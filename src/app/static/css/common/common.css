@@ -1,0 +1,115 @@
+@charset "utf-8";
+
+
+@media screen and (min-width: 1275px) {}
+html {
+    font-size: 56px;
+}
+
+/* head-area */
+.m-tosel-logo {
+    display: none;
+}
+
+
+.head-area, .service-box, .nav-box {
+    display: flex;
+}
+
+.head-area {
+    max-width: 21.34rem;
+    height: 2.39rem;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    /*align-items: center;*/
+}
+
+/* logo-box */
+.logo-box {
+    width: 3.34rem;
+}
+
+
+/* service-box */
+.service-box {
+    margin-top: 2rem;
+}
+
+.service-items {
+    position: relative;
+}
+
+.service-items + .service-items {
+    margin-left: 0.48rem;
+}
+
+.service-item {
+    font-size: 0.32rem;
+    padding: 0.21rem 0.39rem;
+    border-radius: 0.45rem;
+    color: #0F1E74;
+    font-weight: 500;
+}
+
+.service-link {
+    visibility: hidden;
+    width: 2.41rem;
+    margin: 0 auto;
+    margin-top: 0.13rem;
+    border-radius: 0.29rem;
+    box-shadow: 0px 4px 15px rgba(15, 30, 116, 0.15);
+    padding: 0.18rem 0.23rem;
+}
+
+.service-link p {
+    font-weight: 500;
+    font-size: 0.21rem;
+    text-align: center;
+    padding-top: 0.21rem;
+    padding-bottom: 0.21rem;
+    border-bottom: 0.01rem solid rgba(15, 30, 116, 0.4);
+}
+
+.service-link p:nth-child(3) {
+    border-bottom: 0;
+}
+
+.service-link p:hover {
+    font-weight: 800;
+}
+
+.service-items:nth-child(1):hover .service-link {
+    visibility: visible;
+}
+
+.service-items:hover .service-item {
+    background: rgba(15, 30, 116, 0.04);
+}
+
+/* nav-box */
+
+.nav-box {
+    align-items: center;
+}
+
+.nav-item {
+    font-size: 0.21rem;
+    padding: 0.30rem 0.27rem;
+}
+
+.nav-item + .nav-item {
+    margin-left: 0.09rem;
+}
+
+
+.btn-login {
+    font-size: 0.21rem;
+    height: 0.64rem;
+    padding: 0.18rem 0.45rem;
+    margin-left: 0.27rem;
+    border-radius: 1.20rem;
+    border: 0.02rem solid #0F1E74;
+}
+
+
