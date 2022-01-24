@@ -1,3 +1,9 @@
 .DS_Store
 .vscode
 .launch.json
+.idea/
+*.DS_Store
+*.pyc
+__pycache__/
+venv/
+src/static/var/img/*/
