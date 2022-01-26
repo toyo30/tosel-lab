@@ -1,5 +1,4 @@
 (() => {
-    alert('service');
     function showContents() {
         let target = $(this).data('target');
         $('.' + target).fadeIn();

@@ -25,6 +25,9 @@ html, body {
     padding-top: 1.55rem;
     padding-bottom: 1.80rem;
     text-align: center;
+    background: url('/static/images/menu/pc-service-intro-back.png') no-repeat;
+    background-size: contain;
+    background-positon-y: 1rem;
 }
 
 .subject-des {
@@ -181,7 +184,56 @@ html, body {
 .book-contents,
 .digital-contents,
 .teachingmaterials-contents,
-.lms-contents,
 .aiconsult-contents {
     display: none;
 }
+
+
+
+/* bar-area */
+
+.bar-area {
+    width: 7.61rem;
+    margin: 0 auto;
+    margin-top: 1.13rem;
+    color: #333333;
+}
+
+.bar-box {
+    display: flex;
+    margin-bottom: 0.30rem;
+}
+
+.bar-item {
+    width: 100%;
+    font-size: 0.25rem;
+    text-align: center;
+}
+
+.bar-division {
+    width: 0.01rem;
+    height: 0.46rem;
+    border: 0.02rem solid #C4C4C4;
+}
+
+
+.indicate-box {
+    width: 100%;
+    height: 0.04rem;
+    background: #C4C4C4;
+}
+
+
+.indicate-item {
+    width: 50%;
+    height: 0.04rem;
+    background: #1BA7EC;
+}
+
+.bar-text-active {
+    font-weight: bold;
+    color: #1BA7EC;
+}
+
+
+

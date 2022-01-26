@@ -9,7 +9,7 @@ html, body {
 #wrap {
     position: relative;
     overflow-y: hidden;
-    height: 100vh;
+    /*height: 100vh;*/
 }
 
 
@@ -34,6 +34,16 @@ html, body {
     font-weight: 900;
     margin-bottom: 0.75rem;
 }
+
+
+.content-area {
+    display: flex;
+}
+
+.per-component {
+    padding: 0 0.52rem;
+}
+
 
 
 .per-customer {
@@ -64,6 +74,9 @@ html, body {
     background: url('/static/images/menu/pc-content-linkbox-aca.png') no-repeat;
     background-size: 4.55rem 4.55rem;
     text-align: left;
+    z-index: 1;
+    border-left: 0.02px solid #E7E9F4;
+    border-right: 0.02px solid #E7E9F4;
 }
 
 .box-dimmed {
@@ -76,6 +89,7 @@ html, body {
     opacity: 0.2;
     background: rgba(35, 35, 35, 0.75);
     border-radius: 0.63rem;
+    z-index: 2;
 }
 
 .link-box > a {
@@ -86,36 +100,40 @@ html, body {
     border-radius: 0.63rem;
 }
 
-.link-box:hover .service-home,
-.link-box:hover .right-go,
-.link-box:hover .right-go:after
-.link-box:hover .box-dimmed {
+.link-box:hover ~ .service-home,
+.link-box:hover ~ .right-go,
+.link-box:hover ~ .right-go:after
+.link-box:hover ~ .box-dimmed {
     visibility: visible;
     transform: translateY(0px);
 
 }
 
 .service-home {
+    position: relative;
     visibility: hidden;
     font-weight: 900;
     color: #FFFFFF;
     font-size: 0.43rem;
     margin-top: 2.4rem;
-    z-index: 2;
+    z-index: 3;
     transform: translateY(40px);
     transition: 200ms ease-in-out;
 }
 
 .right-go {
+    position: relative;
     visibility: hidden;
     display: flex;
     align-items: center;
     font-size: 0.29rem;
     transform: translateY(40px);
     transition: 200ms ease-in-out;
+    z-index: 3;
 }
 
 .right-go:after {
+    position: relative;
     visibility: hidden;
     content: '';
     display: block;
@@ -126,4 +144,11 @@ html, body {
     margin-left: auto;
     transform: translateY(40px);
     transition: 200ms ease-in-out;
+    z-index: 3;
+}
+
+.content-text {
+    font-size: 0.32rem;
+    text-align: left;
+
 }

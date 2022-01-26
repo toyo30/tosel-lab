@@ -1,10 +1,7 @@
 @charset "utf-8";
 
 
-@media screen and (min-width: 1275px) {}
-html {
-    font-size: 56px;
-}
+
 
 /* ---------------head-area----------- */
 .m-tosel-logo {
@@ -232,3 +229,10 @@ html {
     }
 }
 
+
+
+@media screen and (min-width: 1275px) {
+    html {
+        font-size: 56px;
+    }
+}

@@ -1,0 +1,145 @@
+@charset "utf-8";
+
+
+/* voca-logo-wrap */
+.lms-voca-logo-box {
+    width: 5.36rem;
+    height: 2.86rem;
+    margin: 0 auto;
+    margin-bottom: 1.88rem;
+}
+
+
+/* voca-intro-wrap */
+.lms-voca-intro-wrap {
+    background: #99A1FF;
+}
+
+.lms-voca-intro-box {
+    display: flex;
+    width: 21.34rem;
+    margin: 0 auto;
+    color: #FFFFFF;
+}
+
+.lms-voca-intro-space {
+    position: relative;
+    flex: 1;
+}
+
+.lms-voca-intro-img {
+    position: absolute;
+    top: -3.3rem;
+    left: 0;
+}
+
+.lms-voca-intro-text {
+    padding-top: 0.66rem;
+    padding-bottom: 1.32rem;
+    flex: 1;
+}
+
+
+/* lms-voca-intro-text */
+.lms-voca-intro-text-title {
+    font-size: 0.43rem;
+    margin-bottom: 0.27rem;
+}
+
+.lms-voca-intro-text-des {
+    font-size: 0.71rem;
+    font-weight: 500;
+}
+
+.lms-voca-intro-membership-btn {
+    width: 3.09rem;
+    height: 0.86rem;
+    background: #FF5798;
+    border-radius: 0.57rem;
+    color: #FFFFFF;
+    font-size: 0.32rem;
+}
+
+
+
+
+/* config-wrap */
+
+.lms-voca-config-box {
+    width: 21.34rem;
+    margin: 0 auto;
+    padding-top: 2.41rem;
+    padding-bottom: 2.50rem;
+    text-align: center;
+    color: #333333;
+}
+
+.lms-voca-config-pin-box {
+    padding: 0.89rem 0;
+}
+
+.lms-voca-config-pin {
+    width: 2.98rem;
+    height: 0.02rem;
+    margin: 0 auto;
+    background: #000000;
+}
+
+.lms-voca-config-title {
+    font-size: 0.75rem;
+    font-weight: 350;
+}
+
+
+/* confing-list */
+
+.lms-voca-config-list {
+    display: -webkit-box;   /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+    display: -ms-flexbox;  /* TWEENER - IE 10 */
+    display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+    display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    width: 21.09rem;
+}
+
+.lms-voca-config-img-box {
+    width: 5.54rem;
+    height: 5.54rem;
+    margin-bottom: 0.54rem;
+}
+
+
+.lms-voca-config-item-title {
+    font-size: 0.43rem;
+    font-weight: bold;
+    margin-bottom: 0.27rem;
+}
+
+.lms-voca-config-item-des {
+    font-size: 0.32rem;
+    word-break: keep-all;
+    width: 5.36rem;
+    height: 1.34rem;
+    margin-bottom: 0.45rem;
+}
+
+.lms-voca-config-item-btn {
+    display: -webkit-box;   /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+    display: -ms-flexbox;  /* TWEENER - IE 10 */
+    display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+    display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */
+    font-size: 0.29rem;
+    color: #0095DE;
+    margin: 0 auto;
+}
+
+.lms-voca-config-item-btn:after {
+    content: '';
+    display: block;
+    width: 0.18rem;
+    height: 0.36rem;
+    background: url('/static/images/common/pc-common-btn-arrow-blue.png') no-repeat;
+    background-size: contain;
+    margin-left: 0.09rem;
+}
