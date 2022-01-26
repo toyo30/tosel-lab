@@ -25,3 +25,18 @@ def index():
 def header():
     # session['user_idx'] = random.randint(0, 10)
     return render_template('/common/header.html')
+
+@bp.route('/footer')
+def footer():
+    # session['user_idx'] = random.randint(0, 10)
+    return render_template('/common/footer.html')
+
+@bp.route('/service')
+def service():
+    # session['user_idx'] = random.randint(0, 10)
+    return render_template('/menu/service.html')
+
+@bp.route('/content')
+def content():
+    # session['user_idx'] = random.randint(0, 10)
+    return render_template('/menu/use-content.html')

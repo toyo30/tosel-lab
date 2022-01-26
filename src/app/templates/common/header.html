@@ -8,7 +8,9 @@
 
             <div class="service-box">
                 <div class="service-items">
-                    <button class="service-item">TOSEL Lab 소개</button>
+                    <div class="mouse-over-area">
+                        <div class="service-item">TOSEL Lab 소개</div>
+                    </div>
                     <div class="service-link">
                         <p class="">TOSEL 소개</p>
                         <p class="">TOSEL Lab이란?</p>
@@ -16,24 +18,46 @@
                     </div>
                 </div>
                 <div class="service-items">
-                    <button class="service-item">서비스 소개</button>
+                    <div class="mouse-over-area">
+                        <div class="service-item">서비스 소개</div>
+                    </div>
                 </div>
                 <div class="service-items">
-                    <button class="service-item">멤버십</button>
+                    <div class="mouse-over-area">
+                        <div class="service-item">멤버십</div>
+                    </div>
                 </div>
                 <div class="service-items">
-                    <button class="service-item">컨텐츠 바로가기</button>
+                    <div class="mouse-over-area">
+                        <div class="service-item">컨텐츠 바로가기</div>
+                    </div>
                 </div>
             </div>
 
             <nav class="nav-box">
 
-                <button class="nav-item"><a href="#" class="nav-link block">FAQ</a></button>
+                <div class="nav-item"><a href="#" class="nav-link block">FAQ</a></div>
 
-                <button class="nav-item"><a href="http://www.tosel.org/indexn2" target='_blank' class="nav-link">TOSEL 홈으로</a></button>
+                <div class="nav-item"><a href="http://www.tosel.org/indexn2" target='_blank' class="nav-link">TOSEL 홈으로</a></div>
 
 
-                <button class="btn-login" onclick="window.open('http://www.tosel.org/indexn2')" target='_blank' >로그인</button>
+                <div class="btn-login" onclick="window.open('http://www.tosel.org/indexn2')" target='_blank' >로그인</div>
             </nav>
         </header>
 </div>
+<script>
+
+    $(document).on('mouseover', '.service-items:nth-child(1)', function() {
+        $('.service-link').fadeIn();
+    });
+
+    $(document).on('mouseover', '.service-link', function() {
+        $('.service-link').fadeIn();
+    });
+
+    $(document).on('mouseleave', '.service-items:nth-child(1)', function() {
+        $('.service-link').fadeOut();
+    });
+
+
+</script>
