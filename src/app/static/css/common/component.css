@@ -1,0 +1,196 @@
+@charset "utf-8";
+
+
+/* checkbox */
+input[type="checkbox"] {
+	cursor: pointer;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	outline: 0;
+	background: transparent;
+	height: 25px;
+	width: 25px;
+	border: 1px solid #C4C4C4;
+	border-radius: 5px;
+  }
+
+  input[type="checkbox"]:checked {
+	background: #1BA7EC;
+	border: none;
+  }
+
+  input[type="checkbox"]:hover {
+	filter: brightness(100%);
+  }
+
+  input[type="checkbox"]:disabled {
+	background: #C4C4C4;
+	opacity: 0.6;
+	pointer-events: none;
+  }
+
+  input[type="checkbox"]:after {
+	content: '';
+	position: relative;
+	left: 0%;
+    top: 0%;
+	width: 100%;
+    height: 100%;
+	background: url('/static/images/common/com-checkbox.png') no-repeat;
+	background-size: contain;
+	/* border: solid #FDFDFD; */
+	transform: rotate(10deg);
+	display: none;
+  }
+
+  input[type="checkbox"]:checked:after {
+	display: block;
+  }
+
+  input[type="checkbox"]:disabled:after {
+	border-color: #7b7b7b;
+  }
+
+  input[type="checkbox"]:hover { border-color: rgba(170, 170, 170, 0.5); }
+
+
+
+  /* selectBox */
+  .selectBox {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 0.18rem;
+  border: 0.04rem solid #DFDFDF;
+  background: #FDFDFD url('/static/images/common/com-select-arrow-open.png') center right 10px no-repeat;
+  background-size: 0.45rem;
+  cursor: pointer;
+    color: #333333;
+    padding: 0.21rem 0.36rem;
+}
+
+.selectBox.active {
+    background: url('/static/images/common/com-select-arrow-close.png') center right 10px no-repeat;
+    background-size: 0.45rem 0.45rem;
+}
+
+
+
+.selectBox .label {
+    font-size: 0.29rem;
+    display: flex;
+    align-items: center;
+    width: inherit;
+    height: inherit;
+    border: 0 none;
+    outline: 0 none;
+    background: transparent;
+    cursor: pointer;
+}
+
+.selectBox .optionList {
+    position: absolute;
+    top: 0.89rem;
+    left: 0;
+    width: 100%;
+    color: #333333;
+    list-style-type: none;
+    padding: 0;
+    border-radius: 0.18rem;
+    overflow: hidden;
+    max-height: 0;
+    transition: .3s ease-in;
+    margin: 0;
+    z-index: 1;
+
+}
+
+.selectBox.active .optionList {
+    max-height: 500px;
+}
+
+.selectBox .optionItem {
+    font-size: 0.29rem;
+    border-left: 0.04rem solid #DFDFDF;
+    border-right: 0.04rem solid #DFDFDF;
+    border-bottom: 0.02rem solid #DFDFDF;
+    padding: 0.21rem 0.36rem;
+    transition: .1s;
+    background: #FDFDFD;
+}
+
+
+
+ .selectBox .optionItem:first-child {
+     border-top: 0.04rem solid #DFDFDF;
+     border-top-left-radius: 0.18rem;
+     border-top-right-radius: 0.18rem;
+ }
+
+ .selectBox .optionItem:last-child {
+     border-bottom: 0.04rem solid #DFDFDF;
+     border-bottom-left-radius: 0.18rem;
+     border-bottom-right-radius: 0.18rem;
+ }
+
+.selectBox .optionItem:hover {
+  background: #DFDFDF;
+}
+
+
+/*.selectBox .optionList::-webkit-scrollbar {width: 6px;}*/
+/*.selectBox .optionList::-webkit-scrollbar-track {background: transparent; }*/
+/*.selectBox .optionList::-webkit-scrollbar-thumb {background: #303030; border-radius: 45px;}*/
+/*.selectBox .optionList::-webkit-scrollbar-thumb:hover {background: #303030;}*/
+
+
+
+
+/* input */
+/* input::-ms-clear,*/
+/*input::-ms-reveal{*/
+/*	display:none;width:0;height:0;*/
+/*}*/
+/*input::-webkit-search-decoration,*/
+/*input::-webkit-search-cancel-button,*/
+/*input::-webkit-search-results-button,*/
+/*input::-webkit-search-results-decoration {*/
+/*	display: none;*/
+/*}*/
+
+
+
+.searchBox {
+    border-radius: 0.18rem;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+    height: 100%;
+    padding-right: 0.3rem;
+    border: 0.04rem solid #DFDFDF;
+    background: #FDFDFD;
+}
+
+.searchText {
+    background: #FDFDFD;
+    border-radius: 0.18rem;
+    width: 100%;
+    height: 100%;
+    padding: 0.21rem 0.1rem 0.21rem 0.39rem;
+    border: none;
+}
+
+.btnClear {
+    display: inline-block;
+    width: 0.39rem;
+    height: 0.39rem;
+    background: url('/static/images/common/com-search.png') no-repeat;
+    background-size: contain;
+}
+
+
+textarea:focus, input:focus{
+    outline: none;
+}

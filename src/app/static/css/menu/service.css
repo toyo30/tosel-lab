@@ -201,23 +201,25 @@ html, body {
 
 .bar-box {
     display: flex;
-    margin-bottom: 0.30rem;
+    padding-bottom: 0.30rem;
 }
 
 .bar-item {
     width: 100%;
     font-size: 0.25rem;
     text-align: center;
+    cursor: pointer;
 }
 
 .bar-division {
     width: 0.01rem;
     height: 0.46rem;
-    border: 0.02rem solid #C4C4C4;
+    background: #C4C4C4;
 }
 
 
 .indicate-box {
+    position: relative;
     width: 100%;
     height: 0.04rem;
     background: #C4C4C4;
@@ -225,9 +227,11 @@ html, body {
 
 
 .indicate-item {
+    position: absolute;
     width: 50%;
     height: 0.04rem;
     background: #1BA7EC;
+    transition: 800ms;
 }
 
 .bar-text-active {

@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    {% include '/common/head.html' %}
+    <title>원장 서비스페이지</title>
+    <link rel='stylesheet' href="/static/css/dashboard/dashboard-common.css">
+    <link rel='stylesheet' href="/static/css/dashboard/dashboard-student-id.css">
+</head>
+<body>
+    <div id="wrap">
+        {% include '/dashboard/dashboard-header.html' %}
+        <div id="container">
+
+        </div>
+
+    </div>
+
+
+
+ <script>
+$(document).on('mouseover', '.page-area', function() {
+    $(this).find('.page-links').slideDown();
+})
+
+$(document).on('mouseleave', '.page-area', function() {
+    $(this).find('.page-links').slideUp();
+})
+ </script>
+</body>
+</html>

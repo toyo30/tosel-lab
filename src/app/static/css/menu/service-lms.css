@@ -2,7 +2,7 @@
 
 
 /* voca-logo-wrap */
-.lms-voca-logo-box {
+.lms-logo-box {
     width: 5.36rem;
     height: 2.86rem;
     margin: 0 auto;
@@ -11,29 +11,29 @@
 
 
 /* voca-intro-wrap */
-.lms-voca-intro-wrap {
+.lms-intro-wrap {
     background: #99A1FF;
 }
 
-.lms-voca-intro-box {
+.lms-intro-box {
     display: flex;
     width: 21.34rem;
     margin: 0 auto;
     color: #FFFFFF;
 }
 
-.lms-voca-intro-space {
+.lms-intro-space {
     position: relative;
     flex: 1;
 }
 
-.lms-voca-intro-img {
+.lms-intro-img {
     position: absolute;
-    top: -3.3rem;
+    top: -2rem;
     left: 0;
 }
 
-.lms-voca-intro-text {
+.lms-intro-text {
     padding-top: 0.66rem;
     padding-bottom: 1.32rem;
     flex: 1;
@@ -41,17 +41,17 @@
 
 
 /* lms-voca-intro-text */
-.lms-voca-intro-text-title {
+.lms-intro-text-title {
     font-size: 0.43rem;
     margin-bottom: 0.27rem;
 }
 
-.lms-voca-intro-text-des {
+.lms-intro-text-des {
     font-size: 0.71rem;
     font-weight: 500;
 }
 
-.lms-voca-intro-membership-btn {
+.lms-intro-membership-btn {
     width: 3.09rem;
     height: 0.86rem;
     background: #FF5798;
@@ -65,7 +65,7 @@
 
 /* config-wrap */
 
-.lms-voca-config-box {
+.lms-config-box {
     width: 21.34rem;
     margin: 0 auto;
     padding-top: 2.41rem;
@@ -74,18 +74,18 @@
     color: #333333;
 }
 
-.lms-voca-config-pin-box {
+.lms-config-pin-box {
     padding: 0.89rem 0;
 }
 
-.lms-voca-config-pin {
+.lms-config-pin {
     width: 2.98rem;
     height: 0.02rem;
     margin: 0 auto;
     background: #000000;
 }
 
-.lms-voca-config-title {
+.lms-config-title {
     font-size: 0.75rem;
     font-weight: 350;
 }
@@ -93,7 +93,7 @@
 
 /* confing-list */
 
-.lms-voca-config-list {
+.lms-config-list {
     display: -webkit-box;   /* OLD - iOS 6-, Safari 3.1-6, BB7 */
     display: -ms-flexbox;  /* TWEENER - IE 10 */
     display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
@@ -103,28 +103,29 @@
     width: 21.09rem;
 }
 
-.lms-voca-config-img-box {
+.lms-config-img-box {
     width: 5.54rem;
     height: 5.54rem;
+    margin: 0 auto;
     margin-bottom: 0.54rem;
 }
 
 
-.lms-voca-config-item-title {
+.lms-config-item-title {
     font-size: 0.43rem;
     font-weight: bold;
     margin-bottom: 0.27rem;
 }
 
-.lms-voca-config-item-des {
+.lms-config-item-des {
     font-size: 0.32rem;
     word-break: keep-all;
-    width: 5.36rem;
+    width: 5.5rem;
     height: 1.34rem;
     margin-bottom: 0.45rem;
 }
 
-.lms-voca-config-item-btn {
+.lms-config-item-btn {
     display: -webkit-box;   /* OLD - iOS 6-, Safari 3.1-6, BB7 */
     display: -ms-flexbox;  /* TWEENER - IE 10 */
     display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
@@ -134,7 +135,7 @@
     margin: 0 auto;
 }
 
-.lms-voca-config-item-btn:after {
+.lms-config-item-btn:after {
     content: '';
     display: block;
     width: 0.18rem;
@@ -142,4 +143,153 @@
     background: url('/static/images/common/pc-common-btn-arrow-blue.png') no-repeat;
     background-size: contain;
     margin-left: 0.09rem;
+}
+
+
+/* lms-voca-cur-wrap */
+.lms-cur-wrap {
+    position: relative;
+}
+
+.lms-cur-box {
+    padding: 2.68rem 0;
+}
+
+.cur-img-box {
+    position: relative;
+    width: 18.38rem;
+    margin: 0 auto;
+    z-index: 1;
+}
+
+.cur-background {
+    position: absolute;
+    width: 62%;
+    height: 100%;
+    background-color: #BFEEFF;
+    top: 0;
+    left: 0;
+}
+
+
+/* lms-voca-cur-wrap */
+.lms-daily-wrap {
+    position: relative;
+    background: #D1D4FF;
+}
+
+.lms-daily-box {
+    padding: 1.34rem 0;
+}
+
+.daily-img-box {
+    position: relative;
+    width: 18.38rem;
+    margin: 0 auto;
+    z-index: 1;
+}
+
+
+
+/* lms-voca-monthly-wrap */
+.lms-monthly-wrap {
+    position: relative;
+}
+
+.lms-monthly-box {
+    padding: 1.09rem 0;
+}
+
+.monthly-img-box {
+    position: relative;
+    width: 18.38rem;
+    margin: 0 auto;
+    z-index: 1;
+}
+
+.monthly-background {
+    position: absolute;
+    width: 62%;
+    height: 100%;
+    background-color: #8BEDED;
+    top: 0;
+    right: 0;
+}
+
+
+
+
+/* lms-join-wrap */
+.lms-join-wrap {
+    position: relative;
+    color: #FFFFFF;
+    background: rgba(0, 0, 0, 0.6) url('/static/images/menu/pc-content-lms-join-back.png') no-repeat;
+    background-size: 34.29rem 11.23rem;
+    background-position: center;
+}
+
+.lms-join-box {
+    position: relative;
+    padding: 3.70rem 0 2.68rem 0;
+    text-align: center;
+    z-index: 2;
+}
+
+.join-title {
+    font-size: 0.75rem;
+}
+
+.join-des {
+    font-size: 0.32rem;
+    width: 8.95rem;
+    margin: 0 auto;
+    margin-top: 0.71rem;
+}
+
+.join-pin-box {
+    padding: 0.71rem 0;
+}
+
+.join-pin {
+    background: #FFFFFF;
+    width: 2.98rem;
+    height: 0.02rem;
+    margin: 0 auto;
+}
+
+.join-btn-box {
+    display: -webkit-box;   /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+    display: -ms-flexbox;  /* TWEENER - IE 10 */
+    display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+    display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    width: 5.46rem;
+    margin: 0 auto;
+}
+
+.join-btn {
+    width: 2.55rem;
+    height: 0.70rem;
+    font-size: 0.23rem;
+    border-radius: 0.68rem;
+    font-weight: bold;
+}
+
+.join-btn.join {
+    background: #0F1E74;
+    color: #FFFFFF;
+}
+
+.join-btn.more {
+    color: #0F1E74;
+    background: #ffffff;
+}
+.join-back-box {
+   position: absolute;
+   max-width: 100%;
+   height: 100%;
+   margin: 0 auto;
+   top: 0;
+   left: 0;
 }

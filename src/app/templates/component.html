@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    {% include '/common/head.html' %}
+    <title>Document</title>
+</head>
+<style>
+
+ .select-area {
+     width: 3.39rem;
+     width: 10rem;
+     height: 0.80rem;
+     margin: 0 auto;
+ }
+
+
+ .search-area {
+     width: 7rem;
+     height: 1rem;
+ }
+
+</style>
+<body>
+
+<input type="checkbox">
+
+<div class="select-area">
+    <div class="selectBox">
+      <button class="label">fruits</button>
+      <ul class="optionList">
+        <li class="optionItem">apple</li>
+        <li class="optionItem">orange</li>
+        <li class="optionItem">grape</li>
+        <li class="optionItem">melon</li>
+      </ul>
+    </div>
+</div>
+
+<div class="search-area">
+    <div class="searchBox">
+        <input class="searchText"type="search" id="search" name="q" placeholder="학생의 이름을 검색하세요">
+        <button class="btnClear"></button>
+    </div>
+</div>
+
+
+
+<script src="/static/js/common/selectbox.js"></script>
+</body>
+</html>

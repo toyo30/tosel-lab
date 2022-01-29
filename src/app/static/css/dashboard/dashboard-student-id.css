@@ -1,0 +1,235 @@
+@charset "UTF-8";
+
+#wrap {
+    /*height: 100vh;*/
+}
+
+.logo-box {
+    width: 100%;
+    margin-left: 0;
+}
+
+.flex-arr {
+    flex:1;
+}
+
+
+/* header */
+.page-box {
+    display: -webkit-box;   /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+    display: -ms-flexbox;  /* TWEENER - IE 10 */
+    display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+    display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */
+    flex: 3;
+    -webkit-justify-content: center;
+    justify-content: center;
+}
+
+.page-area:nth-child(1) .page-item {
+    font-weight: bold;
+}
+
+/* container */
+
+.aca-member-box {
+    display: -webkit-box;   /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+    display: -ms-flexbox;  /* TWEENER - IE 10 */
+    display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+    display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    width: 21.34rem;
+    margin: 0 auto;
+    padding-top: 1.88rem;
+    margin-bottom: 0.54rem;
+}
+
+
+.aca-member-area {
+    display: -webkit-box;   /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+    display: -ms-flexbox;  /* TWEENER - IE 10 */
+    display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+    display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */
+    -webkit-align-items: center;
+    align-items: center;
+
+}
+
+.member-img-box {
+    display: -webkit-box;   /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+    display: -ms-flexbox;  /* TWEENER - IE 10 */
+    display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+    display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    width: 3.11rem;
+    height: 3.11rem;
+    background-color: #FDFDFD;
+    box-shadow: 5px 3px 5px rgba(170, 192, 224, 0.7);
+    border-radius: 6.89rem;
+    margin-right: 0.63rem;
+}
+
+.member-img-area {
+    width: 2.93rem;
+    height: 2.93rem;
+}
+
+.aca-member-greeting {
+    font-size: 0.43rem;
+}
+
+.aca-member-name {
+    font-size: 0.43rem;
+    font-weight: bold;
+}
+
+.aca-member-change {
+    font-size: 0.29rem;
+    font-weight: 100;
+    margin-top: 0.45rem;
+    cursor: pointer;
+}
+
+.placement-box {
+    background: linear-gradient(72.34deg, #9498F8 6.02%, #6EE5E5 97.19%);
+    border-radius: 0.36rem;
+    cursor: pointer;
+}
+
+.placement-area {
+    width: 6.75rem;
+    height: 4.05rem;
+    background-image: url('/static/images/dashboard/pc-main-placement-back.png');
+    background-repeat: no-repeat;
+    background-size: 1.70rem 1.25rem;
+    background-position: bottom 0.54rem right 0.5rem;
+    /* 박스 개체 그림자 */
+    box-shadow: 0.16rem 0.16rem 0.63rem #CBDEF9;
+    padding: 0.54rem 0.71rem;
+    border-radius: 0.36rem;
+    color: #FFFFFF;
+}
+
+.placement-title {
+    width: 3.86rem;
+    font-weight: bold;
+    font-size: 0.64rem;
+    word-break: keep-all;
+}
+
+.placement-go {
+    font-size: 0.36rem;
+    font-weight: 300;
+    margin-top: 0.5rem;
+}
+
+
+/* aca-content-wrap */
+
+.aca-content-wrap {
+    padding-bottom: 1.79rem;
+}
+
+.aca-content-box {
+    display: -webkit-box;   /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+    display: -ms-flexbox;  /* TWEENER - IE 10 */
+    display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+    display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    width: 21.34rem;
+    margin: 0 auto;
+}
+
+.aca-content-component {
+    width: 6.75rem;
+    height: 6.75rem;
+    box-shadow: 0.16rem 0.16rem 0.63rem #CBDEF9;
+    border-radius: 0.36rem;
+    padding: 0.63rem 0.71rem;
+    background: #FFFFFF;
+}
+
+.content-title-area {
+    padding-bottom: 3.09rem;
+    background: url("/static/images/dashboard/pc-main-stu-back.png") no-repeat;
+    background-size: 1.79rem 1.88rem;
+    background-position: bottom 0.46rem right 0;
+    border-bottom: 0.03rem solid #CBDEF9;
+}
+
+.aca-content-component:nth-child(2) .content-title-area {
+    background: url("/static/images/dashboard/pc-main-learn-back.png") no-repeat;
+    background-size: 1.79rem 1.88rem;
+    background-position: bottom 0.46rem right 0;
+}
+
+.aca-content-component:nth-child(3) .content-title-area {
+    background: url("/static/images/dashboard/pc-main-ai-back.png") no-repeat;
+    background-size: 1.79rem 1.88rem;
+    background-position: bottom 0.46rem right 0;
+}
+
+.content-title {
+    font-weight: bold;
+    font-size: 0.54rem;
+}
+
+.content-title-eng {
+    font-size: 0.32rem;
+    font-weight: 300;
+}
+
+.content-des-area {
+    display: -webkit-box;   /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+    display: -ms-flexbox;  /* TWEENER - IE 10 */
+    display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+    display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */
+    -webkit-align-items: center;
+    align-items: center;
+    padding-top: 0.45rem;
+    z-index: 1;
+}
+
+.content-adt {
+    -webkit-flex: 1;
+    flex: 1;
+}
+
+.content-adt-des {
+    font-weight: 500;
+    font-size: 0.25rem;
+    color: #1E2F97;
+}
+
+.content-adt-text {
+    font-weight: 300;
+    font-size: 0.25rem;
+
+}
+
+.aca-content-component:nth-child(2) .content-adt:nth-child(2) {
+    display: -webkit-box;   /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+    display: -ms-flexbox;  /* TWEENER - IE 10 */
+    display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+    display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */
+    -webkit-flex-direction: column-reverse;
+    flex-direction: column-reverse;
+}
+
+.aca-content-component:nth-child(3) .content-adt:nth-child(2) {
+    display: -webkit-box;   /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+    display: -ms-flexbox;  /* TWEENER - IE 10 */
+    display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+    display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */
+    -webkit-flex-direction: column-reverse;
+    flex-direction: column-reverse;
+}
+

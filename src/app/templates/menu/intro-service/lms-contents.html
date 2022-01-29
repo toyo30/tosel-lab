@@ -9,9 +9,9 @@
 
     <div class="bar-area">
         <div class="bar-box">
-            <div class="bar-item bar-text-active">ENGLISEA</div>
+            <div class="bar-item bar-text-active" data-item="lms-englisea-wrap">ENGLISEA</div>
             <div class="bar-division"></div>
-            <div class="bar-item">VOCA Series</div>
+            <div class="bar-item" data-item="lms-voca-wrap">VOCA Series</div>
         </div>
 
         <div class="indicate-box">
@@ -22,71 +22,116 @@
 
 
 <div class="lms-container">
-    <div class="lms-voca-wrap">
-        <section class="lms-voca-logo-wrap">
-            <div class="lms-voca-logo-box">
-                <img src="/static/images/menu/pc-content-lms-voca.png" alt="엘엠에스보카로고">
+    <div class="lms-content-wrap">
+        <section class="lms-logo-wrap">
+            <div class="lms-logo-box asyncImage">
+                <img class="asyncImage" src="/static/images/menu/pc-content-lms-voca.png" alt="엘엠에스보카로고">
             </div>
         </section>
 
-        <section class="lms-voca-intro-wrap">
-            <div class="lms-voca-intro-box">
-                <div class="lms-voca-intro-space">
-                    <div class="lms-voca-intro-img">
-                        <img src="/static/images/menu/pc-content-lms-voca-intro-img.png" alt="엘엠에스보카휴대폰목업">
+        <section class="lms-intro-wrap">
+            <div class="lms-intro-box">
+                <div class="lms-intro-space">
+                    <div class="lms-intro-img asyncImage">
+                        <img class="asyncImage" src="/static/images/menu/pc-content-lms-voca-intro-img.png" alt="엘엠에스보카휴대폰목업">
                     </div>
                 </div>
 
-                <div class="lms-voca-intro-text">
-                    <p class="lms-voca-intro-text-title">VOCA Series</p>
-                    <h4 class="lms-voca-intro-text-des">학습 현황을 한 눈에 볼 수 있는 학습통계자료.</h4>
-                    <button class="lms-voca-intro-membership-btn">멤버쉽 가입하기</button>
+                <div class="lms-intro-text">
+                    <p class="lms-intro-text-title">VOCA Series</p>
+                    <h4 class="lms-intro-text-des">학습 현황을 한 눈에 볼 수 있는 학습통계자료.</h4>
+                    <button class="lms-intro-membership-btn">멤버쉽 가입하기</button>
                 </div>
             </div>
         </section>
 
-        <section class="lms-voca-config-wrap">
-            <div class="lms-voca-config-box">
-                <h4 class="lms-voca-config-title">학습통계자료 구성</h4>
-                <div class="lms-voca-config-pin-box">
-                    <div class="lms-voca-config-pin"></div>
+        <section class="lms-config-wrap">
+            <div class="lms-config-box">
+                <h4 class="lms-config-title">학습통계자료 구성</h4>
+                <div class="lms-config-pin-box">
+                    <div class="lms-config-pin"></div>
                 </div>
 
-                <div class="lms-voca-config-list">
-                    <div class="lms-voca-config-item">
-                        <div class="lms-voca-config-img-box">
-                            <img src="/static/images/menu/pc-content-lms-voca-config-study.png" alt="엘엠에스학습현황">
+                <div class="lms-config-list">
+                    <div class="lms-config-item">
+                        <div class="lms-config-img-box asyncImage">
+                            <img class="asyncImage" src="/static/images/menu/pc-content-lms-voca-config-study.png" alt="엘엠에스학습현황">
                         </div>
 
-                        <p class="lms-voca-config-item-title">학습 현황</p>
-                        <p class="lms-voca-config-item-des">학생의 디지털 컨텐츠 학습 현황을 한번에 파악할 수 있습니다.</p>
-                        <button class="lms-voca-config-item-btn">더 알아보기</button>
+                        <p class="lms-config-item-title">학습 현황</p>
+                        <p class="lms-config-item-des">학생의 디지털 컨텐츠 학습 현황을 한번에 파악할 수 있습니다.</p>
+                        <button class="lms-config-item-btn">더 알아보기</button>
                     </div>
 
-                    <div class="lms-voca-config-item">
-                        <div class="lms-voca-config-img-box">
-                            <img src="/static/images/menu/pc-content-lms-voca-config-daily.png" alt="엘엠에스일보고사">
+                    <div class="lms-config-item">
+                        <div class="lms-config-img-box asyncImage">
+                            <img class="asyncImage" src="/static/images/menu/pc-content-lms-voca-config-daily.png" alt="엘엠에스일보고사">
                         </div>
 
-                        <p class="lms-voca-config-item-title">Daily Report</p>
-                        <p class="lms-voca-config-item-des">매일마다 체크할 수 있는 오답률/정답률과 단어 습득률을 제공하여, 지속적인 관리를 도와줍니다.</p>
-                        <button class="lms-voca-config-item-btn">더 알아보기</button>
+                        <p class="lms-config-item-title">Daily Report</p>
+                        <p class="lms-config-item-des">매일마다 체크할 수 있는 오답률/정답률과 단어 습득률을 제공하여, 지속적인 관리를 도와줍니다.</p>
+                        <button class="lms-config-item-btn">더 알아보기</button>
                     </div>
 
-                    <div class="lms-voca-config-item">
-                        <div class="lms-voca-config-img-box">
-                            <img src="/static/images/menu/pc-content-lms-voca-config-monthly.png" alt="엘엠에스월보고서">
+                    <div class="lms-config-item">
+                        <div class="lms-config-img-box asyncImage">
+                            <img class="asyncImage" src="/static/images/menu/pc-content-lms-voca-config-monthly.png" alt="엘엠에스월보고서">
                         </div>
 
-                        <p class="lms-voca-config-item-title">학습 현황</p>
-                        <p class="lms-voca-config-item-des">축적된 데이터로 정확하고 신뢰성 있는 학습 진단과 학습법을 제공하여, 학생들이 학습 목표를 정하는 데 도움을 줍니다. </p>
-                        <button class="lms-voca-config-item-btn">더 알아보기</button>
+                        <p class="lms-config-item-title">학습 현황</p>
+                        <p class="lms-config-item-des">축적된 데이터로 정확하고 신뢰성 있는 학습 진단과 학습법을 제공하여, 학생들이 학습 목표를 정하는 데 도움을 줍니다. </p>
+                        <button class="lms-config-item-btn">더 알아보기</button>
                     </div>
                 </div>
             </div>
 
+        </section>
+
+        <section class="lms-cur-wrap">
+            <div class="lms-cur-box">
+                <div class="cur-img-box asyncImage">
+                    <img class="asyncImage" src="/static/images/menu/pc-content-lms-voca-cur.png" alt="학습현황학습통계">
+                </div>
+                <div class="cur-background"></div>
+            </div>
+        </section>
+
+        <section class="lms-daily-wrap">
+            <div class="lms-daily-box">
+                <div class="daily-img-box asyncImage">
+                    <img class='asyncImage' src="/static/images/menu/pc-content-lms-voca-daily.png" alt="일일학습통계">
+                </div>
+            </div>
+        </section>
+
+        <section class="lms-monthly-wrap">
+            <div class="lms-monthly-box">
+                <div class="monthly-img-box asyncImage">
+                    <img class="asyncImage" src="/static/images/menu/pc-content-lms-voca-monthly.png" alt="월간학습통계">
+                </div>
+                <div class="monthly-background"></div>
+            </div>
+        </section>
+
+        <section class="lms-join-wrap asyncImage">
+            <div class="lms-join-box">
+                <h4 class="join-title">학생의 평균 학습률 파악을 쉽고 빠르게.</h4>
+                <p class="join-des">학생의 위치와 결점을 종합적으로 분석하여, 이를 토대로 학습 진단을
+할 수 있는 <strong>학습 통계 자료</strong>를 이제 토셀이 제공합니다.</p>
+                <div class="join-pin-box">
+                    <div class="join-pin"></div>
+                </div>
+
+                <div class="join-btn-box">
+                    <button class="join-btn join">가입 하러가기</button>
+                    <button class="join-btn more">서비스 더보기</button>
+                </div>
+
+            </div>
 
         </section>
 
     </div>
 </div>
+
+<script src="/static/js/menu/service-content-lms.js"></script>

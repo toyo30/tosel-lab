@@ -40,3 +40,20 @@ def service():
 def content():
     # session['user_idx'] = random.randint(0, 10)
     return render_template('/menu/use-content.html')
+
+
+@bp.route('/dashboard')
+def dashboard():
+    # session['user_idx'] = random.randint(0, 10)
+    return render_template('/dashboard/dashboard-main.html')
+
+@bp.route('/dashboard_stu')
+def dashboard_stu_id():
+    # session['user_idx'] = random.randint(0, 10)
+    return render_template('/dashboard/dashboard-student-id.html')
+
+
+@bp.route('/com')
+def com():
+    # session['user_idx'] = random.randint(0, 10)
+    return render_template('/component.html')
