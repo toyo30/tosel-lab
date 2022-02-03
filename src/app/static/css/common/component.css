@@ -21,7 +21,8 @@ input[type="checkbox"] {
   }
 
   input[type="checkbox"]:hover {
-	filter: brightness(100%);
+	/*filter: brightness(100%);*/
+      border-color: rgba(170, 170, 170, 0.5);
   }
 
   input[type="checkbox"]:disabled {
@@ -52,7 +53,7 @@ input[type="checkbox"] {
 	border-color: #7b7b7b;
   }
 
-  input[type="checkbox"]:hover { border-color: rgba(170, 170, 170, 0.5); }
+  /*input[type="checkbox"]:hover { border-color: rgba(170, 170, 170, 0.5); }*/
 
 
 
