@@ -52,6 +52,17 @@ def dashboard_stu_id():
     # session['user_idx'] = random.randint(0, 10)
     return render_template('/dashboard/dashboard-student-id.html')
 
+@bp.route('/dashboard_analy')
+def dashboard_analy():
+    # session['user_idx'] = random.randint(0, 10)
+    return render_template('/dashboard/dashboard-study-analy.html')
+
+@bp.route('/dashboard_ai')
+def dashboard_ai():
+    # session['user_idx'] = random.randint(0, 10)
+    return render_template('/dashboard/dashboard-ai-consult.html')
+
+
 
 @bp.route('/com')
 def com():

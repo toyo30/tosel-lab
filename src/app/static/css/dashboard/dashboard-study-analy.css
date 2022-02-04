@@ -296,6 +296,12 @@
     font-size: 0.25rem;
 }
 
+.select-container {
+    display: -webkit-box;   /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+    display: -ms-flexbox;  /* TWEENER - IE 10 */
+    display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+    display: flex;
+}
 
 .select-area {
     margin-left: 0.29rem;
@@ -305,9 +311,6 @@
     width: 3.39rem;
 }
 
-
-
-/* */
 
 .parent-id-box {
     display: -webkit-box;   /* OLD - iOS 6-, Safari 3.1-6, BB7 */
@@ -382,15 +385,20 @@
     margin-left: 0.07rem;
 }
 
+
 .student-check-box {
-    margin-right: 0.45rem;
+    width: 100%;
 }
+
 
 .stu-check-area {
     display: -webkit-box;   /* OLD - iOS 6-, Safari 3.1-6, BB7 */
     display: -ms-flexbox;  /* TWEENER - IE 10 */
     display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
     display: flex;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    width: 100%;
     margin-bottom: 1.43rem;
 }
 
@@ -411,7 +419,7 @@
     border-top: 0.04rem solid #1BA7EC;
 }
 
-.stu-check-component {
+.stu-check-head-component, .stu-check-component {
     display: -webkit-box;   /* OLD - iOS 6-, Safari 3.1-6, BB7 */
     display: -ms-flexbox;  /* TWEENER - IE 10 */
     display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
@@ -421,14 +429,11 @@
     align-items: center;
     font-size: 0.32rem;
     border-bottom: 0.02rem solid #DFDFDF;
+    color: #333333;
 }
 
-
-input[type="checkbox"].check-pointer {
-    width: 0.45rem;
-    height: 0.45rem;
-    border-radius: 0.09rem;
-    margin: 0 0.39rem;
+.stu-check-head-component {
+    border-top: 0.02rem solid #1BA7EC;
 }
 
 .arrange-bar {
@@ -437,11 +442,37 @@ input[type="checkbox"].check-pointer {
     background: #DFDFDF;
 }
 
-.check-name {
+.check-name, .check-head-name {
     font-size: 0.32rem;
-    padding: 0 1.4rem;
+    padding: 0 0.8rem;
     color: #333333;
+    text-align: center;
 }
+
+
+.check-name {
+    font-size: 0.29rem;
+}
+
+.check-head-analy {
+    width: 4.36rem;
+    padding: 0 0.7rem;
+    text-align: center;
+}
+
+.check-analy-box {
+    width: 4.36rem;
+    padding: 0 0.36rem;
+}
+
+.check-analy {
+    width: 3.68rem;
+    height: 0.80rem;
+    background: rgba(125, 214, 246, 0.1);
+    border: 0.02rem solid #7DD6F6;
+    border-radius: 0.18rem;
+}
+
 
 .parent-check-btn-des {
     font-size: 0.21rem;

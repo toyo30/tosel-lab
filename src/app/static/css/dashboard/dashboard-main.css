@@ -128,6 +128,7 @@
     border-radius: 0.36rem;
     padding: 0.63rem 0.71rem;
     background: #FFFFFF;
+    cursor: pointer;
 }
 
 .content-title-area {
