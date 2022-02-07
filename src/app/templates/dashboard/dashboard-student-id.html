@@ -5,6 +5,7 @@
     <title>원장 서비스페이지</title>
     <link rel='stylesheet' href="/static/css/dashboard/dashboard-common.css">
     <link rel='stylesheet' href="/static/css/dashboard/dashboard-student-id.css">
+    <link rel='stylesheet' href="/static/css/common/loading-bar.css">
 </head>
 <body>
     <div id="wrap">
@@ -64,7 +65,7 @@
 
 
                             <input type="checkbox" id="tog-btn">
-                            <label for="tog-btn"></label>
+                            <label class="tog-btn-lab" for="tog-btn"></label>
 
 
 
@@ -82,94 +83,94 @@
                             <div class="stu-check-area">
                                 <div class="stu-check-tab">
                                     <div class="stu-check-component">
-                                        <input class="check-pointer" type="checkbox"><div class="arrange-bar"></div>
+                                        <input class="all-check check-pointer" type="checkbox"><div class="arrange-bar"></div>
                                         <p class="check-name">이름</p>
                                     </div>
                                     <div class="stu-check-component">
-                                        <input class="check-pointer" type="checkbox"><div class="arrange-bar"></div>
-                                        <p class="check-name">이름</p>
+                                        <input class="part-check check-pointer" type="checkbox"><div class="arrange-bar"></div>
+                                        <p class="check-name">김하나</p>
                                     </div>
                                     <div class="stu-check-component">
-                                        <input class="check-pointer" type="checkbox"><div class="arrange-bar"></div>
-                                        <p class="check-name">이름</p>
+                                        <input class="part-check check-pointer" type="checkbox"><div class="arrange-bar"></div>
+                                        <p class="check-name">김둘</p>
                                     </div>
                                     <div class="stu-check-component">
-                                        <input class="check-pointer" type="checkbox"><div class="arrange-bar"></div>
-                                        <p class="check-name">이름</p>
+                                        <input class="part-check check-pointer" type="checkbox"><div class="arrange-bar"></div>
+                                        <p class="check-name">김삼</p>
                                     </div>
                                     <div class="stu-check-component">
-                                        <input class="check-pointer" type="checkbox"><div class="arrange-bar"></div>
-                                        <p class="check-name">이름</p>
+                                        <input class="part-check check-pointer" type="checkbox"><div class="arrange-bar"></div>
+                                        <p class="check-name">김사</p>
                                     </div>
                                     <div class="stu-check-component">
-                                        <input class="check-pointer" type="checkbox"><div class="arrange-bar"></div>
-                                        <p class="check-name">이름</p>
+                                        <input class="part-check check-pointer" type="checkbox"><div class="arrange-bar"></div>
+                                        <p class="check-name">김다섯</p>
                                     </div>
                                     <div class="stu-check-component">
-                                        <input class="check-pointer" type="checkbox"><div class="arrange-bar"></div>
-                                        <p class="check-name">이름</p>
-                                    </div>
-                                </div>
-
-                                <div class="stu-check-tab">
-                                    <div class="stu-check-component">
-                                        <input class="check-pointer" type="checkbox"><div class="arrange-bar"></div>
-                                        <p class="check-name">이름</p>
-                                    </div>
-                                    <div class="stu-check-component">
-                                        <input class="check-pointer" type="checkbox"><div class="arrange-bar"></div>
-                                        <p class="check-name">이름</p>
-                                    </div>
-                                    <div class="stu-check-component">
-                                        <input class="check-pointer" type="checkbox"><div class="arrange-bar"></div>
-                                        <p class="check-name">이름</p>
-                                    </div>
-                                    <div class="stu-check-component">
-                                        <input class="check-pointer" type="checkbox"><div class="arrange-bar"></div>
-                                        <p class="check-name">이름</p>
-                                    </div>
-                                    <div class="stu-check-component">
-                                        <input class="check-pointer" type="checkbox"><div class="arrange-bar"></div>
-                                        <p class="check-name">이름</p>
-                                    </div>
-                                    <div class="stu-check-component">
-                                        <input class="check-pointer" type="checkbox"><div class="arrange-bar"></div>
-                                        <p class="check-name">이름</p>
-                                    </div>
-                                    <div class="stu-check-component">
-                                        <input class="check-pointer" type="checkbox"><div class="arrange-bar"></div>
-                                        <p class="check-name">이름</p>
+                                        <input class="part-check check-pointer" type="checkbox"><div class="arrange-bar"></div>
+                                        <p class="check-name">김육</p>
                                     </div>
                                 </div>
 
                                 <div class="stu-check-tab">
                                     <div class="stu-check-component">
-                                        <input class="check-pointer" type="checkbox"><div class="arrange-bar"></div>
+                                        <input class="all-check check-pointer" type="checkbox"><div class="arrange-bar"></div>
                                         <p class="check-name">이름</p>
                                     </div>
                                     <div class="stu-check-component">
-                                        <input class="check-pointer" type="checkbox"><div class="arrange-bar"></div>
+                                        <input class="part-check check-pointer" type="checkbox"><div class="arrange-bar"></div>
+                                        <p class="check-name">김하나</p>
+                                    </div>
+                                    <div class="stu-check-component">
+                                        <input class="part-check check-pointer" type="checkbox"><div class="arrange-bar"></div>
+                                        <p class="check-name">김둘</p>
+                                    </div>
+                                    <div class="stu-check-component">
+                                        <input class="part-check check-pointer" type="checkbox"><div class="arrange-bar"></div>
+                                        <p class="check-name">김삼</p>
+                                    </div>
+                                    <div class="stu-check-component">
+                                        <input class="part-check check-pointer" type="checkbox"><div class="arrange-bar"></div>
+                                        <p class="check-name">김사</p>
+                                    </div>
+                                    <div class="stu-check-component">
+                                        <input class="part-check check-pointer" type="checkbox"><div class="arrange-bar"></div>
+                                        <p class="check-name">김다섯</p>
+                                    </div>
+                                    <div class="stu-check-component">
+                                        <input class="part-check check-pointer" type="checkbox"><div class="arrange-bar"></div>
+                                        <p class="check-name">김육</p>
+                                    </div>
+                                </div>
+
+                                <div class="stu-check-tab">
+                                    <div class="stu-check-component">
+                                        <input class="all-check check-pointer" type="checkbox"><div class="arrange-bar"></div>
                                         <p class="check-name">이름</p>
                                     </div>
                                     <div class="stu-check-component">
-                                        <input class="check-pointer" type="checkbox"><div class="arrange-bar"></div>
-                                        <p class="check-name">이름</p>
+                                        <input class="part-check check-pointer" type="checkbox"><div class="arrange-bar"></div>
+                                        <p class="check-name">김하나</p>
                                     </div>
                                     <div class="stu-check-component">
-                                        <input class="check-pointer" type="checkbox"><div class="arrange-bar"></div>
-                                        <p class="check-name">이름</p>
+                                        <input class="part-check check-pointer" type="checkbox"><div class="arrange-bar"></div>
+                                        <p class="check-name">김둘</p>
                                     </div>
                                     <div class="stu-check-component">
-                                        <input class="check-pointer" type="checkbox"><div class="arrange-bar"></div>
-                                        <p class="check-name">이름</p>
+                                        <input class="part-check check-pointer" type="checkbox"><div class="arrange-bar"></div>
+                                        <p class="check-name">김삼</p>
                                     </div>
                                     <div class="stu-check-component">
-                                        <input class="check-pointer" type="checkbox"><div class="arrange-bar"></div>
-                                        <p class="check-name">이름</p>
+                                        <input class="part-check check-pointer" type="checkbox"><div class="arrange-bar"></div>
+                                        <p class="check-name">김사</p>
                                     </div>
                                     <div class="stu-check-component">
-                                        <input class="check-pointer" type="checkbox"><div class="arrange-bar"></div>
-                                        <p class="check-name">이름</p>
+                                        <input class="part-check check-pointer" type="checkbox"><div class="arrange-bar"></div>
+                                        <p class="check-name">김다섯</p>
+                                    </div>
+                                    <div class="stu-check-component">
+                                        <input class="part-check check-pointer" type="checkbox"><div class="arrange-bar"></div>
+                                        <p class="check-name">김육</p>
                                     </div>
                                 </div>
                             </div>
@@ -178,17 +179,20 @@
                             <div class="stu-paging-box">
                                 <button class="paging-prev">Previous</button>
                                 <span class="active-page">1</span>
-                                <span>1</span>
-                                <span>1</span>
-                                <span>1</span>
-                                <span>1</span>
-                                <span>1</span>
-                                <span>1</span>
-                                <span>1</span>
-                                <span>1</span>
-                                <span>1</span>
+                                <span>2</span>
+                                <span>3</span>
+                                <span>4</span>
+                                <span>5</span>
+                                <span>6</span>
+                                <span>7</span>
+                                <span>8</span>
+                                <span>9</span>
+                                <span>10</span>
                                 <button class="paging-next">Next</button>
                             </div>
+
+
+
                         </div>
 
                         <div class="parent-check-box">
@@ -200,7 +204,7 @@
                                                 <p class="prt-num">No.</p>
                                                 <div class="prt-bar"></div>
                                                 <div class="check-issue-box">
-                                                    <input class="check-issue" type="checkbox">
+                                                    <input class="all-check-issue check-issue" type="checkbox" checked>
                                                 </div>
                                                 <div class="prt-bar"></div>
                                                 <p class="prt-all-name">이름</p>
@@ -211,124 +215,11 @@
 
                                         <div class="prt-check-component-box">
 
-
-                                            <div class="prt-component">
-                                            <div class="prt-check-component">
-                                                <p class="prt-num">01</p>
-                                                <div class="check-issue-box">
-                                                    <input class="check-issue" type="checkbox">
-                                                </div>
-                                                <p class="prt-all-name">이름</p>
-                                            </div>
-                                        </div>
-
-                                        <div class="prt-component">
-                                            <div class="prt-check-component">
-                                                <p class="prt-num">02</p>
-                                                <div class="check-issue-box">
-                                                    <input class="check-issue" type="checkbox">
-                                                </div>
-                                                <p class="prt-all-name">이름</p>
-                                            </div>
-                                        </div>
-
-                                        <div class="prt-component">
-                                            <div class="prt-check-component">
-                                                <p class="prt-num">03</p>
-                                                <div class="check-issue-box">
-                                                    <input class="check-issue" type="checkbox">
-                                                </div>
-                                                <p class="prt-all-name">이름</p>
-                                            </div>
-                                        </div>
-
-                                        <div class="prt-component">
-                                            <div class="prt-check-component">
-                                                <p class="prt-num">04</p>
-                                                <div class="check-issue-box">
-                                                    <input class="check-issue" type="checkbox">
-                                                </div>
-                                                <p class="prt-all-name">이름</p>
-                                            </div>
-                                        </div>
-
-                                        <div class="prt-component">
-                                            <div class="prt-check-component">
-                                                <p class="prt-num">05</p>
-                                                <div class="check-issue-box">
-                                                    <input class="check-issue" type="checkbox">
-                                                </div>
-                                                <p class="prt-all-name">이름</p>
-                                            </div>
-                                        </div>
-
-                                        <div class="prt-component">
-                                            <div class="prt-check-component">
-                                                <p class="prt-num">06</p>
-                                                <div class="check-issue-box">
-                                                    <input class="check-issue" type="checkbox">
-                                                </div>
-                                                <p class="prt-all-name">이름</p>
-                                            </div>
-                                        </div>
-
-                                        <div class="prt-component">
-                                            <div class="prt-check-component">
-                                                <p class="prt-num">07</p>
-                                                <div class="check-issue-box">
-                                                    <input class="check-issue" type="checkbox">
-                                                </div>
-                                                <p class="prt-all-name">이름</p>
-                                            </div>
-                                        </div>
-
-                                        <div class="prt-component">
-                                            <div class="prt-check-component">
-                                                <p class="prt-num">08</p>
-                                                <div class="check-issue-box">
-                                                    <input class="check-issue" type="checkbox">
-                                                </div>
-                                                <p class="prt-all-name">이름</p>
-                                            </div>
-                                        </div>
-
-                                        <div class="prt-component">
-                                            <div class="prt-check-component">
-                                                <p class="prt-num">09</p>
-                                                <div class="check-issue-box">
-                                                    <input class="check-issue" type="checkbox">
-                                                </div>
-                                                <p class="prt-all-name">이름</p>
-                                            </div>
                                         </div>
 
 
-                                        <div class="prt-component">
-                                            <div class="prt-check-component">
-                                                <p class="prt-num">10</p>
-                                                <div class="check-issue-box">
-                                                    <input class="check-issue" type="checkbox">
-                                                </div>
-                                                <p class="prt-all-name">이름</p>
-                                            </div>
-                                        </div>
 
-                                        <div class="prt-component">
-                                            <div class="prt-check-component">
-                                                <p class="prt-num">11</p>
-                                                   <div class="check-issue-box">
-                                                        <input class="check-issue" type="checkbox">
-                                                    </div>
-                                                <p class="prt-all-name">이름</p>
-                                            </div>
-                                        </div>
                                     </div>
-
-
-
-
-                            </div>
-                                <div class="bottom-bar"></div>
                                 <button class="prt-check-btn">학부모 아이디 발급하기</button>
 
 
@@ -358,49 +249,7 @@
 
                                 <div class="dvd-scroll">
                                     <div class="dvd-component-box">
-                                        <div class="dvd-component">
-                                            <p class="cla-sect">Class 001</p>
-                                            <div class="cla-des-box">
-                                                <div class="cla-text">
-                                                    <span>반명,선생님명</span>
-                                                    <button class="name-change-btn"></button>
-                                                </div>
-                                                <p class="cla-id">ID : <span class="cla-id-value">Class001@0000</span></p>
-                                            </div>
-                                        </div>
 
-                                        <div class="dvd-component">
-                                            <p class="cla-sect">Class 002</p>
-                                            <div class="cla-des-box">
-                                                <div class="cla-text">
-                                                    <span>반명,선생님명</span>
-                                                    <button class="name-change-btn"></button>
-                                                </div>
-                                                <p class="cla-id">ID : <span class="cla-id-value">Class001@0000</span></p>
-                                            </div>
-                                        </div>
-
-                                        <div class="dvd-component">
-                                            <p class="cla-sect">Class 003</p>
-                                            <div class="cla-des-box">
-                                                <div class="cla-text">
-                                                    <span>반명,선생님명</span>
-                                                    <button class="name-change-btn"></button>
-                                                </div>
-                                                <p class="cla-id">ID : <span class="cla-id-value">Class001@0000</span></p>
-                                            </div>
-                                        </div>
-
-                                        <div class="dvd-component">
-                                            <p class="cla-sect">Class 004</p>
-                                            <div class="cla-des-box">
-                                                <div class="cla-text">
-                                                    <span>반명,선생님명</span>
-                                                    <button class="name-change-btn"></button>
-                                                </div>
-                                                <p class="cla-id">ID : <span class="cla-id-value">Class001@0000</span></p>
-                                            </div>
-                                        </div>
                                     </div>
                                 </div>
 
@@ -419,13 +268,14 @@
                             <div class="cla-box">
                                 <div class="cla-head">
                                     <div class="cla-check-area">
-                                        <p class="cla-check-text">Class 001</p>
+                                        <p class="cla-check-text">Class</p>
                                     </div>
                                 </div>
 
                                 <div class="cla-scroll">
                                     <div class="cla-component-box">
-                                        <div class="cla-component">
+
+                                        <!--<div class="cla-component">
                                             <p class="stu-num">01</p>
                                             <div class="cal-check-box">
                                                 <input class="check-cla" type="checkbox">
@@ -433,89 +283,9 @@
                                             </div>
 
                                             <p class="stu-name">추가학생이름</p>
+                                        </div>-->
                                         </div>
 
-                                        <div class="cla-component">
-                                            <p class="stu-num">02</p>
-                                            <div class="cal-check-box">
-                                                <input class="check-cla" type="checkbox">
-                                                <button class="remove-com"></button>
-                                            </div>
-
-                                            <p class="stu-name">추가학생이름</p>
-                                        </div>
-
-                                        <div class="cla-component">
-                                            <p class="stu-num">03</p>
-                                            <div class="cal-check-box">
-                                                <input class="check-cla" type="checkbox">
-                                                <button class="remove-com"></button>
-                                            </div>
-
-                                            <p class="stu-name">추가학생이름</p>
-                                        </div>
-
-                                        <div class="cla-component">
-                                            <p class="stu-num">04</p>
-                                            <div class="cal-check-box">
-                                                <input class="check-cla" type="checkbox">
-                                                <button class="remove-com"></button>
-                                            </div>
-
-                                            <p class="stu-name">추가학생이름</p>
-                                        </div>
-
-                                        <div class="cla-component">
-                                            <p class="stu-num">05</p>
-                                            <div class="cal-check-box">
-                                                <input class="check-cla" type="checkbox">
-                                                <button class="remove-com"></button>
-                                            </div>
-
-                                            <p class="stu-name">추가학생이름</p>
-                                        </div>
-
-                                        <div class="cla-component">
-                                            <p class="stu-num">06</p>
-                                            <div class="cal-check-box">
-                                                <input class="check-cla" type="checkbox">
-                                                <button class="remove-com"></button>
-                                            </div>
-
-                                            <p class="stu-name">추가학생이름</p>
-                                        </div>
-
-                                        <div class="cla-component">
-                                            <p class="stu-num">07</p>
-                                            <div class="cal-check-box">
-                                                <input class="check-cla" type="checkbox">
-                                                <button class="remove-com"></button>
-                                            </div>
-
-                                            <p class="stu-name">추가학생이름</p>
-                                        </div>
-
-                                        <div class="cla-component">
-                                            <p class="stu-num">08</p>
-                                            <div class="cal-check-box">
-                                                <input class="check-cla" type="checkbox">
-                                                <button class="remove-com"></button>
-                                            </div>
-
-                                            <p class="stu-name">추가학생이름</p>
-                                        </div>
-
-                                        <div class="cla-component">
-                                            <p class="stu-num">09</p>
-                                            <div class="cal-check-box">
-                                                <input class="check-cla" type="checkbox">
-                                                <button class="remove-com"></button>
-                                            </div>
-
-                                            <p class="stu-name">추가학생이름</p>
-                                        </div>
-
-                                    </div>
                                 </div>
 
                                 <div class="save-info-box">
@@ -539,55 +309,55 @@
                             <div class="stu-add-area">
                                 <div class="stu-add-tab">
                                     <div class="stu-add-component">
-                                        <input class="check-pointer" type="checkbox"><div class="arrange-bar"></div>
+                                        <input class="all-add-check check-pointer" type="checkbox"><div class="arrange-bar"></div>
                                         <p class="add-name">이름</p>
                                     </div>
                                     <div class="stu-add-component">
-                                        <input class="check-pointer" type="checkbox"><div class="arrange-bar"></div>
-                                        <p class="add-name">이름</p>
+                                        <input class="part-add-check check-pointer" type="checkbox"><div class="arrange-bar"></div>
+                                        <p class="add-name">이하나</p>
                                     </div>
                                     <div class="stu-add-component">
-                                        <input class="check-pointer" type="checkbox"><div class="arrange-bar"></div>
-                                        <p class="add-name">이름</p>
+                                        <input class="part-add-check check-pointer" type="checkbox"><div class="arrange-bar"></div>
+                                        <p class="add-name">윤둘리</p>
                                     </div>
                                     <div class="stu-add-component">
-                                        <input class="check-pointer" type="checkbox"><div class="arrange-bar"></div>
-                                        <p class="add-name">이름</p>
+                                        <input class="part-add-check check-pointer" type="checkbox"><div class="arrange-bar"></div>
+                                        <p class="add-name">송삼민</p>
                                     </div>
                                     <div class="stu-add-component">
-                                        <input class="check-pointer" type="checkbox"><div class="arrange-bar"></div>
-                                        <p class="add-name">이름</p>
+                                        <input class="part-add-check check-pointer" type="checkbox"><div class="arrange-bar"></div>
+                                        <p class="add-name">욘사마</p>
                                     </div>
                                     <div class="stu-add-component">
-                                        <input class="check-pointer" type="checkbox"><div class="arrange-bar"></div>
-                                        <p class="add-name">이름</p>
+                                        <input class="part-add-check check-pointer" type="checkbox"><div class="arrange-bar"></div>
+                                        <p class="add-name">오창석</p>
                                     </div>
                                 </div>
 
                                 <div class="stu-add-tab">
                                     <div class="stu-add-component">
-                                        <input class="check-pointer" type="checkbox"><div class="arrange-bar"></div>
+                                        <input class="all-add-check check-pointer" type="checkbox"><div class="arrange-bar"></div>
                                         <p class="add-name">이름</p>
                                     </div>
                                     <div class="stu-add-component">
-                                        <input class="check-pointer" type="checkbox"><div class="arrange-bar"></div>
-                                        <p class="add-name">이름</p>
+                                        <input class="part-add-check check-pointer" type="checkbox"><div class="arrange-bar"></div>
+                                        <p class="add-name">이하나</p>
                                     </div>
                                     <div class="stu-add-component">
-                                        <input class="check-pointer" type="checkbox"><div class="arrange-bar"></div>
-                                        <p class="add-name">이름</p>
+                                        <input class="part-add-check check-pointer" type="checkbox"><div class="arrange-bar"></div>
+                                        <p class="add-name">윤둘리</p>
                                     </div>
                                     <div class="stu-add-component">
-                                        <input class="check-pointer" type="checkbox"><div class="arrange-bar"></div>
-                                        <p class="add-name">이름</p>
+                                        <input class="part-add-check check-pointer" type="checkbox"><div class="arrange-bar"></div>
+                                        <p class="add-name">송삼민</p>
                                     </div>
                                     <div class="stu-add-component">
-                                        <input class="check-pointer" type="checkbox"><div class="arrange-bar"></div>
-                                        <p class="add-name">이름</p>
+                                        <input class="part-add-check check-pointer" type="checkbox"><div class="arrange-bar"></div>
+                                        <p class="add-name">욘사마</p>
                                     </div>
                                     <div class="stu-add-component">
-                                        <input class="check-pointer" type="checkbox"><div class="arrange-bar"></div>
-                                        <p class="add-name">이름</p>
+                                        <input class="part-add-check check-pointer" type="checkbox"><div class="arrange-bar"></div>
+                                        <p class="add-name">오창석</p>
                                     </div>
                                 </div>
                             </div>
@@ -608,6 +378,7 @@
             </div>
 
             <div class="student-level-container">
+                <div class="popup-dimmed"></div>
                 <section class="student-level-wrap">
                     <div class="student-level-box">
 
@@ -921,9 +692,9 @@
                                 <p class="remove-answer">삭제하시겠습니까?</p>
                             </div>
                             <div class="member-btn">
-                                <div class="btn-yes">예</div>
+                                <div class="btn-yes btn-remove" data-target="yes">예</div>
                                 <span class="dvd-info-bar"></span>
-                                <div class="btn-no">취소</div>
+                                <div class="btn-no btn-remove" data-target="no">취소</div>
                             </div>
                             <span class="remove-des">*선택한 학생의 등원 정보 일괄 삭제</span>
                         </div>
@@ -952,32 +723,9 @@
 
 
 <script src="/static/js/common/selectbox.js"></script>
- <script>
-// $(document).on('mouseover', '.page-area', function() {
-//     $(this).find('.page-link-box').slideDown();
-// })
-//
-// $(document).on('mouseleave', '.page-area', function() {
-//     $(this).find('.page-link-box').slideUp();
-// })
+<script src="/static/js/dashboard/slide-menu.js"></script>
+<script src="/static/js/dashboard/student-id.js"></script>
 
 
-$(document).on('click', '.sele-btn', function() {
-    if($(this).data('target') == 'teacher') {
-        $('.btn-bar').animate({left: '3.07rem'}, 10);
-        // $('.btn-bar').css('left', '3.07rem');
-        $('.sele-btn.tcr').css('color', '#37B2EE');
-        $('.sele-btn.prt').css('color', '#FFFFFF');
-    }
-
-    if($(this).data('target') == 'parent') {
-        $('.btn-bar').animate({left: '0'}, 10);
-        //$('.btn-bar').css('left', '0');
-        $('.sele-btn.prt').css('color', '#37B2EE');
-        $('.sele-btn.tcr').css('color', '#FFFFFF');
-    }
-})
-
- </script>
 </body>
 </html>

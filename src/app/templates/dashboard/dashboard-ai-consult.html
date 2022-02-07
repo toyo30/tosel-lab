@@ -4,7 +4,8 @@
     {% include '/common/head.html' %}
     <title>원장 서비스페이지</title>
     <link rel='stylesheet' href="/static/css/dashboard/dashboard-common.css">
-    <link rel='stylesheet' href="/static/css/dashboard/dashboard-student-id.css">
+    <link rel='stylesheet' href="/static/css/dashboard/dashboard-ai-consult.css">
+
 </head>
 <body>
     <div id="wrap">
@@ -13,8 +14,8 @@
             <section class="search-wrap">
                 <div class="search-box">
                     <div class="search-kind">
-                        <h2 class="search-title">아이디 발급</h2>
-                        <p class="search-des">*학부모 아이디는 학생 당 1개, 선생님 아이디는 선생님 당 1개씩 발급됩니다.</p>
+                        <h2 class="search-title">AI 컨설팅 자료</h2>
+                        <p class="search-des">*학생별 or 구역별 정기시험 성적표를 조회하실 수 있습니다.</p>
                     </div>
 
                     <div class="search-container">
@@ -28,43 +29,39 @@
                             </div>
 
 
-                            <div class="select-area">
-                                <div class="selectBox">
-                                  <button class="label">이름/가나다순</button>
-                                  <ul class="optionList">
-                                    <li class="optionItem">apple</li>
-                                    <li class="optionItem">orange</li>
-                                    <li class="optionItem">grape</li>
-                                    <li class="optionItem">melon</li>
-                                  </ul>
+                            <div class="select-container">
+
+                                <div class="select-area">
+                                    <div class="selectBox">
+                                      <button class="label">이름/가나다순</button>
+                                      <ul class="optionList">
+                                        <li class="optionItem">apple</li>
+                                        <li class="optionItem">orange</li>
+                                        <li class="optionItem">grape</li>
+                                        <li class="optionItem">melon</li>
+                                      </ul>
+                                    </div>
                                 </div>
-                            </div>
 
 
-                            <div class="select-area">
-                                <div class="selectBox">
-                                  <button class="label">반별</button>
-                                  <ul class="optionList">
-                                    <li class="optionItem">apple</li>
-                                    <li class="optionItem">orange</li>
-                                    <li class="optionItem">grape</li>
-                                    <li class="optionItem">melon</li>
-                                  </ul>
+                                <div class="select-area">
+                                    <div class="selectBox">
+                                      <button class="label">반별</button>
+                                      <ul class="optionList">
+                                        <li class="optionItem">apple</li>
+                                        <li class="optionItem">orange</li>
+                                        <li class="optionItem">grape</li>
+                                        <li class="optionItem">melon</li>
+                                      </ul>
+                                    </div>
                                 </div>
-                            </div>
-                        </div>
 
-                        <div class="sele-btn-box">
-                            <p class="sele-btn prt" data-target="parent">학부모 아이디 발급하기</p>
-                            <p class="sele-btn tcr" data-target="teacher">선생님 아이디 발급하기</p>
-                            <div class="btn-bar">
-                                <div class="btn-bar-item"></div>
                             </div>
+
                         </div>
 
 
-                            <input type="checkbox" id="tog-btn">
-                            <label for="tog-btn"></label>
+                        <button class="group-check-analy check-analy">단체 컨설팅 자료 보기</button>
 
 
 
@@ -81,95 +78,101 @@
                         <div class="student-check-box">
                             <div class="stu-check-area">
                                 <div class="stu-check-tab">
-                                    <div class="stu-check-component">
-                                        <input class="check-pointer" type="checkbox"><div class="arrange-bar"></div>
-                                        <p class="check-name">이름</p>
+
+                                    <div class="stu-check-head-component">
+                                        <p class="check-head-name">이름</p>
+                                        <div class="arrange-bar"></div>
+                                        <p class="check-head-analy">학습 통계 자료 보기</p>
                                     </div>
                                     <div class="stu-check-component">
-                                        <input class="check-pointer" type="checkbox"><div class="arrange-bar"></div>
-                                        <p class="check-name">이름</p>
+                                        <p class="check-name">이름</p><div class="arrange-bar"></div>
+                                        <div class='check-analy-box'>
+                                            <button class="check-analy">학습 통계 자료 보기</button>
+                                        </div>
                                     </div>
                                     <div class="stu-check-component">
-                                        <input class="check-pointer" type="checkbox"><div class="arrange-bar"></div>
-                                        <p class="check-name">이름</p>
+                                        <p class="check-name">이름</p><div class="arrange-bar"></div>
+                                        <div class='check-analy-box'><button class="check-analy">학습 통계 자료 보기</button></div>
                                     </div>
                                     <div class="stu-check-component">
-                                        <input class="check-pointer" type="checkbox"><div class="arrange-bar"></div>
-                                        <p class="check-name">이름</p>
+                                        <p class="check-name">이름</p><div class="arrange-bar"></div>
+                                        <div class='check-analy-box'><button class="check-analy">학습 통계 자료 보기</button></div>
                                     </div>
                                     <div class="stu-check-component">
-                                        <input class="check-pointer" type="checkbox"><div class="arrange-bar"></div>
-                                        <p class="check-name">이름</p>
+                                        <p class="check-name">이름</p><div class="arrange-bar"></div>
+                                        <div class='check-analy-box'><button class="check-analy">학습 통계 자료 보기</button></div>
                                     </div>
                                     <div class="stu-check-component">
-                                        <input class="check-pointer" type="checkbox"><div class="arrange-bar"></div>
-                                        <p class="check-name">이름</p>
+                                        <p class="check-name">이름</p><div class="arrange-bar"></div>
+                                        <div class='check-analy-box'><button class="check-analy">학습 통계 자료 보기</button></div>
                                     </div>
                                     <div class="stu-check-component">
-                                        <input class="check-pointer" type="checkbox"><div class="arrange-bar"></div>
-                                        <p class="check-name">이름</p>
+                                        <p class="check-name">이름</p><div class="arrange-bar"></div>
+                                        <div class='check-analy-box'><button class="check-analy">학습 통계 자료 보기</button></div>
                                     </div>
                                 </div>
 
                                 <div class="stu-check-tab">
-                                    <div class="stu-check-component">
-                                        <input class="check-pointer" type="checkbox"><div class="arrange-bar"></div>
-                                        <p class="check-name">이름</p>
+                                    <div class="stu-check-head-component">
+                                        <p class="check-head-name">이름</p>
+                                        <div class="arrange-bar"></div>
+                                        <p class="check-head-analy">학습 통계 자료 보기</p>
                                     </div>
                                     <div class="stu-check-component">
-                                        <input class="check-pointer" type="checkbox"><div class="arrange-bar"></div>
-                                        <p class="check-name">이름</p>
+                                        <p class="check-name">이름</p><div class="arrange-bar"></div>
+                                        <div class='check-analy-box'><button class="check-analy">학습 통계 자료 보기</button></div>
                                     </div>
                                     <div class="stu-check-component">
-                                        <input class="check-pointer" type="checkbox"><div class="arrange-bar"></div>
-                                        <p class="check-name">이름</p>
+                                        <p class="check-name">이름</p><div class="arrange-bar"></div>
+                                        <div class='check-analy-box'><button class="check-analy">학습 통계 자료 보기</button></div>
                                     </div>
                                     <div class="stu-check-component">
-                                        <input class="check-pointer" type="checkbox"><div class="arrange-bar"></div>
-                                        <p class="check-name">이름</p>
+                                        <p class="check-name">이름</p><div class="arrange-bar"></div>
+                                        <div class='check-analy-box'><button class="check-analy">학습 통계 자료 보기</button></div>
                                     </div>
                                     <div class="stu-check-component">
-                                        <input class="check-pointer" type="checkbox"><div class="arrange-bar"></div>
-                                        <p class="check-name">이름</p>
+                                        <p class="check-name">이름</p><div class="arrange-bar"></div>
+                                        <div class='check-analy-box'><button class="check-analy">학습 통계 자료 보기</button></div>
                                     </div>
                                     <div class="stu-check-component">
-                                        <input class="check-pointer" type="checkbox"><div class="arrange-bar"></div>
-                                        <p class="check-name">이름</p>
+                                        <p class="check-name">이름</p><div class="arrange-bar"></div>
+                                        <div class='check-analy-box'><button class="check-analy">학습 통계 자료 보기</button></div>
                                     </div>
                                     <div class="stu-check-component">
-                                        <input class="check-pointer" type="checkbox"><div class="arrange-bar"></div>
-                                        <p class="check-name">이름</p>
+                                        <p class="check-name">이름</p><div class="arrange-bar"></div>
+                                        <div class='check-analy-box'><button class="check-analy">학습 통계 자료 보기</button></div>
                                     </div>
                                 </div>
 
                                 <div class="stu-check-tab">
-                                    <div class="stu-check-component">
-                                        <input class="check-pointer" type="checkbox"><div class="arrange-bar"></div>
-                                        <p class="check-name">이름</p>
+                                    <div class="stu-check-head-component">
+                                        <p class="check-head-name">이름</p>
+                                        <div class="arrange-bar"></div>
+                                        <p class="check-head-analy">학습 통계 자료 보기</p>
                                     </div>
                                     <div class="stu-check-component">
-                                        <input class="check-pointer" type="checkbox"><div class="arrange-bar"></div>
-                                        <p class="check-name">이름</p>
+                                        <p class="check-name">이름</p><div class="arrange-bar"></div>
+                                        <div class='check-analy-box'><button class="check-analy">학습 통계 자료 보기</button></div>
                                     </div>
                                     <div class="stu-check-component">
-                                        <input class="check-pointer" type="checkbox"><div class="arrange-bar"></div>
-                                        <p class="check-name">이름</p>
+                                        <p class="check-name">이름</p><div class="arrange-bar"></div>
+                                        <div class='check-analy-box'><button class="check-analy">학습 통계 자료 보기</button></div>
                                     </div>
                                     <div class="stu-check-component">
-                                        <input class="check-pointer" type="checkbox"><div class="arrange-bar"></div>
-                                        <p class="check-name">이름</p>
+                                        <p class="check-name">이름</p><div class="arrange-bar"></div>
+                                        <div class='check-analy-box'><button class="check-analy">학습 통계 자료 보기</button></div>
                                     </div>
                                     <div class="stu-check-component">
-                                        <input class="check-pointer" type="checkbox"><div class="arrange-bar"></div>
-                                        <p class="check-name">이름</p>
+                                        <p class="check-name">이름</p><div class="arrange-bar"></div>
+                                        <div class='check-analy-box'><button class="check-analy">학습 통계 자료 보기</button></div>
                                     </div>
                                     <div class="stu-check-component">
-                                        <input class="check-pointer" type="checkbox"><div class="arrange-bar"></div>
-                                        <p class="check-name">이름</p>
+                                        <p class="check-name">이름</p><div class="arrange-bar"></div>
+                                        <div class='check-analy-box'><button class="check-analy">학습 통계 자료 보기</button></div>
                                     </div>
                                     <div class="stu-check-component">
-                                        <input class="check-pointer" type="checkbox"><div class="arrange-bar"></div>
-                                        <p class="check-name">이름</p>
+                                        <p class="check-name">이름</p><div class="arrange-bar"></div>
+                                        <div class='check-analy-box'><button class="check-analy">학습 통계 자료 보기</button></div>
                                     </div>
                                 </div>
                             </div>
@@ -178,806 +181,40 @@
                             <div class="stu-paging-box">
                                 <button class="paging-prev">Previous</button>
                                 <span class="active-page">1</span>
-                                <span>1</span>
-                                <span>1</span>
-                                <span>1</span>
-                                <span>1</span>
-                                <span>1</span>
-                                <span>1</span>
-                                <span>1</span>
-                                <span>1</span>
-                                <span>1</span>
-                                <button class="paging-next">Next</button>
-                            </div>
-                        </div>
-
-                        <div class="parent-check-box">
-                            <div class="parent-check-area">
-
-
-                                    <div class="prt-check-head">
-                                            <div class="prt-head">
-                                                <p class="prt-num">No.</p>
-                                                <div class="prt-bar"></div>
-                                                <div class="check-issue-box">
-                                                    <input class="check-issue" type="checkbox">
-                                                </div>
-                                                <div class="prt-bar"></div>
-                                                <p class="prt-all-name">이름</p>
-                                            </div>
-                                            <div class="bottom-bar"></div>
-                                    </div>
-                                    <div class="scroll-bar">
-
-                                        <div class="prt-check-component-box">
-
-
-                                            <div class="prt-component">
-                                            <div class="prt-check-component">
-                                                <p class="prt-num">01</p>
-                                                <div class="check-issue-box">
-                                                    <input class="check-issue" type="checkbox">
-                                                </div>
-                                                <p class="prt-all-name">이름</p>
-                                            </div>
-                                        </div>
-
-                                        <div class="prt-component">
-                                            <div class="prt-check-component">
-                                                <p class="prt-num">02</p>
-                                                <div class="check-issue-box">
-                                                    <input class="check-issue" type="checkbox">
-                                                </div>
-                                                <p class="prt-all-name">이름</p>
-                                            </div>
-                                        </div>
-
-                                        <div class="prt-component">
-                                            <div class="prt-check-component">
-                                                <p class="prt-num">03</p>
-                                                <div class="check-issue-box">
-                                                    <input class="check-issue" type="checkbox">
-                                                </div>
-                                                <p class="prt-all-name">이름</p>
-                                            </div>
-                                        </div>
-
-                                        <div class="prt-component">
-                                            <div class="prt-check-component">
-                                                <p class="prt-num">04</p>
-                                                <div class="check-issue-box">
-                                                    <input class="check-issue" type="checkbox">
-                                                </div>
-                                                <p class="prt-all-name">이름</p>
-                                            </div>
-                                        </div>
-
-                                        <div class="prt-component">
-                                            <div class="prt-check-component">
-                                                <p class="prt-num">05</p>
-                                                <div class="check-issue-box">
-                                                    <input class="check-issue" type="checkbox">
-                                                </div>
-                                                <p class="prt-all-name">이름</p>
-                                            </div>
-                                        </div>
-
-                                        <div class="prt-component">
-                                            <div class="prt-check-component">
-                                                <p class="prt-num">06</p>
-                                                <div class="check-issue-box">
-                                                    <input class="check-issue" type="checkbox">
-                                                </div>
-                                                <p class="prt-all-name">이름</p>
-                                            </div>
-                                        </div>
-
-                                        <div class="prt-component">
-                                            <div class="prt-check-component">
-                                                <p class="prt-num">07</p>
-                                                <div class="check-issue-box">
-                                                    <input class="check-issue" type="checkbox">
-                                                </div>
-                                                <p class="prt-all-name">이름</p>
-                                            </div>
-                                        </div>
-
-                                        <div class="prt-component">
-                                            <div class="prt-check-component">
-                                                <p class="prt-num">08</p>
-                                                <div class="check-issue-box">
-                                                    <input class="check-issue" type="checkbox">
-                                                </div>
-                                                <p class="prt-all-name">이름</p>
-                                            </div>
-                                        </div>
-
-                                        <div class="prt-component">
-                                            <div class="prt-check-component">
-                                                <p class="prt-num">09</p>
-                                                <div class="check-issue-box">
-                                                    <input class="check-issue" type="checkbox">
-                                                </div>
-                                                <p class="prt-all-name">이름</p>
-                                            </div>
-                                        </div>
-
-
-                                        <div class="prt-component">
-                                            <div class="prt-check-component">
-                                                <p class="prt-num">10</p>
-                                                <div class="check-issue-box">
-                                                    <input class="check-issue" type="checkbox">
-                                                </div>
-                                                <p class="prt-all-name">이름</p>
-                                            </div>
-                                        </div>
-
-                                        <div class="prt-component">
-                                            <div class="prt-check-component">
-                                                <p class="prt-num">11</p>
-                                                   <div class="check-issue-box">
-                                                        <input class="check-issue" type="checkbox">
-                                                    </div>
-                                                <p class="prt-all-name">이름</p>
-                                            </div>
-                                        </div>
-                                    </div>
-
-
-
-
-                            </div>
-                                <div class="bottom-bar"></div>
-                                <button class="prt-check-btn">학부모 아이디 발급하기</button>
-
-
-                        </div>
-                            <p class="parent-check-btn-des">*선택한 학생의 학부모 아이디 일괄 발급</p>
-
-                    </div>
-                </section>
-
-            </div>
-
-            <div class="divide-class-container">
-                <section class="divide-class-wrap">
-
-                    <div class="divide-class-box">
-
-                        <div class="sele-cla">
-                            <h3 class="sele-text">01.분반 선택하기</h3>
-
-                            <div class="divide-box">
-                                <div class="add-cla-box">
-                                    <div class="add-cla-area">
-                                        <p class="add-cla-text">반 추가하기</p>
-                                        <div class="add-cla-btn"></div>
-                                    </div>
-                                </div>
-
-                                <div class="dvd-scroll">
-                                    <div class="dvd-component-box">
-                                        <div class="dvd-component">
-                                            <p class="cla-sect">Class 001</p>
-                                            <div class="cla-des-box">
-                                                <div class="cla-text">
-                                                    <span>반명,선생님명</span>
-                                                    <button class="name-change-btn"></button>
-                                                </div>
-                                                <p class="cla-id">ID : <span class="cla-id-value">Class001@0000</span></p>
-                                            </div>
-                                        </div>
-
-                                        <div class="dvd-component">
-                                            <p class="cla-sect">Class 002</p>
-                                            <div class="cla-des-box">
-                                                <div class="cla-text">
-                                                    <span>반명,선생님명</span>
-                                                    <button class="name-change-btn"></button>
-                                                </div>
-                                                <p class="cla-id">ID : <span class="cla-id-value">Class001@0000</span></p>
-                                            </div>
-                                        </div>
-
-                                        <div class="dvd-component">
-                                            <p class="cla-sect">Class 003</p>
-                                            <div class="cla-des-box">
-                                                <div class="cla-text">
-                                                    <span>반명,선생님명</span>
-                                                    <button class="name-change-btn"></button>
-                                                </div>
-                                                <p class="cla-id">ID : <span class="cla-id-value">Class001@0000</span></p>
-                                            </div>
-                                        </div>
-
-                                        <div class="dvd-component">
-                                            <p class="cla-sect">Class 004</p>
-                                            <div class="cla-des-box">
-                                                <div class="cla-text">
-                                                    <span>반명,선생님명</span>
-                                                    <button class="name-change-btn"></button>
-                                                </div>
-                                                <p class="cla-id">ID : <span class="cla-id-value">Class001@0000</span></p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-
-                            <p class="sele-des">*반마다 태그를 수정하실 수 있습니다.</p>
-                        </div>
-
-
-
-                        <div class="list-cla">
-                            <div class="reload-box">
-                               <button class="reload-btn"></button>
-                            </div>
-
-                            <div class="cla-box">
-                                <div class="cla-head">
-                                    <div class="cla-check-area">
-                                        <p class="cla-check-text">Class 001</p>
-                                    </div>
-                                </div>
-
-                                <div class="cla-scroll">
-                                    <div class="cla-component-box">
-                                        <div class="cla-component">
-                                            <p class="stu-num">01</p>
-                                            <div class="cal-check-box">
-                                                <input class="check-cla" type="checkbox">
-                                                <button class="remove-com"></button>
-                                            </div>
-
-                                            <p class="stu-name">추가학생이름</p>
-                                        </div>
-
-                                        <div class="cla-component">
-                                            <p class="stu-num">02</p>
-                                            <div class="cal-check-box">
-                                                <input class="check-cla" type="checkbox">
-                                                <button class="remove-com"></button>
-                                            </div>
-
-                                            <p class="stu-name">추가학생이름</p>
-                                        </div>
-
-                                        <div class="cla-component">
-                                            <p class="stu-num">03</p>
-                                            <div class="cal-check-box">
-                                                <input class="check-cla" type="checkbox">
-                                                <button class="remove-com"></button>
-                                            </div>
-
-                                            <p class="stu-name">추가학생이름</p>
-                                        </div>
-
-                                        <div class="cla-component">
-                                            <p class="stu-num">04</p>
-                                            <div class="cal-check-box">
-                                                <input class="check-cla" type="checkbox">
-                                                <button class="remove-com"></button>
-                                            </div>
-
-                                            <p class="stu-name">추가학생이름</p>
-                                        </div>
-
-                                        <div class="cla-component">
-                                            <p class="stu-num">05</p>
-                                            <div class="cal-check-box">
-                                                <input class="check-cla" type="checkbox">
-                                                <button class="remove-com"></button>
-                                            </div>
-
-                                            <p class="stu-name">추가학생이름</p>
-                                        </div>
-
-                                        <div class="cla-component">
-                                            <p class="stu-num">06</p>
-                                            <div class="cal-check-box">
-                                                <input class="check-cla" type="checkbox">
-                                                <button class="remove-com"></button>
-                                            </div>
-
-                                            <p class="stu-name">추가학생이름</p>
-                                        </div>
-
-                                        <div class="cla-component">
-                                            <p class="stu-num">07</p>
-                                            <div class="cal-check-box">
-                                                <input class="check-cla" type="checkbox">
-                                                <button class="remove-com"></button>
-                                            </div>
-
-                                            <p class="stu-name">추가학생이름</p>
-                                        </div>
-
-                                        <div class="cla-component">
-                                            <p class="stu-num">08</p>
-                                            <div class="cal-check-box">
-                                                <input class="check-cla" type="checkbox">
-                                                <button class="remove-com"></button>
-                                            </div>
-
-                                            <p class="stu-name">추가학생이름</p>
-                                        </div>
-
-                                        <div class="cla-component">
-                                            <p class="stu-num">09</p>
-                                            <div class="cal-check-box">
-                                                <input class="check-cla" type="checkbox">
-                                                <button class="remove-com"></button>
-                                            </div>
-
-                                            <p class="stu-name">추가학생이름</p>
-                                        </div>
-
-                                    </div>
-                                </div>
-
-                                <div class="save-info-box">
-                                    <button class="save-info">저장하기</button>
-                                </div>
-                            </div>
-
-                            <p class="cla-des">*저장하시면 추가한 학생이 분반에 반영됩니다.</p>
-                        </div>
-
-
-
-                        <div class="add-student">
-                            <div class="add-stu-head">
-                                <h3 class="add-cla-title">02.학생 추가하기</h3>
-                                <div class="func-des">
-                                    <p class="func-text">*왼쪽 상단 검색창에서 학생을 검색하여 선택하실 수 있습니다.</p>
-                                </div>
-                            </div>
-
-                            <div class="stu-add-area">
-                                <div class="stu-add-tab">
-                                    <div class="stu-add-component">
-                                        <input class="check-pointer" type="checkbox"><div class="arrange-bar"></div>
-                                        <p class="add-name">이름</p>
-                                    </div>
-                                    <div class="stu-add-component">
-                                        <input class="check-pointer" type="checkbox"><div class="arrange-bar"></div>
-                                        <p class="add-name">이름</p>
-                                    </div>
-                                    <div class="stu-add-component">
-                                        <input class="check-pointer" type="checkbox"><div class="arrange-bar"></div>
-                                        <p class="add-name">이름</p>
-                                    </div>
-                                    <div class="stu-add-component">
-                                        <input class="check-pointer" type="checkbox"><div class="arrange-bar"></div>
-                                        <p class="add-name">이름</p>
-                                    </div>
-                                    <div class="stu-add-component">
-                                        <input class="check-pointer" type="checkbox"><div class="arrange-bar"></div>
-                                        <p class="add-name">이름</p>
-                                    </div>
-                                    <div class="stu-add-component">
-                                        <input class="check-pointer" type="checkbox"><div class="arrange-bar"></div>
-                                        <p class="add-name">이름</p>
-                                    </div>
-                                </div>
-
-                                <div class="stu-add-tab">
-                                    <div class="stu-add-component">
-                                        <input class="check-pointer" type="checkbox"><div class="arrange-bar"></div>
-                                        <p class="add-name">이름</p>
-                                    </div>
-                                    <div class="stu-add-component">
-                                        <input class="check-pointer" type="checkbox"><div class="arrange-bar"></div>
-                                        <p class="add-name">이름</p>
-                                    </div>
-                                    <div class="stu-add-component">
-                                        <input class="check-pointer" type="checkbox"><div class="arrange-bar"></div>
-                                        <p class="add-name">이름</p>
-                                    </div>
-                                    <div class="stu-add-component">
-                                        <input class="check-pointer" type="checkbox"><div class="arrange-bar"></div>
-                                        <p class="add-name">이름</p>
-                                    </div>
-                                    <div class="stu-add-component">
-                                        <input class="check-pointer" type="checkbox"><div class="arrange-bar"></div>
-                                        <p class="add-name">이름</p>
-                                    </div>
-                                    <div class="stu-add-component">
-                                        <input class="check-pointer" type="checkbox"><div class="arrange-bar"></div>
-                                        <p class="add-name">이름</p>
-                                    </div>
-                                </div>
-                            </div>
-
-
-
-                            <div class="stu-add-paging-box">
-                                <button class="paging-prev">Previous</button>
-                                <span class="active-page">1</span>
                                 <span>2</span>
                                 <span>3</span>
                                 <span>4</span>
+                                <span>5</span>
+                                <span>6</span>
+                                <span>7</span>
+                                <span>8</span>
+                                <span>9</span>
+                                <span>10</span>
                                 <button class="paging-next">Next</button>
                             </div>
                         </div>
+
+
+
                     </div>
                 </section>
+
             </div>
 
-            <div class="student-level-container">
-                <section class="student-level-wrap">
-                    <div class="student-level-box">
-
-                        <div class="stu-level-head">
-                            <p class="head-sele">선택</p>
-                            <div class="level-bar"></div>
-                            <p class="head-name">이름</p>
-                            <div class="level-bar"></div>
-                            <p class="head-voca">VOCA</p>
-                            <div class="level-bar"></div>
-                            <p class="head-ens">ENGLISEA</p>
-                            <div class="level-bar"></div>
-                            <p class="head-ltn">Listening</p>
-                            <div class="level-bar"></div>
-                            <p class="head-pt">Placement Test 결과보기</p>
-                        </div>
-
-                        <div class="stu-level-com">
-                            <div class="com-check-box">
-                                <input class="check-com" type="checkbox">
-                            </div>
-                            <div class="level-bar"></div>
-                            <p class="com-name">김하나</p>
-
-                            <div class="com-voca-select-area">
-                                <div class="selectBox">
-                                  <button class="label">Pre-starter</button>
-                                  <ul class="optionList">
-                                    <li class="optionItem">Pre-starter</li>
-                                    <li class="optionItem">Starter</li>
-                                    <li class="optionItem">Basic</li>
-                                    <li class="optionItem">Junior</li>
-                                    <li class="optionItem">High-Junior</li>
-                                  </ul>
-                                </div>
-                            </div>
-
-                            <div class="com-englisea-select-area">
-                                <div class="selectBox">
-                                  <button class="label">Pre-starter</button>
-                                  <ul class="optionList">
-                                    <li class="optionItem">Pre-starter</li>
-                                    <li class="optionItem">Starter</li>
-                                    <li class="optionItem">Basic</li>
-                                    <li class="optionItem">Junior</li>
-                                    <li class="optionItem">High-Junior</li>
-                                  </ul>
-                                </div>
-                            </div>
-
-                            <div class="com-ltn-select-area">
-                                <div class="selectBox">
-                                  <button class="label">---</button>
-                                  <ul class="optionList">
-                                    <li class="optionItem">---</li>
-                                    <li class="optionItem">---</li>
-                                    <li class="optionItem">---</li>
-                                    <li class="optionItem">---</li>
-                                    <li class="optionItem">---</li>
-                                  </ul>
-                                </div>
-                            </div>
-                            <div class='com-area'><p class="com-pt">Placement Test결과보기</p></div>
-                        </div>
-
-                        <div class="stu-level-com">
-                            <div class="com-check-box">
-                                <input class="check-com" type="checkbox">
-                            </div>
-                            <div class="level-bar"></div>
-                            <p class="com-name">김하나</p>
-
-                            <div class="com-voca-select-area">
-                                <div class="selectBox">
-                                  <button class="label">Pre-starter</button>
-                                  <ul class="optionList">
-                                    <li class="optionItem">Pre-starter</li>
-                                    <li class="optionItem">Starter</li>
-                                    <li class="optionItem">Basic</li>
-                                    <li class="optionItem">Junior</li>
-                                    <li class="optionItem">High-Junior</li>
-                                  </ul>
-                                </div>
-                            </div>
-
-                            <div class="com-englisea-select-area">
-                                <div class="selectBox">
-                                  <button class="label">Pre-starter</button>
-                                  <ul class="optionList">
-                                    <li class="optionItem">Pre-starter</li>
-                                    <li class="optionItem">Starter</li>
-                                    <li class="optionItem">Basic</li>
-                                    <li class="optionItem">Junior</li>
-                                    <li class="optionItem">High-Junior</li>
-                                  </ul>
-                                </div>
-                            </div>
-
-                            <div class="com-ltn-select-area">
-                                <div class="selectBox">
-                                  <button class="label">---</button>
-                                  <ul class="optionList">
-                                    <li class="optionItem">---</li>
-                                    <li class="optionItem">---</li>
-                                    <li class="optionItem">---</li>
-                                    <li class="optionItem">---</li>
-                                    <li class="optionItem">---</li>
-                                  </ul>
-                                </div>
-                            </div>
-                            <div class='com-area'><p class="com-pt">Placement Test결과보기</p></div>
-                        </div>
-
-                        <div class="stu-level-com">
-                            <div class="com-check-box">
-                                <input class="check-com" type="checkbox">
-                            </div>
-                            <div class="level-bar"></div>
-                            <p class="com-name">김하나</p>
-
-                            <div class="com-voca-select-area">
-                                <div class="selectBox">
-                                  <button class="label">Pre-starter</button>
-                                  <ul class="optionList">
-                                    <li class="optionItem">Pre-starter</li>
-                                    <li class="optionItem">Starter</li>
-                                    <li class="optionItem">Basic</li>
-                                    <li class="optionItem">Junior</li>
-                                    <li class="optionItem">High-Junior</li>
-                                  </ul>
-                                </div>
-                            </div>
-
-                            <div class="com-englisea-select-area">
-                                <div class="selectBox">
-                                  <button class="label">Pre-starter</button>
-                                  <ul class="optionList">
-                                    <li class="optionItem">Pre-starter</li>
-                                    <li class="optionItem">Starter</li>
-                                    <li class="optionItem">Basic</li>
-                                    <li class="optionItem">Junior</li>
-                                    <li class="optionItem">High-Junior</li>
-                                  </ul>
-                                </div>
-                            </div>
-
-                            <div class="com-ltn-select-area">
-                                <div class="selectBox">
-                                  <button class="label">---</button>
-                                  <ul class="optionList">
-                                    <li class="optionItem">---</li>
-                                    <li class="optionItem">---</li>
-                                    <li class="optionItem">---</li>
-                                    <li class="optionItem">---</li>
-                                    <li class="optionItem">---</li>
-                                  </ul>
-                                </div>
-                            </div>
-                            <div class='com-area'><p class="com-pt">Placement Test결과보기</p></div>
-                        </div>
-
-                        <div class="stu-level-com">
-                            <div class="com-check-box">
-                                <input class="check-com" type="checkbox">
-                            </div>
-                            <div class="level-bar"></div>
-                            <p class="com-name">김하나</p>
-
-                            <div class="com-voca-select-area">
-                                <div class="selectBox">
-                                  <button class="label">Pre-starter</button>
-                                  <ul class="optionList">
-                                    <li class="optionItem">Pre-starter</li>
-                                    <li class="optionItem">Starter</li>
-                                    <li class="optionItem">Basic</li>
-                                    <li class="optionItem">Junior</li>
-                                    <li class="optionItem">High-Junior</li>
-                                  </ul>
-                                </div>
-                            </div>
-
-                            <div class="com-englisea-select-area">
-                                <div class="selectBox">
-                                  <button class="label">Pre-starter</button>
-                                  <ul class="optionList">
-                                    <li class="optionItem">Pre-starter</li>
-                                    <li class="optionItem">Starter</li>
-                                    <li class="optionItem">Basic</li>
-                                    <li class="optionItem">Junior</li>
-                                    <li class="optionItem">High-Junior</li>
-                                  </ul>
-                                </div>
-                            </div>
-
-                            <div class="com-ltn-select-area">
-                                <div class="selectBox">
-                                  <button class="label">---</button>
-                                  <ul class="optionList">
-                                    <li class="optionItem">---</li>
-                                    <li class="optionItem">---</li>
-                                    <li class="optionItem">---</li>
-                                    <li class="optionItem">---</li>
-                                    <li class="optionItem">---</li>
-                                  </ul>
-                                </div>
-                            </div>
-                            <div class='com-area'><p class="com-pt">Placement Test결과보기</p></div>
-                        </div>
-
-                        <div class="stu-level-com">
-                            <div class="com-check-box">
-                                <input class="check-com" type="checkbox">
-                            </div>
-                            <div class="level-bar"></div>
-                            <p class="com-name">김하나</p>
-
-                            <div class="com-voca-select-area">
-                                <div class="selectBox">
-                                  <button class="label">Pre-starter</button>
-                                  <ul class="optionList">
-                                    <li class="optionItem">Pre-starter</li>
-                                    <li class="optionItem">Starter</li>
-                                    <li class="optionItem">Basic</li>
-                                    <li class="optionItem">Junior</li>
-                                    <li class="optionItem">High-Junior</li>
-                                  </ul>
-                                </div>
-                            </div>
-
-                            <div class="com-englisea-select-area">
-                                <div class="selectBox">
-                                  <button class="label">Pre-starter</button>
-                                  <ul class="optionList">
-                                    <li class="optionItem">Pre-starter</li>
-                                    <li class="optionItem">Starter</li>
-                                    <li class="optionItem">Basic</li>
-                                    <li class="optionItem">Junior</li>
-                                    <li class="optionItem">High-Junior</li>
-                                  </ul>
-                                </div>
-                            </div>
-
-                            <div class="com-ltn-select-area">
-                                <div class="selectBox">
-                                  <button class="label">---</button>
-                                  <ul class="optionList">
-                                    <li class="optionItem">---</li>
-                                    <li class="optionItem">---</li>
-                                    <li class="optionItem">---</li>
-                                    <li class="optionItem">---</li>
-                                    <li class="optionItem">---</li>
-                                  </ul>
-                                </div>
-                            </div>
-                            <div class='com-area'><p class="com-pt">Placement Test결과보기</p></div>
-                        </div>
-
-                        <div class="stu-level-com">
-                            <div class="com-check-box">
-                                <input class="check-com" type="checkbox">
-                            </div>
-                            <div class="level-bar"></div>
-                            <p class="com-name">김하나</p>
-
-                            <div class="com-voca-select-area">
-                                <div class="selectBox">
-                                  <button class="label">Pre-starter</button>
-                                  <ul class="optionList">
-                                    <li class="optionItem">Pre-starter</li>
-                                    <li class="optionItem">Starter</li>
-                                    <li class="optionItem">Basic</li>
-                                    <li class="optionItem">Junior</li>
-                                    <li class="optionItem">High-Junior</li>
-                                  </ul>
-                                </div>
-                            </div>
-
-                            <div class="com-englisea-select-area">
-                                <div class="selectBox">
-                                  <button class="label">Pre-starter</button>
-                                  <ul class="optionList">
-                                    <li class="optionItem">Pre-starter</li>
-                                    <li class="optionItem">Starter</li>
-                                    <li class="optionItem">Basic</li>
-                                    <li class="optionItem">Junior</li>
-                                    <li class="optionItem">High-Junior</li>
-                                  </ul>
-                                </div>
-                            </div>
-
-                            <div class="com-ltn-select-area">
-                                <div class="selectBox">
-                                  <button class="label">---</button>
-                                  <ul class="optionList">
-                                    <li class="optionItem">---</li>
-                                    <li class="optionItem">---</li>
-                                    <li class="optionItem">---</li>
-                                    <li class="optionItem">---</li>
-                                    <li class="optionItem">---</li>
-                                  </ul>
-                                </div>
-                            </div>
-                            <div class='com-area'><p class="com-pt">Placement Test결과보기</p></div>
-                        </div>
-
-                        <div class="remove-box">
-                            <div class="member-del">
-                                <p class="remove-text">회원 삭제</p>
-                                <span class="dvd-info-bar"></span>
-                                <p class="remove-check">선택한 학생의 등원 정보 및 분반 정보가 일괄 삭제되며 복구 할 수 없습니다.</p>
-                                <p class="remove-answer">삭제하시겠습니까?</p>
-                            </div>
-                            <div class="member-btn">
-                                <div class="btn-yes">예</div>
-                                <span class="dvd-info-bar"></span>
-                                <div class="btn-no">취소</div>
-                            </div>
-                            <span class="remove-des">*선택한 학생의 등원 정보 일괄 삭제</span>
-                        </div>
 
 
-                        <div class="stu-level-paging-box">
-                            <button class="paging-prev">Previous</button>
-                            <span class="active-page">1</span>
-                            <span>1</span>
-                            <span>1</span>
-                            <span>1</span>
-                            <span>1</span>
-                            <span>1</span>
-                            <span>1</span>
-                            <span>1</span>
-                            <span>1</span>
-                            <span>1</span>
-                            <button class="paging-next">Next</button>
-                        </div>
-                    </div>
-                </section>
-            </div>
         </div>
 
     </div>
 
 
 <script src="/static/js/common/selectbox.js"></script>
- <script>
-// $(document).on('mouseover', '.page-area', function() {
-//     $(this).find('.page-link-box').slideDown();
-// })
-//
-// $(document).on('mouseleave', '.page-area', function() {
-//     $(this).find('.page-link-box').slideUp();
-// })
+<script src="/static/js/dashboard/slide-menu.js"></script>
+
+<script>
 
 
-$(document).on('click', '.sele-btn', function() {
-    if($(this).data('target') == 'teacher') {
-        $('.btn-bar').animate({left: '3.07rem'}, 10);
-        // $('.btn-bar').css('left', '3.07rem');
-        $('.sele-btn.tcr').css('color', '#37B2EE');
-        $('.sele-btn.prt').css('color', '#FFFFFF');
-    }
 
-    if($(this).data('target') == 'parent') {
-        $('.btn-bar').animate({left: '0'}, 10);
-        //$('.btn-bar').css('left', '0');
-        $('.sele-btn.prt').css('color', '#37B2EE');
-        $('.sele-btn.tcr').css('color', '#FFFFFF');
-    }
-})
-
- </script>
+</script>
 </body>
 </html>

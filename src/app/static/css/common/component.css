@@ -72,7 +72,7 @@ input[type="checkbox"] {
 }
 
 .selectBox.active {
-    background: url('/static/images/common/com-select-arrow-close.png') center right 10px no-repeat;
+    background: #FDFDFD url('/static/images/common/com-select-arrow-close.png') center right 10px no-repeat;
     background-size: 0.45rem 0.45rem;
 }
 

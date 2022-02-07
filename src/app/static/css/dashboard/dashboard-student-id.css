@@ -255,12 +255,13 @@
     display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */
     -webkit-align-items: end;
     align-items: end;
-    margin-bottom: 0.50rem;
+    margin-bottom: 0.33rem;
 }
 
 .search-title {
     font-size: 0.43rem;
     margin-right: 0.46rem;
+    font-weight: normal;
 }
 
 .search-des {
@@ -299,11 +300,10 @@
 
 .select-area {
     margin-left: 0.29rem;
+    width: 3.39rem;
+    transition: 400ms ease-in-out;
 }
 
-.select-area {
-    width: 3.39rem;
-}
 
 
 
@@ -438,8 +438,9 @@ input[type="checkbox"].check-pointer {
 }
 
 .check-name {
+    width: 3.66rem;
+    text-align: center;
     font-size: 0.32rem;
-    padding: 0 1.4rem;
     color: #333333;
 }
 
@@ -457,8 +458,6 @@ input[type="checkbox"].check-pointer {
     display: flex;
     -webkit-justify-content: space-between;
     justify-content: space-between;
-    -webkit-align-items: center;
-    align-items: center;
     width: 9.64rem;
     margin: 0 auto;
     color: #333333;
@@ -540,6 +539,7 @@ input[type="checkbox"].check-pointer {
 .prt-component {
     width: 4.46rem;
     border-bottom: 0.02rem solid #FDFDFD;
+    margin-bottom: 0.11rem;
 }
 
 .prt-check-head {
@@ -547,7 +547,7 @@ input[type="checkbox"].check-pointer {
     top: 0.14rem;
     left: 0.14rem;
     width: 4.46rem;
-    z-index: 2;
+    z-index: 101;
 }
 
 .prt-check-head {
@@ -562,13 +562,15 @@ input[type="checkbox"].check-pointer {
 
 }
 
-.prt-component {
-    margin-bottom: 0.11rem;
-}
 
 .prt-check-component-box {
-    /*padding: 0.11rem 0;*/
-
+    min-height: 6.7rem;
+     display: -webkit-box;   /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+    display: -ms-flexbox;  /* TWEENER - IE 10 */
+    display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+    display: flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
 }
 
 .scroll-bar {
@@ -628,6 +630,8 @@ input[type="checkbox"].check-pointer {
     text-align: center;
 }
 
+
+
 .prt-check-component .prt-num {
     color: #BEBEBE;
 }
@@ -649,6 +653,17 @@ input[type="checkbox"].check-pointer {
     margin-top: 0.34rem;
 }
 
+.prt-id-issue {
+    display: block;
+    width: 2.82rem;
+    height: 0.52rem;
+    margin: 0 auto;
+    margin-top: 3rem;
+    font-size: 0.21rem;
+    background: rgba(51, 51, 51, 0.2);
+    color: #7B7B7B;
+    border-radius: 0.09rem;
+}
 
 
 
@@ -658,6 +673,7 @@ input[type="checkbox"].check-pointer {
 
 .parent-id-container {
     display: block;
+
 }
 
 
@@ -679,6 +695,7 @@ input[type="checkbox"].check-pointer {
     width: 21.25rem;
     margin: 0 auto;
     margin-top: 0.96rem;
+    padding-bottom: 3rem;
 }
 
 
@@ -702,6 +719,7 @@ input[type="checkbox"].check-pointer {
 .dvd-component-box {
     max-height: 7.68rem;
 }
+
 
 .dvd-scroll::-webkit-scrollbar,
 .cla-scroll::-webkit-scrollbar{
@@ -794,7 +812,17 @@ input[type="checkbox"].check-pointer {
     padding: 0.36rem 0.52rem;
     margin-bottom: 0.16rem;
     cursor: pointer;
+    border: 0.07rem solid transparent;
+    border-radius: 0.18rem;
 }
+
+
+.dvd-component-active {
+    background: #F2FBFF;
+    border: 0.07rem solid #37B2EE;
+    border-radius: 0.18rem;
+}
+
 
 .cla-text, .cla-id {
     text-align: right;
@@ -805,12 +833,40 @@ input[type="checkbox"].check-pointer {
     margin-bottom: 0.32rem;
 }
 
-.name-change-btn {
+.cla-nam-box {
+    display: -webkit-box;   /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+    display: -ms-flexbox;  /* TWEENER - IE 10 */
+    display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+    display: flex;
+    margin-left: auto;
+    width: 3rem;
+
+}
+
+
+.cla-nam {
+    width: 2.6rem;
+    border: none;
+    color: #37B2EE;
+    font-size: 0.21rem;
+    margin-left: auto;
+    text-align: right;
+    margin-right: 0.1rem;
+    background: transparent;
+}
+
+.cla-nam::placeholder {
+    color: #37B2EE;
+    font-size: 0.21rem;
+}
+
+.cla-nam-lab {
     width: 0.30rem;
     height: 0.30rem;
     background: url('/static/images/common/com-btn-edit.png') no-repeat;
     background-size: contain;
 }
+
 
 .sele-des, .cla-des {
     font-size: 0.21rem;
@@ -828,7 +884,6 @@ input[type="checkbox"].check-pointer {
     background-position: top 0rem left 0;
     margin-left: 0.2rem;
 }
-
 
 
 
@@ -950,6 +1005,13 @@ input[type="checkbox"].check-pointer {
     text-align: center;
     width: 6.11rem;
     padding: 0.16rem 0;
+    border: 0.02rem solid transparent;
+}
+
+.cla-component-active {
+    background: #F2FBFF;
+    border: 0.02rem solid #37B2EE;
+
 }
 
 .stu-num {
@@ -985,6 +1047,7 @@ input[type="checkbox"].check-cla {
 
 .remove-com {
     display: none;
+    margin: 0 auto;
     width: 0.38rem;
     height: 0.38rem;
     background: url('/static/images/common/com-remove-trash-btn.png') no-repeat;
@@ -1062,7 +1125,6 @@ input[type="checkbox"].check-cla {
     flex-direction: column;
 }
 
-
 .stu-add-tab + .stu-add-tab {
     margin-left: 0.18rem;
 }
@@ -1085,8 +1147,9 @@ input[type="checkbox"].check-cla {
 
 .add-name {
     font-size: 0.29rem;
-    padding: 0 0.73rem;
+    width: 2.05rem;
     color: #333333;
+    text-align: center;
 }
 
 .stu-add-paging-box {
@@ -1096,8 +1159,6 @@ input[type="checkbox"].check-cla {
     display: flex;
     -webkit-justify-content: space-between;
     justify-content: space-between;
-    -webkit-align-items: center;
-    align-items: center;
     margin: 0 auto;
     color: #333333;
     width: 5.93rem;
@@ -1108,14 +1169,10 @@ input[type="checkbox"].check-cla {
     font-weight: 300;
 }
 
+
 .stu-add-paging-box span.active-page {
     font-weight: 900;
 }
-
-
-
-
-
 
 
 /******** student-level-container ******/
@@ -1124,7 +1181,7 @@ input[type="checkbox"].check-cla {
   display: none;
 }
 
-label {
+.tog-btn-lab {
   width: 1.05rem;
   height: 0.55rem;
   border-radius: 0.29rem;
@@ -1135,7 +1192,7 @@ label {
   transition:0.3s;
 }
 
-label:after{
+.tog-btn-lab:after{
       content:'';
       width: 0.48rem;
       height: 0.48rem;
@@ -1149,11 +1206,11 @@ label:after{
         background-position: 52% center;
 }
 
-#tog-btn:checked + label{
+#tog-btn:checked + .tog-btn-lab{
   background: #1BA7EC;
 }
 
-#tog-btn:checked + label:after{
+#tog-btn:checked + .tog-btn-lab:after{
     left: 0.52rem;
     background: #FFFFFF url('/static/images/common/com-toggle-btn.png') no-repeat;
     background-size: 0.4rem 0.4rem;
@@ -1167,7 +1224,22 @@ label:after{
     width: 21.34rem;
     margin: 0 auto;
     margin-top: 0.54rem;
+    padding-bottom: 2.5rem;
 }
+
+.popup-dimmed {
+    display: none;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: #000;
+	opacity: 0.3;
+    z-index: 1;
+}
+
+
 
 .stu-level-head,
 .stu-level-com {
@@ -1218,6 +1290,7 @@ input[type='checkbox'].check-com {
 
 .head-sele,
 .com-check-box {
+    display: none;
     width: 1.7rem;
 }
 
@@ -1227,6 +1300,10 @@ input[type='checkbox'].check-com {
 
 }
 
+.stu-level-head .level-bar:nth-child(2),
+.stu-level-com .level-bar:nth-child(2) {
+    display: none;
+}
 
 .head-voca,
 .head-ens,
@@ -1277,6 +1354,9 @@ input[type='checkbox'].check-com {
     color: #7B7B7B;
 }
 
+.remove-check {
+    margin-right: 0.3rem;
+}
 
 .remove-box, .member-del, .member-btn {
     display: -webkit-box;   /* OLD - iOS 6-, Safari 3.1-6, BB7 */
@@ -1288,12 +1368,16 @@ input[type='checkbox'].check-com {
 
 }
 
+
 .dvd-info-bar {
     width: 0.02rem;
     height: 0.36rem;
     background: #7DD6F6;
 }
 
+.member-del .dvd-info-bar {
+    margin: 0 0.2rem;
+}
 
 .remove-box {
     margin-top: 0.23rem;
@@ -1303,14 +1387,18 @@ input[type='checkbox'].check-com {
 .member-del {
     -webkit-justify-content: space-around;
     justify-content: space-around;
-    width: 10.77rem;
     height: 0.66rem;
     background: rgba(125, 214, 246, 0.1);
     border: 0.02rem solid #7DD6F6;
     border-radius: 0.18rem;
     margin-right: 0.20rem;
     padding: 0 0.27rem;
+    cursor: pointer;
 }
+
+/*.active-member {*/
+/*    width: 11rem;*/
+/*}*/
 
 .member-btn {
     width: 1.75rem;
@@ -1323,6 +1411,7 @@ input[type='checkbox'].check-com {
 .btn-yes, .btn-no {
     flex: 1;
     text-align: center;
+    cursor: pointer;
 }
 
 
@@ -1337,8 +1426,6 @@ input[type='checkbox'].check-com {
     display: flex;
     -webkit-justify-content: space-between;
     justify-content: space-between;
-    -webkit-align-items: center;
-    align-items: center;
     width: 9.64rem;
     margin: 0 auto;
     color: #333333;
@@ -1353,3 +1440,30 @@ input[type='checkbox'].check-com {
 .stu-level-paging-box span.active-page {
     font-weight: 900;
 }
+
+
+.dvd-info-bar, .remove-check, .remove-answer,
+.member-btn {
+    display: none;
+}
+
+
+
+.page-area:nth-child(1) .page-link:nth-child(1) {
+    font-weight: bold;
+}
+
+.divide-class-container, .student-level-container {
+    display: none;
+}
+
+#tog-btn, .tog-btn-lab {
+    display: none;
+}
+
+
+.divide-class-container {
+    display: none;
+}
+
+
