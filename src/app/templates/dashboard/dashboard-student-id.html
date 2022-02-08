@@ -9,6 +9,7 @@
 </head>
 <body>
     <div id="wrap">
+
         {% include '/dashboard/dashboard-header.html' %}
         <div id="container">
             <section class="search-wrap">
@@ -33,10 +34,8 @@
                                 <div class="selectBox">
                                   <button class="label">이름/가나다순</button>
                                   <ul class="optionList">
-                                    <li class="optionItem">apple</li>
-                                    <li class="optionItem">orange</li>
-                                    <li class="optionItem">grape</li>
-                                    <li class="optionItem">melon</li>
+                                      <li class="optionItem">이름/가나다순</li>
+                                    <li class="optionItem">이름/최근 등록 순</li>
                                   </ul>
                                 </div>
                             </div>
@@ -46,10 +45,12 @@
                                 <div class="selectBox">
                                   <button class="label">반별</button>
                                   <ul class="optionList">
-                                    <li class="optionItem">apple</li>
-                                    <li class="optionItem">orange</li>
-                                    <li class="optionItem">grape</li>
-                                    <li class="optionItem">melon</li>
+                                    <li class="optionItem">반별</li>
+                                    <li class="optionItem">Class001</li>
+                                    <li class="optionItem">Class002</li>
+                                    <li class="optionItem">Class003</li>
+                                    <li class="optionItem">Class004</li>
+                                    <li class="optionItem">Class005</li>
                                   </ul>
                                 </div>
                             </div>
@@ -275,16 +276,8 @@
                                 <div class="cla-scroll">
                                     <div class="cla-component-box">
 
-                                        <!--<div class="cla-component">
-                                            <p class="stu-num">01</p>
-                                            <div class="cal-check-box">
-                                                <input class="check-cla" type="checkbox">
-                                                <button class="remove-com"></button>
-                                            </div>
-
-                                            <p class="stu-name">추가학생이름</p>
-                                        </div>-->
-                                        </div>
+                                        <button class="cla-id-issue">반을 선택해주세요</button>
+                                    </div>
 
                                 </div>
 
@@ -314,23 +307,39 @@
                                     </div>
                                     <div class="stu-add-component">
                                         <input class="part-add-check check-pointer" type="checkbox"><div class="arrange-bar"></div>
-                                        <p class="add-name">이하나</p>
+                                        <div class="cla-add-box">
+                                            <p class="add-name">김하나</p>
+                                            <p class="add-id">kimhana@0000</p>
+                                        </div>
+
                                     </div>
                                     <div class="stu-add-component">
                                         <input class="part-add-check check-pointer" type="checkbox"><div class="arrange-bar"></div>
-                                        <p class="add-name">윤둘리</p>
+                                        <div class="cla-add-box">
+                                            <p class="add-name">윤둘리</p>
+                                            <p class="add-id">kimhana@0001</p>
+                                        </div>
                                     </div>
                                     <div class="stu-add-component">
                                         <input class="part-add-check check-pointer" type="checkbox"><div class="arrange-bar"></div>
-                                        <p class="add-name">송삼민</p>
+                                        <div class="cla-add-box">
+                                            <p class="add-name">송삼민</p>
+                                            <p class="add-id">kimhana@0002</p>
+                                        </div>
                                     </div>
                                     <div class="stu-add-component">
                                         <input class="part-add-check check-pointer" type="checkbox"><div class="arrange-bar"></div>
-                                        <p class="add-name">욘사마</p>
+                                        <div class="cla-add-box">
+                                            <p class="add-name">욘사마</p>
+                                            <p class="add-id">kimhana@0003</p>
+                                        </div>
                                     </div>
                                     <div class="stu-add-component">
                                         <input class="part-add-check check-pointer" type="checkbox"><div class="arrange-bar"></div>
-                                        <p class="add-name">오창석</p>
+                                        <div class="cla-add-box">
+                                            <p class="add-name">오창석</p>
+                                            <p class="add-id">kimhana@0004</p>
+                                        </div>
                                     </div>
                                 </div>
 
@@ -341,23 +350,38 @@
                                     </div>
                                     <div class="stu-add-component">
                                         <input class="part-add-check check-pointer" type="checkbox"><div class="arrange-bar"></div>
-                                        <p class="add-name">이하나</p>
+                                        <div class="cla-add-box">
+                                            <p class="add-name">김하나</p>
+                                            <p class="add-id">kimhana@0005</p>
+                                        </div>
                                     </div>
                                     <div class="stu-add-component">
                                         <input class="part-add-check check-pointer" type="checkbox"><div class="arrange-bar"></div>
-                                        <p class="add-name">윤둘리</p>
+                                        <div class="cla-add-box">
+                                            <p class="add-name">윤둘리</p>
+                                            <p class="add-id">kimhana@0006</p>
+                                        </div>
                                     </div>
                                     <div class="stu-add-component">
                                         <input class="part-add-check check-pointer" type="checkbox"><div class="arrange-bar"></div>
-                                        <p class="add-name">송삼민</p>
+                                        <div class="cla-add-box">
+                                            <p class="add-name">송삼민</p>
+                                            <p class="add-id">kimhana@0007</p>
+                                        </div>
                                     </div>
                                     <div class="stu-add-component">
                                         <input class="part-add-check check-pointer" type="checkbox"><div class="arrange-bar"></div>
-                                        <p class="add-name">욘사마</p>
+                                        <div class="cla-add-box">
+                                            <p class="add-name">욘사마</p>
+                                            <p class="add-id">kimhana@0008</p>
+                                        </div>
                                     </div>
                                     <div class="stu-add-component">
                                         <input class="part-add-check check-pointer" type="checkbox"><div class="arrange-bar"></div>
-                                        <p class="add-name">오창석</p>
+                                        <div class="cla-add-box">
+                                            <p class="add-name">오창석</p>
+                                            <p class="add-id">kimhana@0009</p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -378,7 +402,7 @@
             </div>
 
             <div class="student-level-container">
-                <div class="popup-dimmed"></div>
+
                 <section class="student-level-wrap">
                     <div class="student-level-box">
 
@@ -433,10 +457,6 @@
                                 <div class="selectBox">
                                   <button class="label">---</button>
                                   <ul class="optionList">
-                                    <li class="optionItem">---</li>
-                                    <li class="optionItem">---</li>
-                                    <li class="optionItem">---</li>
-                                    <li class="optionItem">---</li>
                                     <li class="optionItem">---</li>
                                   </ul>
                                 </div>
@@ -716,10 +736,13 @@
                         </div>
                     </div>
                 </section>
+
+                <div class="popup-dimmed"></div>
             </div>
         </div>
 
     </div>
+
 
 
 <script src="/static/js/common/selectbox.js"></script>

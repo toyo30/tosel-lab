@@ -57,18 +57,17 @@ input[type="checkbox"] {
 
 
 
-  /* selectBox */
-  .selectBox {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  border-radius: 0.18rem;
-  border: 0.04rem solid #DFDFDF;
-  background: #FDFDFD url('/static/images/common/com-select-arrow-open.png') center right 10px no-repeat;
-  background-size: 0.45rem;
-  cursor: pointer;
+/* selectBox */
+.selectBox {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 0.18rem;
+    border: 0.04rem solid #DFDFDF;
+    background: #FDFDFD url('/static/images/common/com-select-arrow-open.png') center right 10px no-repeat;
+    background-size: 0.45rem;
+    cursor: pointer;
     color: #333333;
-    padding: 0.21rem 0.36rem;
 }
 
 .selectBox.active {
@@ -88,6 +87,7 @@ input[type="checkbox"] {
     outline: 0 none;
     background: transparent;
     cursor: pointer;
+    padding: 0.21rem 0.36rem;
 }
 
 .selectBox .optionList {
@@ -101,10 +101,9 @@ input[type="checkbox"] {
     border-radius: 0.18rem;
     overflow: hidden;
     max-height: 0;
-    transition: .3s ease-in;
+    transition: .400ms;
     margin: 0;
     z-index: 1;
-
 }
 
 .selectBox.active .optionList {
@@ -117,7 +116,7 @@ input[type="checkbox"] {
     border-right: 0.04rem solid #DFDFDF;
     border-bottom: 0.02rem solid #DFDFDF;
     padding: 0.21rem 0.36rem;
-    transition: .1s;
+    transition: .400ms;
     background: #FDFDFD;
 }
 

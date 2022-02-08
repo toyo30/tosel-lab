@@ -5,7 +5,7 @@
             let optionList = lb.nextElementSibling;
             let optionItems = optionList.querySelectorAll('.optionItem');
             clickLabel(lb, optionItems);
-        })
+        });
     });
     const clickLabel = (lb, optionItems) => {
         if(lb.parentNode.classList.contains('active')) {
@@ -23,9 +23,24 @@
                 })
             })
         }
-    }
+    };
     const handleSelect = (label, item) => {
         label.innerHTML = item.textContent;
         label.parentNode.classList.remove('active');
-    }
-})()
+    };
+
+    const handleOther = (e, lb) => {
+        let target = e.target;
+
+        if(target == e.currentTarget.querySelector(lb)) {
+
+        };
+
+
+    };
+
+    body.addEventListener('click', handleOther);
+
+
+
+})();

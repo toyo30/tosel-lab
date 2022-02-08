@@ -961,9 +961,8 @@ input[type="checkbox"].check-pointer {
     overflow-y: scroll;
 }
 
-.cla-component-box {
-    max-height: 7.7rem;
-}
+
+
 
 
 .save-info-box {
@@ -987,9 +986,26 @@ input[type="checkbox"].check-pointer {
 
 
 .cla-component-box {
-    max-height: 5.59rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    height: 5.59rem;
 }
 
+.cla-id-issue {
+    display: block;
+    width: 2.82rem;
+    height: 0.52rem;
+    margin: 0 auto;
+    margin-top: 2.5rem;
+    font-size: 0.21rem;
+    background: rgba(51, 51, 51, 0.2);
+    color: #7B7B7B;
+    border-radius: 0.09rem;
+}
 
 .cla-component {
     display: -webkit-box;   /* OLD - iOS 6-, Safari 3.1-6, BB7 */
@@ -1008,7 +1024,7 @@ input[type="checkbox"].check-pointer {
     border: 0.02rem solid transparent;
 }
 
-.cla-component-active {
+.cla-component.active {
     background: #F2FBFF;
     border: 0.02rem solid #37B2EE;
 
@@ -1019,12 +1035,23 @@ input[type="checkbox"].check-pointer {
     color: #BEBEBE;
 }
 
-.stu-num, .cal-check-box {
+
+
+.stu-num, .cla-check-box, .remove-com, .remove-active {
     -webkit-flex: 1;
     flex: 1;
 }
 
-.cal-check-box {
+.remove-active {
+    width: 0.34rem;
+    height: 0.34rem;
+    background: url('/static/images/common/com-remove.png') no-repeat;
+    background-size: contain;
+    background-position: 50%;
+    cursor: pointer;
+}
+
+.cla-check-box {
     margin-left: 0.11rem;
     width: 0.34rem;
     height: 0.34rem;
@@ -1032,9 +1059,12 @@ input[type="checkbox"].check-pointer {
 }
 
 input[type="checkbox"].check-cla {
+    display: block;
+    margin: 0 auto;
     width: 0.34rem;
     height: 0.34rem;
     border-radius: 0.09rem;
+    margin-right: 0.2rem;
 }
 
 
@@ -1152,6 +1182,12 @@ input[type="checkbox"].check-cla {
     text-align: center;
 }
 
+.add-id {
+    font-size: 0.20rem;
+    text-align: center;
+    color: #BEBEBE;
+}
+
 .stu-add-paging-box {
     display: -webkit-box;   /* OLD - iOS 6-, Safari 3.1-6, BB7 */
     display: -ms-flexbox;  /* TWEENER - IE 10 */
@@ -1229,7 +1265,7 @@ input[type="checkbox"].check-cla {
 
 .popup-dimmed {
     display: none;
-	position: absolute;
+	position: fixed;
 	top: 0;
 	right: 0;
 	bottom: 0;

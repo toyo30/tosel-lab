@@ -6,6 +6,7 @@
     let stuLevelText = ['학생 레벨 설정', '*설정하신대로 Digital Contents Level이 변경됩니다.'];
     let stuClassText = ['분반 관리', '*분반을 추가하면 자동으로 선생님 아이디가 발급됩니다.'];
 
+    //아이디 발급페이지 fadein
     function stuChangeId() {
         $('.search-title').text(stuId[0]);
         $('.search-des').text(stuId[1]);
@@ -13,10 +14,10 @@
         $('.select-area').fadeIn();
         $('.page-area:nth-child(1) .page-link').css('font-weight', 'normal');
         $('.page-area:nth-child(1) .page-link:nth-child(1)').css('font-weight', 'bold');
-        $('#tog-btn').fadeOut();
-        $('.tog-btn-lab').fadeOut();
-        $('.student-level-container').fadeOut();
-        $('.divide-class-container').fadeOut();
+        $('#tog-btn').fadeOut(1);
+        $('.tog-btn-lab').fadeOut(1);
+        $('.student-level-container').fadeOut(1);
+        $('.divide-class-container').fadeOut(1);
         $('.parent-id-container').fadeIn();
         $('.btn-bar').animate({left: '0'}, 10);
         $('.sele-btn.prt').css('color', '#37B2EE');
@@ -25,16 +26,17 @@
         //data-target들 변경해주기, searchText/ searcharea
     }
 
+    //학생레벨 페이지 fadein
     function stuChangeLevel() {
         $('.page-area:nth-child(1) .page-link').css('font-weight', 'normal');
         $('.page-area:nth-child(1) .page-link:nth-child(2)').css('font-weight', 'bold');
         $('.search-title').text(stuLevelText[0]);
         $('.search-des').text(stuLevelText[1]);
-        $('.sele-btn-box').fadeOut();
+        $('.sele-btn-box').fadeOut(1);
         $('.select-area').fadeIn();
         $('.tog-btn-lab').fadeIn();
-        $('.divide-class-container').fadeOut();
-        $('.parent-id-container').fadeOut();
+        $('.divide-class-container').fadeOut(1);
+        $('.parent-id-container').fadeOut(1);
         $('.student-level-container').fadeIn();
         $('.btn-bar').animate({left: '3.07rem'}, 10);
         $('.sele-btn.tcr').css('color', '#37B2EE');
@@ -43,17 +45,18 @@
         //data-target들 변경해주기, searchText/ searcharea
     }
 
+    //분반 관리 페이지 fadein
     function stuChangeClass() {
         $('.page-area:nth-child(1) .page-link').css('font-weight', 'normal');
         $('.page-area:nth-child(1) .page-link:nth-child(3)').css('font-weight', 'bold');
         $('.search-title').text(stuClassText[0]);
         $('.search-des').text(stuClassText[1]);
         $('.sele-btn-box').fadeIn();
-        $('.select-area:nth-child(3)').fadeOut();
-        $('#tog-btn').fadeOut();
-        $('.tog-btn-lab').fadeOut();
-        $('.student-level-container').fadeOut();
-        $('.parent-id-container').fadeOut();
+        $('.select-area:nth-child(3)').fadeOut(1);
+        $('#tog-btn').fadeOut(1);
+        $('.tog-btn-lab').fadeOut(1);
+        $('.student-level-container').fadeOut(1);
+        $('.parent-id-container').fadeOut(1);
         $('.divide-class-container').fadeIn();
         $('.btn-bar').animate({left: '3.07rem'}, 10);
         $('.sele-btn.tcr').css('color', '#37B2EE');
@@ -62,20 +65,22 @@
         //data-target들 변경해주기, searchText/ searcharea
     }
 
+    //아이디 발급페이지 fadein
     $(document).on('click', '.page-area:nth-child(1) .page-link:nth-child(1)', function() {
         stuChangeId();
     });
 
-
+    ////학생레벨 페이지 fadein
     $(document).on('click', '.page-area:nth-child(1) .page-link:nth-child(2)', function() {
         stuChangeLevel();
     });
 
-
+    //분반 관리 페이지 fadein
     $(document).on('click', '.page-area:nth-child(1) .page-link:nth-child(3)', function() {
         stuChangeClass();
     });
 
+    //아이디 발급페이지, 분반관리페이지 fadein 설정 .sele-btn 버튼을 눌렀을 때,
      $(document).on('click', '.sele-btn', function() {
         if($(this).data('target') == 'teacher') {
             $('.btn-bar').animate({left: '3.07rem'}, 10);
@@ -97,7 +102,7 @@
 
 /* -------------------  학부모 아이디 발급 ------------------------------*/
 
-    //학부모 아이디 발급하기 버튼 클릭
+    //학부모 아이디 발급하기 버튼 클릭 -> 새로고침 로딩바 -> ajax전송 -> 선택된 요소들 제거
     function addLoading() {
         $('.scroll-bar').addClass('before-load');
         $('.scroll-bar').prepend(`
@@ -121,7 +126,7 @@
         // 선택된 요소들을 제거
         $('.prt-component').remove();
         $('input[type="checkbox"]').prop('checked', false);
-    }
+    };
 
 
     // 체크박스 전체 선택
@@ -134,7 +139,7 @@
         } else if(!checked) {
             $(target).parents().eq(1).find('.part-check').prop('checked', false);
         }
-    }
+    };
 
     // 체크박스 부분 선택
     function partCheck(target) {
@@ -175,6 +180,7 @@
 
     // 발급 요소 생성
     function addCheckComponent(target){
+        //아이디가 발급되었습니다. 메세지 삭제
         $('.prt-id-issue').remove();
 
         let checks = $('.part-check:checked');
@@ -201,7 +207,11 @@
              $('.all-check-issue').prop('checked', true);
 
         });
+
     };
+
+
+
 
 
 
@@ -266,13 +276,13 @@
     $(document).on('click', '.member-del', function() {
         if(!$(this).hasClass('member-active')) {
             $(this).addClass('member-active');
-            $(this).animate({width: '11rem'});
-            $('.dvd-info-bar').fadeIn();
-            $('.remove-check').fadeIn();
-            $('.remove-answer').fadeIn();
-            $('.member-btn').animate({width: '1.75rem'});
+            $(this).css('width', '11rem');
+            $('.dvd-info-bar').fadeIn(400);
+            $('.remove-check').fadeIn(400);
+            $('.remove-answer').fadeIn(400);
+            $('.member-btn').animate({width: '1.75rem'}, 500);
             $('.member-btn').css('display', 'flex');
-            $('.remove-des').fadeOut();
+            $('.remove-des').fadeOut(1);
         }
 
     });
@@ -296,24 +306,24 @@
         }
 
         $('.member-active').removeClass('member-active');
-            $('.member-del').animate({width: '1.75rem'});
-            $('.dvd-info-bar').fadeOut();
-            $('.remove-check').fadeOut();
-            $('.remove-answer').fadeOut();
-            $('.member-btn').fadeOut();
+            $('.member-del').css('width', '1.75rem');
+            $('.dvd-info-bar').fadeOut(1);
+            $('.remove-check').fadeOut(1);
+            $('.remove-answer').fadeOut(1);
+            $('.member-btn').fadeOut(1);
             $('.remove-des').fadeIn();
     });
 
     //selecBox 클릭 시 화면 까메지고,
-        $(document).on('click', '.selectBox', function() {
+        $(document).on('click', '.student-level-box .selectBox', function() {
            if($(this).hasClass('active')) {
-               $(this).css('z-index', '1');
+               $(this).css('z-index', '2');
                $('.popup-dimmed').fadeIn();
            } else if(!$(this).hasClass('active')) {
                setTimeout(() => {
                    $(this).css('z-index', '0');
                     $('.popup-dimmed').fadeOut();
-               }, 600)
+               }, 100)
 
            }
         });
@@ -360,21 +370,39 @@
         `);
     };
 
-    //dvdcomponent를 클릭할 때 해당하는 데이터를 .cla-box 에 보여주기
 
-    function clickDvd(target) {
-        //색상 변경
+    //input 값이 바뀔 때마다 전송
+    function changeValue() {
+        alert('반명, 선생님명이 변경되었습니다.')
+        let checkCla = $(this);
+        //ajax
+    }
+
+
+    //clacomponent 색상 변경
+    function changeComColor(target) {
         $(document).find('.dvd-component').not(target).removeClass('dvd-component-active');
         $(target).toggleClass('dvd-component-active');
 
-        //.cla-component 전체삭제
+    }
+
+
+
+    //dvdcomponent를 클릭할 때 해당하는 데이터를 .cla-box 에 보여주기
+
+    function clickDvd(target) {
+         //.cla-component 전체삭제
+        let curCom = $('.cla-component-active').wrapAll();
+        // curCom.forEach(function(item) {
+        //     console.log(item);
+        // });
+
+
         $('.cla-component-box').find('.cla-component').remove();
 
+        //이름 변경
         let claBoxTitle = $(target).find('.cla-sect').text();
-        console.log(claBoxTitle);
-
         $('.cla-check-text').text(claBoxTitle);
-
 
 
         // ajax 해당 데이터의 저장된 값을 가져와서 .cla-box 에 보여주기
@@ -393,16 +421,17 @@
                 $('.cla-component-box').append(`
                 <div class="cla-component">
                     <p class="stu-num">${idx}</p>
-                    <div class="cal-check-box">            
+                    <p class="stu-name">${item}</p>
+                    <div class="cla-check-box">            
                         <button class="remove-com" style="display:block"></button>
-                        </div>
-        
-                        <p class="stu-name">${item}</p>
+                    </div>
                     </div>
                 `);
             });
         };
 
+        $('.cla-component-box').prepend(curCom);
+        removeClaMsg();
 
     };
 
@@ -434,65 +463,178 @@
 
 
     function addStuComponent(target){
+        //removeClaMsg();
+
 
         let checks = $('.part-add-check:checked');
-        let checkNum = $('.cla-component').length + checks.length;
-        $('.cla-component-box .cla-component.').remove();
 
-        $(checks).each(function (index, item){
-            checkNum = checks.length;
+        $('.cla-component.active').remove();
 
-            if(checkNum < 10) {
-                checkNum = '0' + checkNum;
-             };
+        checks.each(function (index, item){
+            let checkValue = $(item).parent().find('.add-name').text();
+            let checkId = $(item).parent().find('.add-id').text();
 
-
-
-            let checkValue = $(item).parent().find('.stu-name').text();
-            $('.prt-check-component-box').append(`
-                 <div class="cla-component">
-                        <p class="stu-num">${checkNum}</p>
-                        <div class="cal-check-box">
-                            <input class="check-cla" type="checkbox">
-                            <button class="remove-com"></button>
-                        </div>
-    
-                        <p class="stu-name">추가학생이름</p>
-                    </div>`);
-
-             $('.all-check-issue').prop('checked', true);
+            $('.cla-component-box').prepend(`
+                 <div class="cla-component active">
+                    <button class="remove-active"></button>
+                    <p class="stu-name">${checkValue}</p>
+                    <div class="cla-check-box">
+                        <input class="check-cla" type="checkbox" checked>
+                    </div>
+                    <div class="cla-com-id blind">${checkId}</div>
+                </div>`);
 
         });
-        checkNum--;
+        calStuNum();
+    };
+
+     // cla-component-box에 "반을 선택해주세요" 메세지 판정/ ajax 처음 로딩 될때, 클릭 될때,
+    function removeClaMsg() {
+      if($('.cla-component').length > 0){
+          $('.cla-id-issue').remove();
+      } else if ($('.cla-component').length == 0 || $('.cla-component').length == null) {
+          if($('.cla-id-issue').length == 0) {
+              $('.cla-component-box').append('<button class="cla-id-issue">학생을 선택해주세요</button>');
+          }
+      }
+    };
+
+    function dvdComNonActive() {
+        if($('.dvd-component-active').length == 0) {
+            $('.cla-check-text').text('class');
+            $('.cla-component').remove();
+            removeClaMsg();
+            checkReset();
+        }
     };
 
 
+    function calStuNum() {
+        let stuNum = $('.cla-component').length - $('.cla-component.active').length;
+
+        $('.stu-num').each(function(idx, item) {
+            idx++;
+            if(idx < 10) {
+                idx = '0' + idx;
+            };
+            $(item).text(idx);
+        });
+    };
+
+    //check reset
+    function checkReset() {
+        $('.all-add-check').prop('checked', false);
+        $('.part-add-check').prop('checked', false);
+        removeClaMsg();
+    };
+
+    function saveInfo(){
+
+
+        //ajax 전송
+        let target = '.dvd-component.dvd-component-active';
+        let classNam = $('.dvd-component.dvd-component-active .cla-sect').text();
+        if($(target).length != 0)  {
+            alert(`${classNam}의 변경사항이 저장되었습니다.`);
+            reloadActive(target);
+        } else{
+            alert(`분반을 선택하고, 학생을 추가해주세요.`);
+        };
+    };
+
+    function delInfo(target) {
+        $(target).parents().eq(1).remove();
+       calStuNum();
+       removeClaMsg();
+    };
+
+    function reloadActive(target) {
+        if($(target).length != null || $(target).length != 0)  {
+            clickDvd(target);
+        };
+        checkReset();
+        
+    };
+
+
+    function removeComActive(target) {
+        $(target).parent().remove();
+        //해당 아이디를 다 가져와야겠다.
+        let find = $('.part-add-check:checked').parent().find('.add-id');
+
+        let txt = $(target).parent().find('.cla-com-id').text()
+
+        find.each(function (index, item) {
+           if(txt  == $(item).text()) {
+               $(item).parents().eq(1).find('.part-add-check').prop('checked', false);
+               $(item).parents().eq(3).find('.all-add-check').prop('checked', false);
+           };
+        });
+    };
+
+    //cla-component-box에 .add-cla-btn을 클릭하여 반 추가하기
     $(document).on('click', '.add-cla-btn', function() {
         addDvdCom();
     });
 
+    //dvd-component를 클릭했을 때, 해당 데이터 보여주기
     $(document).on('click', '.dvd-component', function() {
         clickDvd(this);
+        changeComColor(this);
+        addStuComponent(this);
+        dvdComNonActive();
     });
 
     //현재 active되어 있는 요소로 새로고침
     $(document).on('click', '.reload-btn', function() {
         let target = '.dvd-component.dvd-component-active';
-        clickDvd(target);
+        reloadActive(target);
     });
 
+    //전체체크박스클릭
     $(document).on('click', '.all-add-check', function() {
+        $('.cla-id-issue').remove();
         allAddCheck(this);
-        addStuComponent();
+        addStuComponent(this);
+        dvdComNonActive();
     });
 
+    //부분체크박스클릭
     $(document).on('click', '.part-add-check', function() {
+        $('.cla-id-issue').remove();
         partAddCheck(this);
-        addStuComponent();
+        addStuComponent(this);
+        dvdComNonActive();
     });
 
 
+    //값 입력될 때마다 ajax통신보내기
+    $(document).on('change', '.cla-nam', function(e) {
+       changeValue();
+    });
 
+    //값이 입력되는 거 클릭될 때, dvd-component 클릭되는 거 방지
+    $(document).on('click', '.cla-text', function(e) {
+        if($(this).parents().eq(1).hasClass('dvd-component-active')){
+            e.stopPropagation();//부모요소 클릭되는 거 막기
+        };
+
+    });
+
+    //변경된 값 저장하기
+    $(document).on('click', '.save-info', function() {
+        saveInfo();
+    });
+
+
+    $(document).on('click', '.remove-com', function() {
+        delInfo(this);
+    });
+
+
+    $(document).on('click', '.remove-active', function() {
+        removeComActive(this);
+    });
 
 
 
