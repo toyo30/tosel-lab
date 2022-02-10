@@ -105,6 +105,16 @@
                                         <p class="check-name">이름</p><div class="arrange-bar"></div>
                                         <div class='check-analy-box'><button class="check-analy">학습 통계 자료 보기</button></div>
                                     </div>
+
+                                    <div class="lms-stu-paging-box">
+                                        <button class="paging-prev">Previous</button>
+                                        <span class="active-page">1</span>
+                                        <span>2</span>
+                                        <span>3</span>
+                                        <span>4</span>
+                                        <span>5</span>
+                                        <button class="paging-next">Next</button>
+                                    </div>
                                 </div>
 
                                 <div class="stu-check-tab">
@@ -189,14 +199,22 @@
                             </div>
                         </div>
 
+                    </div>
 
-
+                    <div class="lms-container">
+                        <div class="lms-box">
+                            <iframe class="lms-web" src="https://map.kakao.com/" title="YouTube video player" name="cocojuan" id="cocojuan" aligh="middle"> iframe이 있어던 자리 입니다 </iframe>
+                            <div class="mov-stu-box">
+                                <button class="btn-prev"></button>
+                                <p class="prv-stu">이전 학생보기</p>
+                                <p class="nxt-stu">다음 학생보기</p>
+                            </div>
+                        </div>
                     </div>
                 </section>
 
             </div>
 
-            <iframe width=390, height="890" src="https://www.youtube.com/embed/tPSFLt31oVI" title="YouTube video player" name="cocojuan" id="cocojuan" aligh="middle"> iframe이 있어던 자리 입니다 </iframe>
 
 
 
@@ -208,10 +226,12 @@
 
 <script src="/static/js/common/selectbox.js"></script>
 <script src="/static/js/dashboard/slide-menu.js"></script>
+<script src="/static/js/dashboard/study-analy.js"></script>
 <script>
 
-
-
+$(document).on('click', '.page-area.stu .page-link', function() {
+    location.href ='/dashboard_stu?page=' + $(this).data('page');
+});
 </script>
 </body>
 </html>

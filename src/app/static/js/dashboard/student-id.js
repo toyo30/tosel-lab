@@ -1,5 +1,6 @@
 (() => {
 
+
     /* --------------------- 학생관리 메뉴 변경('아이디 발급, 분반 관리, 학생 레벨 설정)------------------------------------------*/
 
     let stuId = ['아이디 발급', '*학부모 아이디는 학생 당 1개, 선생님 아이디는 선생님 당 1개씩 발급됩니다.'];
@@ -65,6 +66,7 @@
         //data-target들 변경해주기, searchText/ searcharea
     }
 
+
     //아이디 발급페이지 fadein
     $(document).on('click', '.page-area:nth-child(1) .page-link:nth-child(1)', function() {
         stuChangeId();
@@ -104,34 +106,38 @@
 
     //학부모 아이디 발급하기 버튼 클릭 -> 새로고침 로딩바 -> ajax전송 -> 선택된 요소들 제거
     function addLoading() {
-        $('.scroll-bar').addClass('before-load');
-        $('.scroll-bar').prepend(`
+        if($('.part-check-issue:checked').length > 0) {
+            //ajax
+
+
+
+            $('.scroll-bar').addClass('before-load');
+            $('.scroll-bar').prepend(`
             <div class="loading">
                 <svg class="loading-circle">
                     <circle cx="50%" cy="50%" r="25"></circle>
                 </svg>
             </div>`)
 
-        setTimeout(() => {
-            $('.scroll-bar').remove('before-load');
-        }, 1000);
+            setTimeout(() => {
+                $('.scroll-bar').remove('before-load');
+            }, 1000);
 
-        setTimeout(() => {
-            $(document).find('.loading').remove();
-            $('.prt-check-component-box').append(`
+            setTimeout(() => {
+                $(document).find('.loading').remove();
+                $('.prt-check-component-box').append(`
             <button class="prt-id-issue">아이디가 발급되었습니다.</button>
             `);
-        }, 2000);
+            }, 2000);
 
-        // 선택된 요소들을 제거
-        $('.prt-component').remove();
-        $('input[type="checkbox"]').prop('checked', false);
+            prtReload();
+        }
     };
 
 
     // 체크박스 전체 선택
     function allCheck(target) {
-        let checked = $('.all-check').is(':checked');
+        let checked = $(target).is(':checked');
 
         //all-check
         if(checked) {
@@ -193,14 +199,16 @@
              };
 
             let checkValue = $(item).parent().find('.check-name').text();
+            let prtId = $(item).parent().find('.check-id').text();
             $('.prt-check-component-box').append(`
                  <div class="prt-component">
                      <div class="prt-check-component">
-                         <p class="prt-num">${checkNum}</p>
+                        <div class="prt-check-id blind">${prtId}</div>
+                         <button class="prt-remove"></button>
+                         <p class="prt-all-name">${checkValue}</p>
                          <div class="check-issue-box">
                              <input class="part-check-issue check-issue" type="checkbox" checked>
                          </div>
-                         <p class="prt-all-name">${checkValue}</p>
                      </div>
                  </div>`);
 
@@ -210,6 +218,35 @@
 
     };
 
+    function prtReload(){
+        $('.all-check').prop('checked', false);
+        $('.part-check').prop('checked', false);
+        $('.prt-check-component-box .prt-component').remove();
+        $('.all-check-issue').prop('checked', true);
+
+    };
+    function prtRemove(target) {
+
+        if(confirm("해당 학생을 목록에서 지우시겠습니까?")) {
+            let prtId = $(target).parent().find('.prt-check-id').text();
+            $(target).parent().parent().remove();
+
+            $('.part-check:checked').each(function (idx, item) {
+                if ($(item).parent().find('.check-id').text() == prtId) {
+                    $(item).prop('checked', false);
+                }
+            });
+        }
+    };
+
+    //remove btn 클릭 컴포턴트 제거
+    $(document).on('click', '.prt-remove', function() {
+       prtRemove(this);
+    });
+
+    $(document).on('click', '.prt-reload', function() {
+        prtReload();
+    });
 
 
 
@@ -251,9 +288,6 @@
 
 
 
-
-
-
     /* -------------------  학생 레벨 설정 ------------------------------*/
 
     $(document).on('click', '.tog-btn-lab', function() {
@@ -288,30 +322,49 @@
     });
 
     $(document).on('click', '.btn-remove', function() {
-        if($(this).data('target') == 'yes') {
-            //ajax 데이터 삭제
-            //페이징 다시하기
-            alert('학생 정보가 삭제되었습니다.');
+        if($('.check-com:checked').length > 0) {
+            if ($(this).data('target') == 'yes') {
+                //ajax 데이터 삭제
+                //페이징 다시하기
+                alert('학생 정보가 삭제되었습니다.');
 
-            let checkAll = $('.check-com:checked');
-            checkAll.each(function(idx, item) {
-                $('.check-com:checked').parents().eq(1).remove();
+                let checkAll = $('.check-com:checked');
+                checkAll.each(function (idx, item) {
+                    $('.check-com:checked').parents().eq(1).remove();
 
-            });
+                });
+            };
 
-        }
+            if($(this).data('target') == 'no') {
 
-        if($(this).data('target') == 'no') {
+            };
 
-        }
-
-        $('.member-active').removeClass('member-active');
+            $('.member-active').removeClass('member-active');
             $('.member-del').css('width', '1.75rem');
             $('.dvd-info-bar').fadeOut(1);
             $('.remove-check').fadeOut(1);
             $('.remove-answer').fadeOut(1);
             $('.member-btn').fadeOut(1);
             $('.remove-des').fadeIn();
+
+        }else{
+            if ($(this).data('target') == 'yes') {
+
+                alert('학생을 선택해주세요.');
+
+            };
+
+            if($(this).data('target') == 'no') {
+                $('.member-active').removeClass('member-active');
+                $('.member-del').css('width', '1.75rem');
+                $('.dvd-info-bar').fadeOut(1);
+                $('.remove-check').fadeOut(1);
+                $('.remove-answer').fadeOut(1);
+                $('.member-btn').fadeOut(1);
+                $('.remove-des').fadeIn();
+            };
+        };
+
     });
 
     //selecBox 클릭 시 화면 까메지고,
@@ -398,7 +451,7 @@
         // });
 
 
-        $('.cla-component-box').find('.cla-component').remove();
+        $('.cla-component-box').find('.cla-component.prev').remove();
 
         //이름 변경
         let claBoxTitle = $(target).find('.cla-sect').text();
@@ -419,7 +472,7 @@
                 };
 
                 $('.cla-component-box').append(`
-                <div class="cla-component">
+                <div class="cla-component prev">
                     <p class="stu-num">${idx}</p>
                     <p class="stu-name">${item}</p>
                     <div class="cla-check-box">            
@@ -437,7 +490,7 @@
 
 
     function allAddCheck(target) {
-        let checked = $('.all-add-check').is(':checked');
+        let checked = $(this).is(':checked');
 
         //all-check
         if(checked) {
@@ -543,9 +596,12 @@
     };
 
     function delInfo(target) {
-        $(target).parents().eq(1).remove();
-       calStuNum();
-       removeClaMsg();
+        if(confirm("해당 학생을 삭제하시겠습니까?")) {
+            $(target).parents().eq(1).remove();
+            calStuNum();
+            removeClaMsg();
+        }
+
     };
 
     function reloadActive(target) {
@@ -553,7 +609,8 @@
             clickDvd(target);
         };
         checkReset();
-        
+        removeComActive('.remove-active');
+        removeClaMsg();
     };
 
 
@@ -581,7 +638,7 @@
     $(document).on('click', '.dvd-component', function() {
         clickDvd(this);
         changeComColor(this);
-        addStuComponent(this);
+        //addStuComponent(this);
         dvdComNonActive();
     });
 

@@ -29,6 +29,8 @@
         label.parentNode.classList.remove('active');
     };
 
+
+    /*
     const handleOther = (e, lb) => {
         let target = e.target;
 
@@ -40,6 +42,8 @@
     };
 
     body.addEventListener('click', handleOther);
+
+     */
 
 
 

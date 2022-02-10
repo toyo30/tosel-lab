@@ -32,7 +32,16 @@
     display: block;
 }
 
+
+.page-area:nth-child(2) .page-link:nth-child(2) {
+    font-weight: bold;
+}
+
 /* container */
+
+#container {
+    position: relative;
+}
 
 .aca-member-box {
     display: -webkit-box;   /* OLD - iOS 6-, Safari 3.1-6, BB7 */
@@ -244,7 +253,7 @@
 .search-box {
     width: 21.25rem;
     margin: 0 auto;
-    padding-top: 1.88rem;
+    margin-top: 1.88rem;
     color: #000000;
 }
 
@@ -302,6 +311,8 @@
     display: -ms-flexbox;  /* TWEENER - IE 10 */
     display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
     display: flex;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
 }
 
 .select-area {
@@ -465,6 +476,31 @@
     width: 4.36rem;
     padding: 0 0.36rem;
 }
+
+
+.lms-stu-paging-box {
+    display: -webkit-box;   /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+    display: -ms-flexbox;  /* TWEENER - IE 10 */
+    display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+    display: flex;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    width: 6.52rem;
+    margin: 0 auto;
+    color: #333333;
+    display: none;
+    margin-top: 1.43rem;
+}
+
+.lms-stu-paging-box span {
+    font-size: 0.29rem;
+    font-weight: 300;
+}
+
+.lms-stu-paging-box span.active-page {
+    font-weight: 900;
+}
+
 
 .check-analy {
     width: 3.68rem;
@@ -1382,4 +1418,94 @@ input[type='checkbox'].check-com {
 
 .stu-level-paging-box span.active-page {
     font-weight: 900;
+}
+
+
+
+
+
+/* lms-container */
+
+
+.lms-container {
+    width: 100%;
+    display: none;
+    position: absolute;
+    top: 15.4rem;
+    transition: 400ms;
+}
+
+.lms-container.active {
+    display: block;
+    top: 2.02rem;
+}
+
+.lms-box {
+    display: -webkit-box;   /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+    display: -ms-flexbox;  /* TWEENER - IE 10 */
+    display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+    display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    margin-left: 6rem;
+}
+
+.btn-prev {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.2);
+    background: #ffffff url('/static/images/common/com-prev-btn.png') no-repeat 50%;
+    background-size: contain;
+    top: -6.7rem;
+    left: 1.07rem;
+}
+
+.mov-stu-box {
+    position: relative;
+}
+
+.prv-stu, .nxt-stu {
+    display: -webkit-box;   /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+    display: -ms-flexbox;  /* TWEENER - IE 10 */
+    display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+    display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */
+    -webkit-align-items: center;
+    align-items: center;
+    font-size: 0.25rem;
+    margin-left: 1.07rem;
+    color: #333333;
+    cursor: pointer;
+}
+
+.prv-stu {
+    margin-bottom: 0.23rem;
+}
+
+.prv-stu:before, .nxt-stu:before {
+    content: '';
+    width: 0.98rem;
+    height: 0.80rem;
+    border: 0.04rem solid #DFDFDF;
+    margin-right: 0.39rem;
+    border-radius: 0.18rem;
+}
+
+.prv-stu:before {
+    background: #FDFDFD url('/static/images/common/com-select-arrow-close.png') no-repeat 50%;
+    background-size: contain;
+}
+
+.nxt-stu:before {
+    background: #FDFDFD url('/static/images/common/com-select-arrow-open.png') no-repeat 50%;
+    background-size: contain;
+}
+
+.lms-web {
+    width: 6.96rem;
+    height: 15.70rem;
+    border-radius: 0.36rem 0.36rem 0px 0px;
 }

@@ -42,6 +42,7 @@ html, body {
 
 .per-component {
     padding: 0 0.52rem;
+    margin-bottom: 1.07rem;
 }
 
 
@@ -54,7 +55,8 @@ html, body {
     margin-bottom: 0.50rem;
 }
 
-.per-customer:nth-child(1):before {
+
+.per-customer:before {
     content: '';
     display: block;
     width: 0.45rem;
@@ -64,50 +66,74 @@ html, body {
     margin-right: 0.2rem;
 }
 
+.per-customer.aca:before {
+    background: url('/static/images/menu/pc-content-aca-icon.png') no-repeat;
+    background-size: contain;
+}
+
+.per-customer.tcr:before{
+    background: url('/static/images/menu/pc-content-tch-icon.png') no-repeat;
+    background-size: contain;
+}
+
+.per-customer.lms:before{
+    background: url('/static/images/menu/pc-content-prt-icon.png') no-repeat;
+    background-size: contain;
+}
+
+
+.per-customer.std:before{
+    background: url('/static/images/menu/pc-content-stu-icon.png') no-repeat;
+    background-size: contain;
+
+}
+
 .link-box {
     position: relative;
-    width: 4.3rem;
-    height: 4.3rem;
+    width: 4.55rem;
+    height: 4.55rem;
     margin-bottom: 0.39rem;
     border-radius: 0.63rem;
     color: #FFFFFF;
-    background: url('/static/images/menu/pc-content-linkbox-aca.png') no-repeat;
-    background-size: 4.55rem 4.55rem;
+    background: url('/static/images/menu/pc-content-linkbox-aca.png') no-repeat 50% 50%;
+    background-size: 5rem 5rem;
     text-align: left;
     z-index: 1;
-    border-left: 0.02px solid #E7E9F4;
-    border-right: 0.02px solid #E7E9F4;
+    overflow: hidden;
+    cursor: pointer;
+    padding: 0.54rem;
+}
+
+.per-component:nth-child(2) .link-box {
+    background: url('/static/images/menu/pc-content-linkbox-tmr.png') no-repeat 50% 50%;
+    background-size: 5rem 5rem;
+}
+
+.per-component:nth-child(3) .link-box {
+    background: url('/static/images/menu/pc-content-linkbox-lms.png') no-repeat 50% 50%;
+    background-size: 5rem 5rem;
+}
+
+.per-component:nth-child(4) .link-box {
+    background: url('/static/images/menu/pc-content-linkbox-sct.png') no-repeat 50% 50%;
+    background-size: 5rem 5rem;
 }
 
 .box-dimmed {
     position: absolute;
-    visibility: hidden;
+    display: none;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    opacity: 0.2;
+    opacity: 0.7;
     background: rgba(35, 35, 35, 0.75);
     border-radius: 0.63rem;
     z-index: 2;
 }
 
-.link-box > a {
-    display: block;
-    max-width: 100%;
-    height: 100%;
-    padding: 0.54rem;
-    border-radius: 0.63rem;
-}
 
-.link-box:hover ~ .service-home,
-.link-box:hover ~ .right-go,
-.link-box:hover ~ .right-go:after
-.link-box:hover ~ .box-dimmed {
-    visibility: visible;
-    transform: translateY(0px);
 
-}
 
 .service-home {
     position: relative;
@@ -115,7 +141,7 @@ html, body {
     font-weight: 900;
     color: #FFFFFF;
     font-size: 0.43rem;
-    margin-top: 2.4rem;
+    margin-top: 2.2rem;
     z-index: 3;
     transform: translateY(40px);
     transition: 200ms ease-in-out;
@@ -136,13 +162,12 @@ html, body {
     position: relative;
     visibility: hidden;
     content: '';
-    display: block;
     width: 0.27rem;
     height: 0.36rem;
     background: url('/static/images/menu/pc-content-go-btn.png') no-repeat;
     background-size: contain;
-    margin-left: auto;
     transform: translateY(40px);
+    margin-left: auto;
     transition: 200ms ease-in-out;
     z-index: 3;
 }
@@ -150,5 +175,141 @@ html, body {
 .content-text {
     font-size: 0.32rem;
     text-align: left;
+    border-bottom: 1px dashed;
+    padding: 0.3rem 0;
+    list-style: disc;
+    list-style-position: inside;
+}
+
+
+
+
+
+.per-component:nth-child(2) .service-home,
+.per-component:nth-child(2) .right-go,
+.per-component:nth-child(2) .right-go:after{
+    transform: translateY(0px);
+}
+
+.per-component:nth-child(2) .link-box {
+    display: flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    padding: 0;
+}
+
+.link-box .link-box-part {
+    display: block;
+    -webkit-flex: 1;
+    flex: 1;
+    padding: 0.46rem 0.46rem 0 0.46rem;
+    transition: 400ms ease-in-out;
+}
+
+.service-home.line {
+    line-height: 0.45rem;
+}
+
+.link-box-bar {
+    visibility: hidden;
+    width: 100%;
+    height: 0.02rem;
+    background: #FFFFFF;
+    z-index: 3;
+}
+
+.per-component:nth-child(2) .link-box-part.top {
+    transform: translateY(-40px);
+    z-index: 3;
+}
+
+.per-component:nth-child(2) .link-box-part.bottom {
+    transform: translateY(40px);
+    z-index: 3;
+}
+
+.per-component:nth-child(2) .service-home {
+    margin: 0;
+}
+
+
+.link-box:hover > .service-home,
+.link-box:hover > .right-go,
+.link-box:hover > .right-go:after,
+.link-box:hover > .link-box-part .service-home,
+.link-box:hover > .link-box-part .right-go,
+.link-box:hover > .link-box-part .right-go:after,
+.link-box:hover > .link-box-part.top,
+.link-box:hover > .link-box-part.bottom,
+.link-box:hover > .link-box-bar{
+    visibility: visible;
+    transform: translateY(0px);
+}
+
+.link-box:hover > .box-dimmed {
+    display: block;
+}
+
+
+/* go-book */
+
+.go-book {
+    width: 21.34rem;
+    margin: 0 auto;
+}
+
+.go-book-box {
+    width: 6.46rem;
+    height: 2.05rem;
+    margin-left: auto;
+    border-radius: 0.63rem;
+    box-shadow: 9px 9px 20px #CBDEF9;
+    cursor: pointer;
+    display: -webkit-box;   /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+    display: -ms-flexbox;  /* TWEENER - IE 10 */
+    display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+    display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */
+    -webkit-align-items: center;
+    align-items: center;
+    color: #0F1E74;
+    margin-bottom: 2.84rem;
+    transition: 400ms ease-in;
+}
+
+.bkm-title {
+    font-size: 0.43rem;
+    margin-bottom: 0.13rem;
+}
+
+.bkm-go {
+    font-size: 0.29rem;
+}
+
+.bkm-text {
+    -webkit-flex: 1;
+    flex: 1;
+}
+
+.bkm-img {
+    -webkit-flex: 1.7;
+    flex: 1.7;
+    height: 1.36rem;
+    background: url('/static/images/menu/pc-content-bkm.png') no-repeat;
+    background-size: contain;
+    transition: 400ms ease-in;
+}
+
+.go-book-box:hover {
+     box-shadow: 9px 9px 20px rgba(236, 104, 61, 0.5);
+    color: #EC683D;
+}
+
+.go-book-box:hover > .bkm-img {
+    background: url('/static/images/menu/pc-content-bkm-hover.png') no-repeat;
+    background-size: contain;
+}
+
+.go-book-box:hover > .bkm-title,
+.go-book-box:hover > .bkm-go {
 
 }

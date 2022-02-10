@@ -437,11 +437,30 @@ input[type="checkbox"].check-pointer {
     background: #DFDFDF;
 }
 
-.check-name {
+.check-box {
+    display: -webkit-box;   /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+    display: -ms-flexbox;  /* TWEENER - IE 10 */
+    display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
     width: 3.66rem;
+}
+
+.check-name {
     text-align: center;
     font-size: 0.32rem;
     color: #333333;
+    -webkit-flex: 1;
+    flex: 1;
+}
+
+.check-id {
+    font-size: 0.21rem;
+    text-align: left;
+    color: #BEBEBE;
+    -webkit-flex: 1;
+    flex: 1;
 }
 
 .parent-check-btn-des {
@@ -609,11 +628,11 @@ input[type="checkbox"].check-pointer {
     background: #DFDFDF;
 }
 
-.prt-num, .prt-all-name {
+.prt-all-name {
     padding: 0.14rem 0;
 }
 
-.prt-num, .check-issue-box {
+.prt-reload, .check-issue-box, .prt-remove  {
     -webkit-flex: 1;
     flex: 1;
     text-align: center;
@@ -624,6 +643,24 @@ input[type="checkbox"].check-pointer {
     height: 0.34rem;
 }
 
+.prt-reload {
+    width: 0.36rem;
+    height: 0.36rem;
+    background: url('/static/images/common/com-reload-btn.png') no-repeat;
+    background-size: contain;
+    background-position: 50%;
+    cursor: pointer;
+}
+
+.prt-remove {
+    width: 0.36rem;
+    height: 0.36rem;
+    background: url('/static/images/common/com-remove.png') no-repeat;
+    background-size: contain;
+    background-position: 50%;
+    cursor: pointer;
+}
+
 .prt-all-name {
     -webkit-flex: 3.5;
     flex: 3.5;
@@ -632,7 +669,7 @@ input[type="checkbox"].check-pointer {
 
 
 
-.prt-check-component .prt-num {
+.prt-check-component .prt-reload {
     color: #BEBEBE;
 }
 .prt-check-component .prt-all-name {
@@ -1367,6 +1404,7 @@ input[type='checkbox'].check-com {
     border-radius: 0.18rem;
     background: #7DD6F61A;
     border: 0.02rem solid #7DD6F6;
+    cursor: pointer;
 }
 
 .com-englisea-select-area,

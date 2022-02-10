@@ -9,36 +9,36 @@
 
             <div class="page-box flex-arr">
 
-                <div class="page-area">
+                <div class="page-area stu">
                     <div class="page-over">
                         <div class="page-item">학생 관리</div>
                     </div>
                     <div class="page-link-box">
                         <ul class="page-links">
-                            <li class="page-link">아이디 발급</li>
-                            <li class="page-link">학생 레벨 설정</li>
-                            <li class="page-link">분반 관리</li>
+                            <li class="page-link" data-page="1">아이디 발급</li>
+                            <li class="page-link" data-page="2">학생 레벨 설정</li>
+                            <li class="page-link" data-page="3">분반 관리</li>
                         </ul>
                     </div>
                      <div class="page-bar"></div>
                 </div>
 
-                <div class="page-area">
+                <div class="page-area lms">
                     <div class="page-over">
                         <div class="page-item">학습 통계 자료</div>
                     </div>
                     <div class="page-link-box">
                         <ul class="page-links">
-                            <li class="page-link">ENGLISEA</li>
-                            <li class="page-link">VOCA</li>
+                            <li class="page-link" data-page="1">ENGLISEA</li>
+                            <li class="page-link" data-page="2">VOCA</li>
                         </ul>
                     </div>
                     <div class="page-bar"></div>
                 </div>
 
-                <div class="page-area">
+                <div class="page-area ai">
                     <div class="page-over">
-                        <div class="page-item">AI 컨설팅 자료</div>
+                        <div class="page-item" data-page="1">AI 컨설팅 자료</div>
                     </div>
                     <div class="page-bar"></div>
                 </div>
@@ -56,5 +56,18 @@
 
 
             </nav>
-        </header>
+
 </div>
+
+<script>
+
+
+$(document).on('click', '.page-area.lms .page-link', function() {
+    location.href ='/dashboard_analy?page=' + $(this).data('page');
+});
+
+$(document).on('click', '.page-area.ai .page-item', function() {
+    location.href ='/dashboard_ai?page=' + $(this).data('page');
+});
+
+</script>

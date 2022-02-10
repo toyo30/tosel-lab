@@ -49,17 +49,17 @@ def dashboard():
 
 @bp.route('/dashboard_stu')
 def dashboard_stu_id():
-    # session['user_idx'] = random.randint(0, 10)
-    return render_template('/dashboard/dashboard-student-id.html')
+    page = request.args.get('page')
+    return render_template('/dashboard/dashboard-student-id.html', page=page)
 
 @bp.route('/dashboard_analy')
 def dashboard_analy():
-    # session['user_idx'] = random.randint(0, 10)
-    return render_template('/dashboard/dashboard-study-analy.html')
+    page = request.args.get('page')
+    return render_template('/dashboard/dashboard-study-analy.html', page=page)
 
 @bp.route('/dashboard_ai')
 def dashboard_ai():
-    # session['user_idx'] = random.randint(0, 10)
+
     return render_template('/dashboard/dashboard-ai-consult.html')
 
 
@@ -68,3 +68,5 @@ def dashboard_ai():
 def com():
     # session['user_idx'] = random.randint(0, 10)
     return render_template('/component.html')
+
+
