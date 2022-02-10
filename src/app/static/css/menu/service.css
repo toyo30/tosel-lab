@@ -185,7 +185,7 @@ html, body {
 .digital-contents,
 .teachingmaterials-contents,
 .aiconsult-contents {
-    display: none;
+    display: block;
 }
 
 
@@ -239,5 +239,38 @@ html, body {
     color: #1BA7EC;
 }
 
+
+
+/* scd-box pointer */
+
+.scd-box  {
+    width: 17.68rem;
+    margin: 0 auto;
+    font-size: 0.29rem;
+}
+
+.scd-btn {
+    display: -webkit-box;   /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+    display: -ms-flexbox;  /* TWEENER - IE 10 */
+    display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+    display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */
+    -webkit-align-items: center;
+    align-items: center;
+    color: #333333;
+    font-weight: 300;
+    margin-top: 1.57rem;
+    margin-bottom: 0.89rem;
+}
+
+.scd-btn:after {
+    content: '';
+    display: inline-block;
+    width: 0.45rem;
+    height: 0.45rem;
+    background: url('/static/images/common/com-select-arrow-open.png') no-repeat 50%;
+    background-size: contain;
+    margin-left: 0.18rem;
+
+}
 
 

@@ -7,12 +7,13 @@
 
 		{
 			//0 lms-englisea-wrap
-			target: 'lms-englisea-wrap',
+			target: 'bk-read',
 			//urlLength: 3,
 			objs: {
 				//각 섹션을 담는 요소
-				logoImg: $('.lms-logo-box img'),
+				logoImg: $('.book-intro-img-box img'),
 
+				/*
 				lmsIntroWrap: $('.lms-intro-wrap'),
 				lmsIntroImg: $('.lms-intro-img img'),
 				lmsIntroTextTitle: $('.lms-intro-text-title'),
@@ -24,11 +25,12 @@
 				lmsCurWrap: $('.cur-img-box img'),
 				lmsDailyWrap: $('.daily-img-box img'),
 				lmsMonthlyWrap: $('.monthly-img-box img'),
-
+				*/
 			},
 			values: {
-				logoImg_url: ['/static/images/menu/pc-content-lms-englisea.png', '잉글리쉬학습통계자료로고'],
+				logoImg_url: ['/static/images/menu/pc-content-bk-intr-read.png', '리딩시리즈설명'],
 
+				/*
 				lmsIntroWrap_color: ['#7BD5F5'],
 				lmsIntroImg_url: ['/static/images/menu/pc-content-lms-englisea-intro-img.png', '잉글리쉬학습통계자료휴대폰목업'],
 				lmsIntroTextTitle: 'ENGLISEA',
@@ -41,19 +43,20 @@
 				lmsCurWrap_url: ['/static/images/menu/pc-content-lms-englisea-cur.png', '학습현황통계'],
 				lmsDailyWrap_url: ['/static/images/menu/pc-content-lms-englisea-daily.png', '일일현황통계'],
 				lmsMonthlyWrap_url: ['/static/images/menu/pc-content-lms-englisea-weekly.png', '주간현황통계'],
-
+				*/
 
 			},
 		},
 
 		{
 			//1 lms-voca-wrap
-			target: 'lms-voca-wrap',
+			target: 'bk-voca',
 			//urlLength: 3,
 			objs: {
 				//각 섹션을 담는 요소
-				logoImg: $('.lms-logo-box img'),
+				logoImg: $('.book-intro-img-box img'),
 
+				/*
 				lmsIntroWrap: $('.lms-intro-wrap'),
 				lmsIntroImg: $('.lms-intro-img img'),
 				lmsIntroTextTitle: $('.lms-intro-text-title'),
@@ -66,10 +69,13 @@
 				lmsDailyWrap: $('.daily-img-box img'),
 				lmsMonthlyWrap: $('.monthly-img-box img'),
 
+				 */
+
 			},
 			values: {
-				logoImg_url: ['/static/images/menu/pc-content-lms-voca.png', '보카학습통계자료로고'],
+				logoImg_url: ['/static/images/menu/pc-content-bk-intr-voca.png', '보카시리즈설명'],
 
+				/*
 				lmsIntroWrap_color: ['#99A1FF'],
 				lmsIntroImg_url: ['/static/images/menu/pc-content-lms-voca-intro-img.png', '보카학습통계자료휴대폰목업'],
 				lmsIntroTextTitle: 'VOCA Series',
@@ -82,7 +88,51 @@
 				lmsCurWrap_url: ['/static/images/menu/pc-content-lms-voca-cur.png', '보카학습현황통계'],
 				lmsDailyWrap_url: ['/static/images/menu/pc-content-lms-voca-daily.png', '보카일일현황통계'],
 				lmsMonthlyWrap_url: ['/static/images/menu/pc-content-lms-voca-monthly.png', '보카월간현황통계'],
+				*/
 
+			},
+		},
+		{
+			//2 lms-voca-wrap
+			target: 'lms-voca-wrap',
+			//urlLength: 3,
+			objs: {
+				//각 섹션을 담는 요소
+				logoImg: $('.book-intro-img-box img'),
+
+				/*
+				lmsIntroWrap: $('.lms-intro-wrap'),
+				lmsIntroImg: $('.lms-intro-img img'),
+				lmsIntroTextTitle: $('.lms-intro-text-title'),
+
+				lmsConfigItemStudyImg: $('.lms-config-item:nth-child(1) .lms-config-img-box img'),
+				lmsConfigItemDailyImg: $('.lms-config-item:nth-child(2) .lms-config-img-box img'),
+				lmsConfigItemWeeklyImg: $('.lms-config-item:nth-child(3) .lms-config-img-box img'),
+
+				lmsCurWrap: $('.cur-img-box img'),
+				lmsDailyWrap: $('.daily-img-box img'),
+				lmsMonthlyWrap: $('.monthly-img-box img'),
+
+				 */
+
+			},
+			values: {
+				logoImg_url: ['/static/images/menu/pc-content-bk-intr-gram.png', '그래머시리즈설명'],
+
+				/*
+				lmsIntroWrap_color: ['#99A1FF'],
+				lmsIntroImg_url: ['/static/images/menu/pc-content-lms-voca-intro-img.png', '보카학습통계자료휴대폰목업'],
+				lmsIntroTextTitle: 'VOCA Series',
+
+
+				lmsConfigItemStudyImg_url: ['/static/images/menu/pc-content-lms-voca-config-study.png', '보카엘엠에스학습현황'],
+				lmsConfigItemDailyImg_url: ['/static/images/menu/pc-content-lms-voca-config-daily.png', '보카엘엠에스일일현황'],
+				lmsConfigItemWeeklyImg_url: ['/static/images/menu/pc-content-lms-voca-config-monthly.png', '보카엘엠에스월간현황'],
+
+				lmsCurWrap_url: ['/static/images/menu/pc-content-lms-voca-cur.png', '보카학습현황통계'],
+				lmsDailyWrap_url: ['/static/images/menu/pc-content-lms-voca-daily.png', '보카일일현황통계'],
+				lmsMonthlyWrap_url: ['/static/images/menu/pc-content-lms-voca-monthly.png', '보카월간현황통계'],
+				*/
 
 			},
 		},
@@ -107,6 +157,7 @@
 			objs.logoImg.attr('src', `${values.logoImg_url[0]}`);
 			objs.logoImg.attr('alt', `${values.logoImg_url[1]}`);
 
+			/*
 			objs.lmsIntroWrap.css('background-color', `${values.lmsIntroWrap_color[0]}`);
 			objs.lmsIntroImg.attr('src', `${values.lmsIntroImg_url[0]}`);
 			objs.lmsIntroImg.attr('alt', `${values.lmsIntroImg_url[1]}`);
@@ -131,6 +182,8 @@
 			objs.lmsMonthlyWrap.attr('src', `${values.lmsMonthlyWrap_url[0]}`);
 			objs.lmsMonthlyWrap.attr('alt', `${values.lmsMonthlyWrap_url[1]}`);
 
+			 */
+
 
 
 
@@ -148,8 +201,9 @@
 
 		let objs = contentInfo[currentClick].objs;
 		let values = contentInfo[currentClick].values;
-		if(target == "lms-englisea-wrap"){ currentClick = 0}
-		else if(target == "lms-voca-wrap"){ currentClick = 1}
+		if(target == "bk-read-wrap"){ currentClick = 0}
+		else if(target == "bk-voca-wrap"){ currentClick = 1}
+		else if(target == "bk-gram-wrap"){ currentClick = 2}
 
 		$.each(objs, function(idx, item) {
 			//$(item).css('visibility', 'hidden');

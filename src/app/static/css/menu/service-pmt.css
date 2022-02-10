@@ -1,0 +1,67 @@
+.scd-box  {
+    width: 17.68rem;
+    margin: 0 auto;
+    font-size: 0.29rem;
+}
+
+.scd-btn {
+    display: -webkit-box;   /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+    display: -ms-flexbox;  /* TWEENER - IE 10 */
+    display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+    display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */
+    -webkit-align-items: center;
+    align-items: center;
+    color: #333333;
+    font-weight: 300;
+    margin-top: 1.57rem;
+}
+
+.scd-btn:after {
+    content: '';
+    display: inline-block;
+    width: 0.45rem;
+    height: 0.45rem;
+    background: url('/static/images/common/com-select-arrow-open.png') no-repeat 50%;
+    background-size: contain;
+    margin-left: 0.18rem;
+}
+
+
+/********* pmt-main-wrap ***********/
+
+.pmt-main-wrap {
+    background: linear-gradient(92.59deg, rgba(74, 222, 222, 0.39) 0%, rgba(125, 214, 246, 0.46) 42.04%, rgba(255, 192, 95, 0.1) 100.9%);
+}
+
+.pmt-main-box {
+    position: relative;
+    width: 21.34rem;
+    margin: 0 auto;
+    height: 8.77rem;
+}
+
+.pmt-img-area {
+    position: absolute;
+    width: 21.25rem;
+    top: -1.25rem;
+    left: 0.89rem;
+}
+
+.btn-area {
+    position: absolute;
+    width: 100%;
+    padding-left: 1.77rem;
+    bottom: 1.22rem;
+}
+
+.btn-go-mbs, .btn-go-tst {
+    width: 3.46rem;
+    height: 0.89rem;
+    cursor: pointer;
+    border-radius: 0.57rem;
+}
+
+.btn-go-mbs {
+    margin-right: 0.09rem;
+}
+

@@ -144,7 +144,7 @@ html, body {
     margin-top: 2.2rem;
     z-index: 3;
     transform: translateY(40px);
-    transition: 200ms ease-in-out;
+    transition: 400ms ease-in-out;
 }
 
 .right-go {
@@ -154,7 +154,7 @@ html, body {
     align-items: center;
     font-size: 0.29rem;
     transform: translateY(40px);
-    transition: 200ms ease-in-out;
+    transition: 400ms ease-in-out;
     z-index: 3;
 }
 
@@ -168,7 +168,7 @@ html, body {
     background-size: contain;
     transform: translateY(40px);
     margin-left: auto;
-    transition: 200ms ease-in-out;
+    transition: 400ms ease-in-out;
     z-index: 3;
 }
 

@@ -1,6 +1,69 @@
 @charset "utf-8";
 
 
+/* book-intro-wrap */
+
+
+
+.book-intro-wrap {
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), linear-gradient(92.59deg, #1BA7EC 0%, #7DD6F6 37.84%, rgba(27, 167, 236, 0.1) 100.9%);
+}
+
+.book-intro-box {
+    position: relative;
+    width: 21.34rem;
+    height: 9.50rem;
+    margin: 0 auto;
+}
+
+.book-intro-img-back {
+    position: absolute;
+    width: 15.64rem;
+    height: 5.66rem;
+    z-index: -1;
+    right: -2rem;
+    top: 1.73rem;
+}
+
+.book-intro-img-box {
+    position: absolute;
+    width: 21.25rem;
+    margin: 0 auto;
+    top: 1.73rem;
+}
+
+
+.btn-bk-intro-box {
+    position: absolute;
+    width: 100%;
+    bottom: 1.75rem;
+
+}
+
+
+.btn-bkm {
+    width: 3.46rem;
+    height: 0.89rem;
+    border-radius: 0.57rem;
+    margin-left: 1.31rem;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* voca-logo-wrap */
 .lms-logo-box {
     width: 5.36rem;
