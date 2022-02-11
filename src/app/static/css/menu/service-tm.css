@@ -29,10 +29,11 @@
     left: 2.68rem;
 }
 
-.btn-bk-intro-box {
+.btn-tm-intro-box {
     position: absolute;
     width: 100%;
     left:0;
+    bottom: 1.75rem;
     padding-left: 1.7rem;
 }
 

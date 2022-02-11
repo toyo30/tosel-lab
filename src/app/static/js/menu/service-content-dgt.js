@@ -99,6 +99,7 @@
 
 		objs.crsBox.css('width', values.crsBox_size[0]);
 		objs.crsBox.css('height', values.crsBox_size[1]);
+
 		objs.crsBox.css('bottom', values.crsBox_size[2]);
 		objs.crsBox.css('left', values.crsBox_size[3]);
 
@@ -206,7 +207,6 @@
 
 	$(window).resize(function() {
 		changeValue();
-		startSwiper();
 	});
 
 

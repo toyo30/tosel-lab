@@ -1,8 +1,6 @@
 ( () => {
 
 	let currentClick = 0;
-
-	
 	const contentInfo = [
 
 		{
@@ -83,7 +81,6 @@
 				lmsDailyWrap_url: ['/static/images/menu/pc-content-lms-voca-daily.png', '보카일일현황통계'],
 				lmsMonthlyWrap_url: ['/static/images/menu/pc-content-lms-voca-monthly.png', '보카월간현황통계'],
 
-
 			},
 		},
 		
@@ -98,10 +95,6 @@
 
 		let objs = contentInfo[currentClick].objs;
 		let values = contentInfo[currentClick].values;
-
-
-
-
 
 
 			objs.logoImg.attr('src', `${values.logoImg_url[0]}`);
@@ -144,10 +137,9 @@
 //currentClick을 지정하기 
 	$(document).on('click', '.bar-item', function() {
 		let target = $(this).data('item');
-
-
 		let objs = contentInfo[currentClick].objs;
 		let values = contentInfo[currentClick].values;
+
 		if(target == "lms-englisea-wrap"){ currentClick = 0}
 		else if(target == "lms-voca-wrap"){ currentClick = 1}
 
@@ -158,7 +150,6 @@
 			$(item).css('opacity', '0');
 
 		})
-
 		changeValue();
 
 		$.each(objs, function(idx, item) {
