@@ -1,10 +1,6 @@
 ( () => {
-
 	let currentClick = 0;
-
-
 	const contentInfo = [
-
 		{
 			//0 lms-englisea-wrap
 			target: 'dgt-eng',
@@ -12,21 +8,11 @@
 			objs: {
 				//각 섹션을 담는 요소
 				mainImg: $('.dgt-intro-img-box img'),
+				crsBox: $('.crs-box'),
+				crsPgn: $('.crs-box > .crs-pgn'),
+				crsNext: $('.crs-next'),
+				crsPrev: $('.crs-prev'),
 
-
-				/*
-				lmsIntroWrap: $('.lms-intro-wrap'),
-				lmsIntroImg: $('.lms-intro-img img'),
-				lmsIntroTextTitle: $('.lms-intro-text-title'),
-
-				lmsConfigItemStudyImg: $('.lms-config-item:nth-child(1) .lms-config-img-box img'),
-				lmsConfigItemDailyImg: $('.lms-config-item:nth-child(2) .lms-config-img-box img'),
-				lmsConfigItemWeeklyImg: $('.lms-config-item:nth-child(3) .lms-config-img-box img'),
-
-				lmsCurWrap: $('.cur-img-box img'),
-				lmsDailyWrap: $('.daily-img-box img'),
-				lmsMonthlyWrap: $('.monthly-img-box img'),
-				*/
 			},
 			values: {
 				mainImg_url: ['/static/images/menu/pc-content-dgt-intr-eng.png', '디지털컨텐츠잉글리쉬'],
@@ -48,50 +34,28 @@
                             <div class="crs-item swiper-slide">
                                 <img class="lazy lz-entered lz-loaded" data-src="/static/images/menu/pc-content-dgt-crs-item6.png" src="/static/images/menu/pc-content-dgt-crs-item6.png" alt="디지털보카 컨텐츠">
                             </div>`,
-
-
-				/*
-				lmsIntroWrap_color: ['#7BD5F5'],
-				lmsIntroImg_url: ['/static/images/menu/pc-content-lms-englisea-intro-img.png', '잉글리쉬학습통계자료휴대폰목업'],
-				lmsIntroTextTitle: 'ENGLISEA',
-
-
-				lmsConfigItemStudyImg_url: ['/static/images/menu/pc-content-lms-englisea-config-study.png', '엘엠에스학습현황'],
-				lmsConfigItemDailyImg_url: ['/static/images/menu/pc-content-lms-englisea-config-daily.png', '엘엠에스일일현황'],
-				lmsConfigItemWeeklyImg_url: ['/static/images/menu/pc-content-lms-englisea-config-weekly.png', '엘엠에스주간현황'],
-
-				lmsCurWrap_url: ['/static/images/menu/pc-content-lms-englisea-cur.png', '학습현황통계'],
-				lmsDailyWrap_url: ['/static/images/menu/pc-content-lms-englisea-daily.png', '일일현황통계'],
-				lmsMonthlyWrap_url: ['/static/images/menu/pc-content-lms-englisea-weekly.png', '주간현황통계'],
-				*/
+				crsBox_size: ['14.2rem', '8.3rem', '4.4rem', '3.41rem'],//width, height, bottom, left
+				crsPgn_pos: ['-4.5rem'],
+				crsNext_pos: ['5rem', '-2.6rem'],//top, right
+				crsPrev_pos: ['5rem', '-2.6rem'],//top, left
 
 			},
 		},
-
 		{
 			//1 lms-voca-wrap
 			target: 'dgt-voca',
-			//urlLength: 3,
 			objs: {
 				//각 섹션을 담는 요소
 				mainImg: $('.dgt-intro-img-box img'),
+				crsBox: $('.crs-box'),
+				crsPgn: $('.crs-box > .crs-pgn'),
+				crsNext: $('.crs-next'),
+				crsPrev: $('.crs-prev'),
 
-				/*
-				lmsIntroWrap: $('.lms-intro-wrap'),
-				lmsIntroImg: $('.lms-intro-img img'),
-				lmsIntroTextTitle: $('.lms-intro-text-title'),
-
-				lmsConfigItemStudyImg: $('.lms-config-item:nth-child(1) .lms-config-img-box img'),
-				lmsConfigItemDailyImg: $('.lms-config-item:nth-child(2) .lms-config-img-box img'),
-				lmsConfigItemWeeklyImg: $('.lms-config-item:nth-child(3) .lms-config-img-box img'),
-
-				lmsCurWrap: $('.cur-img-box img'),
-				lmsDailyWrap: $('.daily-img-box img'),
-				lmsMonthlyWrap: $('.monthly-img-box img'),
-
-				 */
 
 			},
+			//urlLength: 3,
+			target: 'dgt-voca',
 			values: {
 				mainImg_url: ['/static/images/menu/pc-content-dgt-intr-voca.png', '디지털컨텐츠보카'],
 				crs_item: `<div class="crs-item swiper-slide">
@@ -112,21 +76,10 @@
                             <div class="crs-item swiper-slide">
                                 <img class="lazy lz-entered lz-loaded" data-src="/static/images/menu/pc-content-dgt-crs-item6.png" src="/static/images/menu/pc-content-dgt-crs-item6.png" alt="디지털보카 컨텐츠">
                             </div>`,
-
-				/*
-				lmsIntroWrap_color: ['#99A1FF'],
-				lmsIntroImg_url: ['/static/images/menu/pc-content-lms-voca-intro-img.png', '보카학습통계자료휴대폰목업'],
-				lmsIntroTextTitle: 'VOCA Series',
-
-
-				lmsConfigItemStudyImg_url: ['/static/images/menu/pc-content-lms-voca-config-study.png', '보카엘엠에스학습현황'],
-				lmsConfigItemDailyImg_url: ['/static/images/menu/pc-content-lms-voca-config-daily.png', '보카엘엠에스일일현황'],
-				lmsConfigItemWeeklyImg_url: ['/static/images/menu/pc-content-lms-voca-config-monthly.png', '보카엘엠에스월간현황'],
-
-				lmsCurWrap_url: ['/static/images/menu/pc-content-lms-voca-cur.png', '보카학습현황통계'],
-				lmsDailyWrap_url: ['/static/images/menu/pc-content-lms-voca-daily.png', '보카일일현황통계'],
-				lmsMonthlyWrap_url: ['/static/images/menu/pc-content-lms-voca-monthly.png', '보카월간현황통계'],
-				*/
+					crsBox_size: ['12.5rem', '8.3rem', '1.2rem', '4.41rem'],//width, height, bottom, left
+					crsPgn_pos: ['-2.2rem'],
+					crsNext_pos: ['3.8rem', '-3rem'],//top, right
+					crsPrev_pos: ['3.8rem', '-3rem'],//top, left
 
 			},
 		},
@@ -143,6 +96,19 @@
 
 		objs.mainImg.attr('src', `${values.mainImg_url[0]}`);
 		objs.mainImg.attr('alt', `${values.mainImg_url[1]}`);
+
+		objs.crsBox.css('width', values.crsBox_size[0]);
+		objs.crsBox.css('height', values.crsBox_size[1]);
+		objs.crsBox.css('bottom', values.crsBox_size[2]);
+		objs.crsBox.css('left', values.crsBox_size[3]);
+
+		objs.crsPgn.css('bottom', values.crsPgn_pos[0]);
+
+		objs.crsNext.css('top', values.crsNext_pos[0]);
+		objs.crsNext.css('right', values.crsNext_pos[1]);
+
+		objs.crsPrev.css('top', values.crsPrev_pos[0]);
+		objs.crsPrev.css('left', values.crsPrev_pos[1]);
 
 		/*
         objs.lmsIntroWrap.css('background-color', `${values.lmsIntroWrap_color[0]}`);
@@ -173,7 +139,10 @@
 
 	}
 
+	window.swiper = null;
+
 	function startSwiper() {
+
 		if(window.swiper != null){
 			window.swiper.destroy();
 		}
@@ -220,7 +189,6 @@
 		})
 
 		startSwiper();
-
 		changeValue();
 
 		$.each(objs, function(idx, item) {
@@ -236,9 +204,10 @@
 		startSwiper();
 	});
 
-	// $(window).resize(function() {
-	// 	changeValue();
-	// });
+	$(window).resize(function() {
+		changeValue();
+		startSwiper();
+	});
 
 
 

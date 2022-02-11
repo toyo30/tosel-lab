@@ -6,7 +6,6 @@
     margin: 0 auto;
 }
 
-
 .crs-box {
     position: absolute;
     bottom: 4.4rem;
@@ -36,10 +35,9 @@ crs-area {
     height: 8.3rem;
 }
 
-.swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction  {
+.crs-box > .crs-pgn {
     bottom: -4.5rem;
 }
-
 
 .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
     margin: 0 var(--swiper-pagination-bullet-horizontal-gap,4px);
@@ -60,7 +58,7 @@ crs-area {
 }
 
 
-.swiper-button-next, .swiper-rtl .swiper-button-prev {
+.crs-next{
     width: 1.2rem;
     height: 1.2rem;
     right: -2.6rem;
@@ -73,7 +71,7 @@ crs-area {
     content: '';
 }
 
-.swiper-button-prev, .swiper-rtl .swiper-button-next {
+.crs-prev{
     width: 1.2rem;
     height: 1.2rem;
     left: -2.6rem;

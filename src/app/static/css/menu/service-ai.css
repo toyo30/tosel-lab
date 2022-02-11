@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+
+.ai-intro-wrap {
+    background: #141313;
+}
+
+.ai-intro-box {
+    position: relative;
+    height: 18.71rem;
+    margin: 0 auto;
+    margin-top: 2.57rem;
+    padding-top: 1.79rem;
+}
+
+.ai-intro-img-box {
+    width: 21.43rem;
+    height: 15.41rem;
+    margin: 0 auto;
+
+}

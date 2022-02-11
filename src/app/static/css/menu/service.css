@@ -180,12 +180,12 @@ html, body {
 
 /* contents-display */
 
-
+.lms-contents,
 .book-contents,
 .digital-contents,
 .teachingmaterials-contents,
 .aiconsult-contents {
-    display: block;
+    display: none;
 }
 
 

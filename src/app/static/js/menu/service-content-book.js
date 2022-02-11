@@ -1,8 +1,5 @@
-( () => {
-
+(() => {
 	let currentClick = 0;
-
-	
 	const contentInfo = [
 
 		{

@@ -60,7 +60,7 @@
         </div>
         {% include '/common/footer.html' %}
     </div>
-<!--<script src="/static/js/menu/service.js"></script>-->
+<script src="/static/js/menu/service.js"></script>
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
 
@@ -69,8 +69,9 @@
 <script>
   (function () {
     function logElementEvent(eventName, element) {
-      console.log(Date.now(), eventName, element.getAttribute("data-src"));
+      // console.log(Date.now(), eventName, element.getAttribute("data-src"));
     }
+    <!--
 
     var callback_enter = function (element) {
       logElementEvent("🔑 ENTERED", element);
@@ -95,6 +96,9 @@
     var callback_cancel = function (element) {
       logElementEvent("🔥 CANCEL", element);
     };
+    -->
+
+
 
     var ll = new LazyLoad({
       // Assign the callbacks defined above
@@ -105,7 +109,14 @@
       callback_loaded: callback_loaded,
       callback_error: callback_error,
       callback_finish: callback_finish
+
     });
+
+
+
+
+
+
   })();
 </script>
 </body>

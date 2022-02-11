@@ -1,0 +1,44 @@
+@charset "UTF-8";
+
+.tm-intro-wrap {
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), linear-gradient(92.59deg, #FFBE2E 0%, rgba(255, 190, 46, 0.942708) 37.84%, rgba(255, 190, 46, 0.1) 100.9%);
+}
+
+.tm-intro-box {
+    position: relative;
+    width: 21.34rem;
+    height: 8.77rem;
+    margin: 0 auto;
+}
+
+
+
+.tm-intro-img-box {
+    width: 17.68rem;
+    height: 7.18rem;
+    margin: 0 auto;
+    padding-top: 0.4rem;
+}
+
+
+.tm-intro-img-back {
+    position: absolute;
+    width: 23.70rem;
+    height: 8.77rem;
+    z-index: -3;
+    left: 2.68rem;
+}
+
+.btn-bk-intro-box {
+    position: absolute;
+    width: 100%;
+    left:0;
+    padding-left: 1.7rem;
+}
+
+.btn-mbs, .btn-tmr {
+    width: 3.46rem;
+    height: 0.89rem;
+    border-radius: 0.57rem;
+    cursor: pointer;
+}
