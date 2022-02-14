@@ -9,6 +9,10 @@
 			objs: {
 				//각 섹션을 담는 요소
 				logoImg: $('.book-intro-img-box img'),
+				bookAvt: $('.book-avt-img-box img'),
+				bookDes: $('.book-des-img-box img'),
+				bookInfo: $('.book-info-img-box img'),
+				bookBuy: $('.book-buy-img-box img'),
 
 				/*
 				lmsIntroWrap: $('.lms-intro-wrap'),
@@ -25,7 +29,11 @@
 				*/
 			},
 			values: {
-				logoImg_url: ['/static/images/menu/pc-content-bk-intr-read.png', '리딩시리즈설명'],
+				logoImg_url: ['/static/images/menu/pc-content-bk-intr-read.png', '리딩시리즈소개'],
+				bookAvt_url: ['/static/images/menu/pc-content-bk-read-avt.png', '리딩시리즈특장점'],
+				bookDes_url: ['/static/images/menu/pc-content-bk-read-des.png', '리딩시리즈설명'],
+				bookInfo_url: ['/static/images/menu/pc-content-bk-read-info.png', '리딩시리즈정보'],
+				bookBuy_url: ['/static/images/menu/pc-content-bk-read-buy.png', '리딩시리즈구매정보'],
 
 				/*
 				lmsIntroWrap_color: ['#7BD5F5'],
@@ -52,6 +60,10 @@
 			objs: {
 				//각 섹션을 담는 요소
 				logoImg: $('.book-intro-img-box img'),
+				bookAvt: $('.book-avt-img-box img'),
+				bookDes: $('.book-des-img-box img'),
+				bookInfo: $('.book-info-img-box img'),
+				bookBuy: $('.book-buy-img-box img'),
 
 				/*
 				lmsIntroWrap: $('.lms-intro-wrap'),
@@ -71,6 +83,10 @@
 			},
 			values: {
 				logoImg_url: ['/static/images/menu/pc-content-bk-intr-voca.png', '보카시리즈설명'],
+				bookAvt_url: ['/static/images/menu/pc-content-bk-voca-avt.png', '보카시리즈특장점'],
+				bookDes_url: ['/static/images/menu/pc-content-bk-voca-des.png', '보카시리즈설명'],
+				bookInfo_url: ['/static/images/menu/pc-content-bk-voca-info.png', '보카시리즈정보'],
+				bookBuy_url: ['/static/images/menu/pc-content-bk-voca-buy.png', '보카시리즈구매정보'],
 
 				/*
 				lmsIntroWrap_color: ['#99A1FF'],
@@ -96,6 +112,10 @@
 			objs: {
 				//각 섹션을 담는 요소
 				logoImg: $('.book-intro-img-box img'),
+				bookAvt: $('.book-avt-img-box img'),
+				bookDes: $('.book-des-img-box img'),
+				bookInfo: $('.book-info-img-box img'),
+				bookBuy: $('.book-buy-img-box img'),
 
 				/*
 				lmsIntroWrap: $('.lms-intro-wrap'),
@@ -115,6 +135,10 @@
 			},
 			values: {
 				logoImg_url: ['/static/images/menu/pc-content-bk-intr-gram.png', '그래머시리즈설명'],
+				bookAvt_url: ['/static/images/menu/pc-content-bk-gram-avt.png', '그래머시리즈특장점'],
+				bookDes_url: ['/static/images/menu/pc-content-bk-gram-des.png', '그래머시리즈설명'],
+				bookInfo_url: ['/static/images/menu/pc-content-bk-gram-info.png', '그래머시리즈정보'],
+				bookBuy_url: ['/static/images/menu/pc-content-bk-gram-buy.png', '그래머시리즈구매정보'],
 
 				/*
 				lmsIntroWrap_color: ['#99A1FF'],
@@ -154,32 +178,20 @@
 			objs.logoImg.attr('src', `${values.logoImg_url[0]}`);
 			objs.logoImg.attr('alt', `${values.logoImg_url[1]}`);
 
-			/*
-			objs.lmsIntroWrap.css('background-color', `${values.lmsIntroWrap_color[0]}`);
-			objs.lmsIntroImg.attr('src', `${values.lmsIntroImg_url[0]}`);
-			objs.lmsIntroImg.attr('alt', `${values.lmsIntroImg_url[1]}`);
 
-			objs.lmsIntroTextTitle.html(`${values.lmsIntroTextTitle}`);
+			objs.bookAvt.attr('src', `${values.bookAvt_url[0]}`);
+			objs.bookAvt.attr('alt', `${values.bookAvt_url[1]}`);
 
-			objs.lmsConfigItemStudyImg.attr('src', `${values.lmsConfigItemStudyImg_url[0]}`);
-			objs.lmsConfigItemStudyImg.attr('alt', `${values.lmsConfigItemStudyImg_url[1]}`);
+			objs.bookDes.attr('src', `${values.bookDes_url[0]}`);
+			objs.bookDes.attr('alt', `${values.bookDes_url[1]}`);
 
-			objs.lmsConfigItemDailyImg.attr('src', `${values.lmsConfigItemDailyImg_url[0]}`);
-			objs.lmsConfigItemDailyImg.attr('alt', `${values.lmsConfigItemDailyImg_url[1]}`);
+			objs.bookInfo.attr('src', `${values.bookInfo_url[0]}`);
+			objs.bookInfo.attr('alt', `${values.bookInfo_url[1]}`);
 
-			objs.lmsConfigItemWeeklyImg.attr('src', `${values.lmsConfigItemWeeklyImg_url[0]}`);
-			objs.lmsConfigItemWeeklyImg.attr('alt', `${values.lmsConfigItemWeeklyImg_url[1]}`);
+			objs.bookBuy.attr('src', `${values.bookBuy_url[0]}`);
+			objs.bookBuy.attr('alt', `${values.bookBuy_url[1]}`);
 
-			objs.lmsCurWrap.attr('src', `${values.lmsCurWrap_url[0]}`);
-			objs.lmsCurWrap.attr('alt', `${values.lmsCurWrap_url[1]}`);
 
-			objs.lmsDailyWrap.attr('src', `${values.lmsDailyWrap_url[0]}`);
-			objs.lmsDailyWrap.attr('alt', `${values.lmsDailyWrap_url[1]}`);
-
-			objs.lmsMonthlyWrap.attr('src', `${values.lmsMonthlyWrap_url[0]}`);
-			objs.lmsMonthlyWrap.attr('alt', `${values.lmsMonthlyWrap_url[1]}`);
-
-			 */
 
 
 
