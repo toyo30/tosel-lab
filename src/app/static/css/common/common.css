@@ -109,11 +109,13 @@
 
 .btn-login {
     font-size: 0.21rem;
+    width: 1.50rem;
     height: 0.64rem;
-    padding: 0.18rem 0.45rem;
+    line-height: 0.65rem;
     margin-left: 0.27rem;
     border-radius: 1.20rem;
     border: 0.02rem solid #0F1E74;
+    cursor: pointer;
 }
 
 
@@ -205,8 +207,11 @@
 }
 
 .flink-tosel {
+    font-size: 0.21rem;
+    width: 1.79rem;
+    height: 0.64rem;
+    line-height: 0.65rem;
     margin-left: 0.43rem;
-    padding: 0.18rem 0.23rem;
     border: 0.02rem solid #000000;
     border-radius: 1.20rem;
 }

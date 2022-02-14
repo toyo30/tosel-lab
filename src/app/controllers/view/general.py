@@ -19,9 +19,8 @@ bp = Blueprint('view', __name__)
 @bp.route('/')
 def index():
     # session['user_idx'] = random.randint(0, 10)
-    return render_template('/index.html')
+    return render_template('/main/index.html')
 
-@bp.route('/header')
 def header():
     # session['user_idx'] = random.randint(0, 10)
     return render_template('/common/header.html')
